@@ -1,0 +1,253 @@
+.dummy {
+
+  .container {
+    position: relative;
+    z-index: 500;
+  }
+
+  &__top {
+    padding: 7rem 0 8.9rem;
+
+    @media (max-width: $tablet) {
+      padding: 8.5rem 0 10rem;
+    }
+
+    @media (max-width: $mobile) {
+      padding: 4rem 0 10rem;
+    }
+  }
+
+  &__bottom {
+    padding: 8.5rem 0 8.9rem;
+
+    @media (max-width: $tablet) {
+      padding: 4.2rem 0 8.3rem;
+    }
+
+    @media (max-width: $mobile) {
+      padding: 2.6rem 0 5.3rem;
+    }
+
+  }
+
+  &__main-image {
+
+    @media (max-width: $tablet) {
+      width: 60%;
+    }
+
+    @media(max-width: $mobile) {
+      width: 79%;
+    }
+  }
+
+  &__chip {
+    position: absolute;
+    left: 41.5rem;
+    bottom: -15.8rem;
+
+    @media (max-width: $tablet) {
+      display: none;
+    }
+  }
+
+  &__info {
+    margin: 0 0 5.2rem;
+
+    @media(max-width: $tablet) {
+      margin: 0 0 6rem;
+    }
+
+    @media(max-width: $mobile) {
+      margin: 0 0 4rem;
+    }
+  }
+  &__decor {
+    position: absolute;
+    right: -2.1rem;
+    top: -59.1rem;
+
+    @media(max-width: $laptop) {
+      top: -40rem;
+      right: -16rem;
+      width: 50%;
+    }
+
+    @media(max-width: $tablet) {
+      top: -30.5rem;
+      right: -4.5rem;
+      width: 55%;
+    }
+
+    @media (max-width: $mobile) {
+      top: -16.5rem;
+      right: -2rem;
+      width: 65%;
+
+      max-width: 35rem
+    }
+  }
+
+  &__title {
+    font-family: $mossport;
+    text-transform: uppercase;
+    font-size: 7.5rem;
+    line-height: 1;
+    margin: 0 0 4rem;
+
+    @media(max-width: $tablet) {
+      width: 50%;
+    }
+
+    @media(max-width: $mobile) {
+      font-size: 3.6rem;
+      width: 53%;
+      
+    }
+  }
+
+  &__subtitle {
+    font-family: $mossport;
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin: 0 0 2.2rem;
+
+    @media (max-width: $mobile) {
+      font-size: 2.2rem;
+    }
+  }
+
+  &__bullits {
+    display: flex;
+    gap: 4.5rem;
+
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+
+  &__bullit {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 3rem;
+    line-height: 1;
+    align-items: flex-start;
+
+    @media (max-width: $mobile) {
+      font-size: 2.2rem;
+    }
+
+    span {
+      margin-top: 0.3rem;
+    }
+  }
+
+  &__dates {
+    display: flex;
+    gap: 6rem;
+    margin-top: 4.9rem;
+
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    @media (max-width: $mobile) {
+      gap: 3rem;
+    }
+
+  }
+
+  &__date-block {
+    background-color: $purple;
+    border-radius: 18px;
+    padding: 1.9rem 3.4rem 2rem 3.4rem;
+
+    @media (max-width: $mobile) {
+      padding: 1.5rem 1rem;
+    }
+  }
+
+  &__date-title {
+    font-family: $mossport;
+    text-transform: uppercase;
+    line-height: 1;
+    font-size: 5rem;
+    margin: 0 0 1.2rem;
+
+    @media (max-width: $mobile) {
+      font-size: 2.4rem;
+    }
+  }
+
+  &__date-list {
+    display: flex;
+    gap: 2.8rem;
+
+    
+    @media (max-width: $mobile) {
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+  }
+
+  &__date {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    font-family: $mossport;
+    text-transform: uppercase;
+    font-size: 3rem;
+    line-height: 1;
+
+    @media (max-width: $mobile) {
+      font-size: 2rem;
+    }
+
+  }
+
+  &__footer {
+    padding: 9rem 0 9rem;
+    color: $black;
+    font-size: 2.4rem;
+    line-height: 1;
+
+    p {
+      margin: 0;
+    }
+
+    span {
+      color: $red;
+      font-weight: bold;
+    }
+
+    a {
+      color: $black;
+    }
+
+    @media (max-width: $mobile) {
+      padding: 4.5rem 0 4.5rem;
+    }
+
+    .container {
+      display: flex;
+      gap: 14.3rem;
+
+      @media (max-width: $tablet) {
+        flex-direction: column;
+        gap: 2rem;
+        font-size: 2rem;
+      }
+    }
+  }
+
+  &__footer-left {
+    width: 60rem;
+    flex-shrink: 0;
+
+    @media (max-width: $tablet) {
+      width: auto;
+    }
+  }
+}

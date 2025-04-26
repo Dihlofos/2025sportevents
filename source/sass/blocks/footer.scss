@@ -1,0 +1,260 @@
+.footer {
+
+  .container {
+    position: relative;
+    padding: 7.5rem 0 9.6rem;
+
+    @media (max-width: $tablet) {
+      padding: 4rem 2.4rem 9.6rem;
+    }
+
+    @media (max-width: $mobile) {
+      padding: 0 1.6rem 9.6rem;
+    }
+  }
+
+  &__title {
+    margin: 0 0 7rem;
+
+    @media (max-width: $tablet) {
+      margin: 0 0 3.5rem;
+    }
+
+    @media (max-width: $mobile) {
+      margin: 3.5rem 0 4.5rem;
+    }
+  }
+
+
+  &__decor {
+    position: absolute;
+    top: -0.1rem;
+    right: -6.4rem;
+    width: 50.7rem;
+    height: 43.5rem;
+
+    @media (max-width: $tablet) {
+      width: 29.6rem;
+      height: 25.4rem;
+      right: 2.6rem;
+    }
+
+    @media (max-width: $mobile) {
+      position: relative;
+      width: 42.5rem;
+      height: auto;
+      margin: 0 auto;
+      left: -5rem;
+    }
+  }
+
+
+  &__logos {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    justify-content: center;
+    z-index: 5;
+    padding: 4.5rem 0 0 2.5rem;
+
+    @media (max-width: $tablet) {
+      gap: 2rem;
+      padding: 2.5rem 0 0 2.5rem;
+    }
+
+    @media (max-width: $mobile) {
+      gap: 4rem;
+      padding: 4rem 0 0 1.5rem;
+    }
+
+
+  }
+
+  &__logo {
+    @media (max-width: $laptop) {
+      width: 15rem;
+    }
+
+    @media (max-width: $tablet) {
+      width: 9rem;
+    }
+
+    @media (max-width: $mobile) {
+      width: 12rem;
+      height: auto;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    gap: 11.5rem;
+    margin: 0 0 4.8rem;
+
+    @media (max-width: $tablet) {
+      gap: 3.5rem;
+      align-items: flex-end;
+      margin: 0 0 4rem;
+    }
+
+    @media (max-width: $mobile) {
+      gap: 2.8rem;
+      margin: 0 0 4.8rem;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    color: $red;
+    text-transform: uppercase;
+    font-family: $mossport;
+    font-size: 3.5rem;
+    line-height: 1;
+
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      align-items: flex-start;
+      color: $white;
+      font-size: 2.4rem;
+      gap: 1rem;
+    }
+  }
+
+  &__info {
+    font-size: 2rem;
+    max-width: 65.8rem;
+    margin: 0 0 11rem;
+
+    p {
+      margin: 0 0 2.3rem;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 3.1rem;
+    }
+
+    @media (max-width: $tablet) {
+      font-size: 1.2rem;
+      max-width: 40rem;
+      line-height: 1;
+      margin: 0 0 4.2rem;
+
+      p {
+        margin: 0 0 1.1rem;
+      }
+    }
+
+    @media(max-width: $mobile) {
+      margin: 0 0 5.5rem;
+      ul {
+        padding-left: 2rem;
+      }
+
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: $mobile) {
+      flex-direction: column;
+    }
+  }
+
+  &__underground {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    @media (max-width: $mobile) {
+      align-items: flex-start;
+      margin-top: 4.8rem;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    gap: 2.3rem;
+    margin: 0 0 2.1rem;
+
+    @media (max-width: $tablet) {
+      margin: 0 0 1.5rem;
+    }
+  }
+
+  &__item-image {
+
+    @media (max-width:$tablet) {
+      display: none;
+    }
+
+    &--tablet {
+      display: none;
+
+      @media (max-width:$tablet) {
+        display: block;
+      }
+    }
+  }
+
+  &__policy-link {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    color: $bgcolor;
+    opacity: 0.4;
+    text-decoration: none;
+    font-weight: 400;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    @media (max-width: $tablet) {
+      font-size: 1.2rem;;
+    }
+  }
+
+  &__emails {
+    display: flex;
+    gap: 8.8rem;
+
+    h6 {
+      font-size: 2rem;
+      text-transform: uppercase;
+      margin: 0 0 2.4rem;
+      font-weight: 400;
+    }
+
+    a {
+      display: block;
+      font-size: 3.2rem;
+      line-height: 1.2;
+      color: $white;
+
+      &:hover {
+        color: $red;
+      }
+    }
+
+    @media (max-width: $tablet) {
+      gap: 2.3rem;
+      h6 {
+        font-size: 1.2rem;
+        margin: 0 0 1rem;
+      }
+
+      a {
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+}

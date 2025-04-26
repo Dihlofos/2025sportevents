@@ -1,0 +1,89 @@
+html {
+  @include font(10px, 10px, 400);
+
+  @media (max-width: $desktop) {
+    @include font(10px, 10px, 400);
+  }
+
+  @media (max-width: $laptop) {
+    @include font(8px, 8px, 400);
+  }
+
+  @media (max-width: $tablet) {
+    @include font(10px, 10px, 400);
+  }
+}
+
+body {
+  @include font(1.6rem, 2.1rem, 400);
+  margin: 0;
+  padding: 0;
+  position: relative;
+  min-width: 320px;
+  margin: 0 auto;
+  font-family: $myriad;
+  background-color: $bgcolor;
+  color: $white;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  padding-top: 0; // 6.5rem
+
+  @media (max-width: $laptop) {
+    // шаблон медиа-запроса desktop-first
+  }
+
+  @media (min-resolution: $extra) {
+    // шаблон для фонового изображения на экранах с повышенной плотностью пикселей
+  }
+
+
+}
+
+button {
+  font-family: $myriad;
+}
+
+body,
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+main {
+  position: relative;
+  flex-grow: 1;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.grecaptcha-badge {
+  opacity: 0;
+  pointer-events: none;
+}
+
+
+.red {
+  background-color: $red;
+}
+
+.purple {
+  background-color: $purple;
+}
+
+.justify-align-center {
+  @media (max-width: $mobile) {
+    justify-content: center;
+  }
+}
+
+.align-center {
+  align-items: center;
+}
