@@ -199,9 +199,15 @@
     text-transform: uppercase;
     font-size: 3rem;
     line-height: 1.6rem;
+
+ 
     
     @media (max-width: $mobile) {
       font-size: 2rem;
+
+      img {
+        margin-top: -0.2rem;
+      }
     }
 
   }
