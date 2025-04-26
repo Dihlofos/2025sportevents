@@ -13,7 +13,7 @@
     }
 
     @media (max-width: $mobile) {
-      padding: 4rem 0 10rem;
+      padding: 4rem 0 6rem;
     }
   }
 
@@ -80,10 +80,9 @@
     }
 
     @media (max-width: $mobile) {
-      top: -16.5rem;
-      right: -2rem;
-      width: 65%;
-
+      top: -13.5rem;
+      right: -3rem;
+      width: 62%;
       max-width: 35rem
     }
   }
@@ -199,7 +198,7 @@
     font-family: $mossport;
     text-transform: uppercase;
     font-size: 3rem;
-    line-height: 1;
+    line-height: 1.6rem;
 
     @media (max-width: $mobile) {
       font-size: 2rem;
