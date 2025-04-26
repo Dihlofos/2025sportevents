@@ -193,13 +193,13 @@
 
   &__date {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 0.9rem;
     font-family: $mossport;
     text-transform: uppercase;
     font-size: 3rem;
     line-height: 1.6rem;
-
+    
     @media (max-width: $mobile) {
       font-size: 2rem;
     }
