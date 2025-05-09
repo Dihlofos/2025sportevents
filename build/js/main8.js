@@ -55,7 +55,7 @@
   const swiperSlider = new Swiper(".js-slider", {
     // Optional parameters
     slidesPerView: "auto",
-    spaceBetween: 56,
+    spaceBetween: 39,
     initialSlide: 0,
     speed: 0,
     draggable: false,
@@ -104,7 +104,7 @@
 
       1025: {
         slidesPerView: "auto",
-        spaceBetween: 56,
+        spaceBetween: 39,
       },
     },
   });
@@ -120,39 +120,33 @@
   const figures = map.querySelectorAll(".figure");
 
   const locations = {
-    1: "Зона экстремальных видов спорта",
-    2: "Мотофристайл",
-    3: "Марафон тренировок",
-    4: "Фан-встречи",
-    5: "Стритбол",
-    6: "Стантрайдинг",
-    7: "Настольный теннис",
-    8: "Шахматы",
-    9: "Мини-футбол",
-    10: "Стретчинг",
-    11: "Кубик Рубика",
-    12: "Воркаут",
-    13: "Купер и SberShop",
-    14: "Брейк-данс",
-    15: "Детская зона",
-    16: "Зона футбольных клубов",
-    17: "Настольные игры",
-    18: "Фуд-корт Депо",
-    19: "Фестиваль фигурного катания",
-    20: "Мастер-класс Этери Тутберидзе",
-    21: "Рыболовный спорт",
-    22: "Стронгмен",
-    23: "Битбокс",
-    24: "Концерт",
-    25: "Чемпионат (партнёр)",
-    26: "Велобайк (партнёр)",
-    27: "Whoosh самокаты (партнёр)",
-    28: "ГТО",
-    29: "Мото‑шар",
-    // 30: "Этноспорт",
-    // 31: "ММА",
-    30: "Игры дружбы",
-    31: "Ринг",
+    1: "МОТОФРИСТАЙЛ + БАГГИ",
+    2: "ЗОНА ЭКСТРИМАЛЬНЫХ ВИДОВ СПОРТА",
+    3: "скейт-парк",
+    4: "паркур",
+    5: "воркаут",
+    6: "настольный теннис",
+    7: "шахматы",
+    8: "фан-встречи",
+    9: "стронгмен",
+    10: "стрельба из лука",
+    11: "детская зона",
+    12: "брейк-данс",
+    13: "стантрайдиниг",
+    14: "стритбол",
+    15: "сайклинг",
+    16: "беговелы",
+    17: "фк спартак",
+    18: "фк динамо",
+    19: "фк локомотив",
+    20: "фк цска",
+    21: "кубик рубика",
+    22: "полоса препятствий",
+    23: "фоно-зона",
+    24: "информационная стойка",
+    25: "живые шахматы",
+    26: "бокс",
+    27: "концерт",
   };
 
   console.log(window.location);
@@ -168,17 +162,13 @@
   }
 
   // 32 убрать, когда заработает.
-  const numbersWithoutAction = ["13", "18", "29", "30", "32"];
+  const numbersWithoutAction = ["24"];
 
-  const concertNumber = "24";
-  const extreemeNumbers = ["2", "29"];
-  const figureSkating = ["19", "20"];
+  const concertNumber = "27";
+  const extreemeNumbers = [];
+  const figureSkating = [];
 
-  const partnersLinks = {
-    25: "https://www.championat.com/",
-    26: "https://velobike.ru/",
-    27: "https://whoosh-bike.ru/",
-  };
+  const partnersLinks = {};
   const vw = window.innerWidth;
   // ACTIONS
 
@@ -514,7 +504,7 @@
     new Swiper(`.js-people-slider-concert`, {
       // Optional parameters
       slidesPerView: 3,
-      spaceBetween: 30,
+      spaceBetween: 58,
       initialSlide: 0,
       draggable: false,
       pagination: false,

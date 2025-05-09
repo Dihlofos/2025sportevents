@@ -8,7 +8,7 @@
     new Swiper(`.js-people-slider-concert`, {
       // Optional parameters
       slidesPerView: 3,
-      spaceBetween: 30,
+      spaceBetween: 58,
       initialSlide: 0,
       draggable: false,
       pagination: false,

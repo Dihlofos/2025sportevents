@@ -1,0 +1,32 @@
+.partners {
+  position: relative;
+  padding: 10.3rem 0 0;
+
+  &__title {
+    margin: 0 0 12.1rem;
+  }
+
+  &__content {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    min-height: 34.5rem;
+  }
+
+  &__logos {
+    display: flex;
+    flex-wrap: wrap;
+    width: 59rem;
+    gap: 3.8rem;
+  }
+
+  &__decor {
+    position: absolute;
+    top: -8.3rem;
+    right: -9.5rem;
+    width: 68.2rem;
+    z-index: 6;
+  }
+
+}

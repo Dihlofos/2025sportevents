@@ -1,0 +1,33 @@
+.concert {
+  padding: 10.4rem 0 18.5rem;
+
+  .container {
+    position: relative;
+  }
+
+  &__decor {
+    position: absolute;
+    top: -44.4rem;
+    right: -14rem;
+
+  }
+
+  &__text {
+    font-size: 2.4rem;
+    line-height: 1.1;
+    margin: 0 0 7.5rem;
+  }
+
+  &__title {
+    margin: 0 0 0.5rem;
+  }
+
+  &__time-text {
+    font-family: $mossport;
+    text-transform: uppercase;
+    font-size: 4rem;
+    line-height: 1;
+    margin: 0 0 6.2rem;
+
+  }
+}

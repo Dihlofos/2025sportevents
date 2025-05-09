@@ -1,0 +1,109 @@
+.dropdown {
+  position: relative;
+
+  &.button {
+    padding: 0;
+  }
+
+  &__trigger {
+    position: relative;
+    background-color: $white;
+    color: $red;
+    cursor: pointer;
+    z-index: 5;
+    transition: 0.2s box-shadow ease-in-out;
+
+
+
+    .dropdown.open & {
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    svg {
+      transform: rotate(90deg);
+    }
+
+    &:hover {
+      background-color: $white;
+      color: $red;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    padding: 6rem 0 1.5rem;
+    margin: 0;
+
+    .dropdown.open & {
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    @media(max-width: $tablet) {
+      padding: 60px 0 20px
+    }
+
+
+  }
+
+  &__item {
+    @media(max-width: $tablet) {
+      font-size: 26px;
+    }
+  }
+
+  &__link {
+    display: block;
+    font-size: 1.7rem;
+    line-height: 2.6rem;
+    color: $red;
+    padding: 0 2rem 0 2.3rem;
+    text-decoration: none;
+    transition: 0.1s font-weight ease-in-out, 0.1s background-color ease-in-out;
+
+    @media (max-width: $tablet) {
+      font-size: 18px;
+      line-height: 1.3;
+    }
+
+    @media (max-width: $mobile) {
+      padding: 0 20px 0 23px;
+      font-size: 14px;
+      line-height: 26px;
+    }
+
+    &:hover {
+      font-weight: 700;
+      background-color: $red;
+      color: $white;
+    }
+  };
+
+  &__content {
+    position: absolute;
+    width: 100%;
+    top: 0.5rem;
+    background-color: $white;
+    z-index: 4;
+    overflow: hidden;
+    max-height: 4rem;
+
+    .dropdown.open & {
+      overflow: visible;
+    }
+
+    @media(max-width: $tablet) {
+      top: 0px;
+      max-height: 48px;
+    }
+
+    @media (max-width: $mobile) {
+      top: 15px;
+      max-height: 25px;
+    }
+
+    .dropdown.open & {
+      max-height: 100rem;
+    }
+
+  }
+}

@@ -1,0 +1,150 @@
+.about {
+  padding: 10.5rem 0 13.5rem;
+  background-color: $red;
+  color: $white;
+
+  .container {
+    position: relative;
+  }
+
+  &__decor {
+    position: absolute;
+    right: 2.7rem;
+    top: -10.5rem;
+  }
+
+  &__title {
+    margin: 0 0 9rem;
+  }
+
+  &__description {
+    font-size: 2.4rem;
+    line-height: 1.1;
+    max-width: 102.3rem;
+    margin: 0 0 13.5rem;
+
+    p {
+      margin: 0 0 2rem;
+    };
+  }
+
+  &__bullits {
+    position: relative;
+    left: 1.5rem;
+    display: flex;
+  }
+
+  &__bullit {
+    position: relative;
+    width: 25%;
+    color: $purple;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 4.1rem 1rem 4.9rem;
+
+    h4, p {
+      position: relative;
+      z-index: 3;
+    }
+
+    h4 {
+      margin: 0 0 3.5rem;
+      font-family: $mossport;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 0 2rem;
+      font-size: 3.5rem;
+      line-height: 1;
+    }
+
+    p {
+      font-size: 2.4rem;
+      line-height: 1;
+      padding: 0 2rem;
+      text-align: center;
+      margin: 0;
+    }
+
+    &:after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: '';
+      background-color: $white;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      transform: rotate(8.1deg);
+    }
+
+    &--purple {
+      color: $white;
+
+      &:after {
+
+        z-index: 2;
+        background-color: $purple;
+        transform: rotate(-6.6deg);
+      }
+    }
+
+    &:nth-child(2) {
+      padding-bottom: 3rem;
+
+      &:after {
+        left:-1rem
+      }
+
+      h4 {
+        margin-right: 2rem;
+        margin-bottom: 7rem;
+      }
+
+      p {
+        padding-left: 0;
+        margin-right: 0.6rem;
+      }
+    }
+
+    &:nth-child(3) {
+
+      &:after {
+        z-index: 1;
+        left:-2rem
+      }
+
+      h4 {
+        margin-right: 4.5rem;
+        margin-bottom: 3.5rem;
+      }
+
+      p {
+        margin-right: 4.6rem;
+        padding: 0 4rem;
+      }
+
+    }
+
+    &:nth-child(4) {
+      padding-bottom: 4rem;
+
+      &:after {
+        left:-3rem
+      }
+
+      h4 {
+        margin-right: 7.1rem;
+        margin-bottom: 4.5rem;
+      }
+
+      p {
+        padding: 0;
+        margin-right: 6.3rem;
+      }
+
+    }
+
+  }
+}

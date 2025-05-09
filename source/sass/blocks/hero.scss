@@ -1,0 +1,71 @@
+.hero {
+  color: $lightBlack;
+
+  .container {
+    position: relative;
+  }
+
+  &__decor {
+    position: absolute;
+    top: -8.5rem;
+    left: -8rem;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: flex-end;
+    padding: 9rem 0 8.1rem;
+
+  }
+
+  &__right {
+    width: 55.9rem;
+  }
+
+  &__title {
+    width: 100%;
+    margin: 0 0 9.7rem;
+  }
+
+  &__bullits {
+    display: flex;
+    align-items: flex-start;
+    font-size: 4rem;
+    line-height: 1;
+    font-family: $mossport;
+    text-transform: uppercase;
+    gap: 7.1rem;
+    margin: 0 0 5.2rem;
+  }
+
+  &__bullit {
+    display: flex;
+    align-items: flex-start;
+    gap: 2.3rem;
+
+  }
+
+  &__chip-link {
+    display: inline-flex;
+    background-color: $red;
+    color: $white;
+    padding: 0.7rem 3.2rem;
+    font-family: $mossport;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    line-height: 2rem;
+    text-decoration: none;
+    border-radius: 30px;
+    height: 3.8rem;
+    transition: all 0.2s ease-in;
+    border: 2px solid $red;
+
+    &:hover {
+      background-color: $white;
+      color: $red
+    }
+  }
+
+
+
+}

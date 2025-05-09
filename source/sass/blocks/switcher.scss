@@ -1,0 +1,70 @@
+.switcher {
+  position: relative;
+  display: flex;
+  gap: 0.5rem;
+  z-index: 6;
+
+  &--big {
+    gap: 3.8rem;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 38px;
+    padding: 0.6rem 1.2rem;
+    font-size: 1.6rem;
+    line-height: 1;
+    color: $white;
+    border: 2px solid $red;
+    text-decoration: none;
+    background-color: $red;
+    transition: all 0.2s ease-in;
+    width: 5.9rem;
+    height: 3.1rem;
+
+    .switcher--big & {
+      padding: 1.3rem 2.2rem;
+      font-family: $mossport;
+      text-transform: uppercase;
+      font-size: 4.5rem;
+      line-height: 1;
+      width: 11rem;
+      height: 5.89rem;
+      padding: 0;
+      border-width: 3px;
+    }
+
+    &:hover {
+      background-color: $white;
+      color: $red;
+    }
+
+    &--night {
+      background-color: transparent;
+      color: $purple;
+      border-color: $purple;
+
+
+      &:hover {
+        background-color: $purple;
+        color: $white;
+      }
+
+
+      .switcher--big & {
+        color: $white;
+        border-color: $white;
+
+        &:hover {
+          background-color: $red;
+          color: $white;
+          border-color: $red;
+        }
+      }
+
+    }
+  }
+
+}

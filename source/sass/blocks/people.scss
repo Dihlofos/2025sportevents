@@ -1,0 +1,141 @@
+.people {
+  width: 100%;
+  overflow: visible;
+
+  &__slider {
+    position: relative;
+    overflow: visible;
+  }
+
+  .swiper-container {
+    width: 99.2rem;
+
+    @media (max-width: $mobile) {
+      width: calc(100% + 3.2rem);
+      margin: 0 -1.6rem;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    gap: 3.8rem;
+    @media (max-width: $tablet) {
+      gap: 1rem;
+    }
+
+    @media(max-width: $mobile) {
+      margin: 0 0 1.3rem;
+      gap: 2.5rem;
+      padding: 0 1.6rem;
+
+      &::-webkit-scrollbar {
+        -webkit-appearance: none;
+      }
+
+      overflow: auto;
+    }
+  }
+
+  .swiper-container-initialized {
+    .swiper-wrapper {
+      gap: 0;
+    }
+  }
+
+  &__image {
+    position: relative;
+    border-radius: 50%;
+    width: 29.2rem;
+    height: 29.2rem;
+    background-image: url('../img/concert/image-bg.svg');
+    overflow: hidden;
+
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: calc(100% - 3.2rem);
+      height: calc(100% - 3.2rem);
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+  }
+
+  &__mobile-arrows {
+    display: none;
+
+    @media (max-width: $mobile) {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    top: 11.4rem;
+    z-index: 20;
+    cursor: pointer;
+
+    .disabled & {
+      display: none;
+    }
+
+    &--prev {
+      left: -0;
+    }
+
+    &--next {
+      right: 0;
+    }
+
+    @media (max-width: $tablet) {
+      width: 3.5rem;
+      height: 3.5rem;
+    }
+  }
+
+  &__slide {
+    width: 29.2rem;
+  }
+
+  &__slide-title {
+    position: relative;
+    color: $red;
+    background-color: $white;
+    font-family: $mossport;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+    margin: 4rem auto 0;
+    text-align: center;
+    width: 26rem;
+    padding: 0.5rem 0;
+    z-index: 5;
+
+    span {
+      display: block;
+      font-family: $myriad;
+      color: $lightBlack;
+      text-transform: capitalize;
+      font-size: 2.4rem;
+      line-height: 1;
+      margin: 0.5rem 0 0.5rem;
+    }
+
+    @media (max-width: $tablet) {
+      font-size: 2.4rem;
+    }
+  }
+
+  &__slide-subtitle {
+    color: $red;
+    font-family: $mossport;
+    text-transform: uppercase;
+    font-size: 3rem;
+    text-align: center;
+
+  }
+
+}

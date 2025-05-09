@@ -1,0 +1,23 @@
+.top {
+  position: relative;
+  overflow: hidden;
+
+  &__section {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__switcher {
+    padding: 2.1rem 0 2rem;
+    background-color: $purple;
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+  }
+
+}
