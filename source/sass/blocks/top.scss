@@ -2,6 +2,10 @@
   position: relative;
   overflow: hidden;
 
+  &--night {
+    background-color: $purple;
+  }
+
   &__section {
     position: relative;
     z-index: 2;
@@ -10,6 +14,10 @@
   &__switcher {
     padding: 2.1rem 0 2rem;
     background-color: $purple;
+
+    .top--night & {
+      background-color: $white;
+    }
 
     .container {
       display: flex;

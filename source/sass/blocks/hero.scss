@@ -1,6 +1,10 @@
 .hero {
   color: $lightBlack;
 
+  .top--night & {
+    color: $white;
+  }
+
   .container {
     position: relative;
   }

@@ -36,35 +36,40 @@
       border-width: 3px;
     }
 
-    &:hover {
-      background-color: $white;
-      color: $red;
-    }
-
-    &--night {
+    &--purple {
       background-color: transparent;
       color: $purple;
       border-color: $purple;
-
 
       &:hover {
         background-color: $purple;
         color: $white;
       }
+    }
 
+    &--white {
+      color: $white;
+      border-color: $white;
+      background: transparent;
 
-      .switcher--big & {
+      &:hover {
+        background-color: $red;
         color: $white;
-        border-color: $white;
+        border-color: $red;
+      }
+    }
 
-        &:hover {
-          background-color: $red;
-          color: $white;
-          border-color: $red;
-        }
+    &--white-red {
+      color: $red;
+      border-color: $red;
+      background: transparent;
+
+      &:hover {
+        background-color: $red;
+        color: $white;
+        border-color: $red;
       }
 
     }
   }
-
 }

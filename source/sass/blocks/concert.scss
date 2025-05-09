@@ -1,6 +1,10 @@
 .concert {
   padding: 10.4rem 0 18.5rem;
 
+  .night & {
+    padding: 10.4rem 0 15.4rem;
+  }
+
   .container {
     position: relative;
   }
@@ -16,10 +20,18 @@
     font-size: 2.4rem;
     line-height: 1.1;
     margin: 0 0 7.5rem;
+
+    .night & {
+      margin: 0 0 10.5rem;
+    }
   }
 
   &__title {
     margin: 0 0 0.5rem;
+
+    .night & {
+      margin: 0 0 7.5rem;
+    }
   }
 
   &__time-text {

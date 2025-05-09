@@ -1,0 +1,35 @@
+.map-night {
+  position: relative;
+  overflow: hidden;
+  background-color: $purple;
+
+  .container {
+    position: relative;
+    padding: 10.6rem 0 12.7rem;
+  }
+
+  &__grey {
+    position: absolute;
+    top: 0;
+    right: -583.1%;
+    width: 600%;
+    height: 100%;
+    background-color: $grey;
+    z-index: 2;
+  }
+
+  &__decor {
+    position: absolute;
+    top: -1rem;
+    right: -65rem;
+    z-index: 7;
+  }
+
+  &__title {
+    margin: 0;
+
+    @media (max-width: $mobile) {
+      padding: 0 1.6rem;
+    }
+  }
+}

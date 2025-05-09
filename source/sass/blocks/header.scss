@@ -4,7 +4,19 @@
   left: 0;
   width: 100%;
   background-color: $bgcolor;
-  margin: 0 0 2.5rem;
+  margin: 0 0 1.6rem;
+
+  &--night {
+    background-color: $purple;
+
+    .header__nav .nav__link {
+      color: $white;
+
+      &:hover {
+        color: $red;
+      }
+    }
+  }
 
   &__decor {
     position: absolute;
@@ -50,9 +62,10 @@
   &__logos {
     position: relative;
     display: flex;
-    gap: 2.2rem;
+    gap: 2.6rem;
     align-items: flex-end;
     padding: 2.3rem 4rem 3rem 0;
+    width: 40.1rem;
 
     &:before {
       content: '';

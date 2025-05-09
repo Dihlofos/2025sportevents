@@ -37,6 +37,8 @@
     position: relative;
     margin: 1.9rem 0 0 0;
 
+
+
     span {
       display: block;
       position: relative;
@@ -47,6 +49,10 @@
       font-size: 4rem;
       z-index: 5;
       padding: 1rem 1.4rem;
+
+      .night & {
+        color: $purple;
+      }
     }
 
     &:before {
@@ -58,6 +64,12 @@
       top: 0;
       width: 600%;
       z-index: 1;
+    }
+
+    .night & {
+      &:before {
+        background-color: $white;
+      }
     }
   }
 
