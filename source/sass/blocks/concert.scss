@@ -13,7 +13,11 @@
     position: absolute;
     top: -44.4rem;
     right: -14rem;
+    z-index: 5;
 
+    .night & {
+      top: -48.4rem;
+    }
   }
 
   &__text {

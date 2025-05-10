@@ -26,10 +26,144 @@
   }
 
   &__title {
-    margin: 0;
+    margin: 0 0 8rem;
 
     @media (max-width: $mobile) {
       padding: 0 1.6rem;
     }
   }
+
+  &__map {
+    position: relative;
+    width: 66rem;
+    height: 72.2rem;
+    background-color: $black;
+    z-index: 7;
+  }
+
+  &__legend-wrapper {
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 1px;
+      height: 100%;
+      left: 0.63rem;
+      top: 0;
+      background-color: $white;
+    }
+
+  }
+
+  &__legend {
+    position: relative;
+    padding-left: 3rem;
+    width: 47.8rem;
+    height: 72.2rem;
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+      width: 15px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $red;
+      border: 3px solid transparent;
+      border-radius: 7px;
+      background-clip: content-box;
+    }
+  }
+
+  &__map-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 2.2rem;
+  }
+
+  &__legend-item {
+    width: 100%;
+    background: none;
+    border: none;
+    color: $white;
+    display: flex;
+    gap: 2.7rem;
+    padding: 1.8rem 1rem 2.1rem;
+    margin: 0 0 1rem;
+    text-align: left;
+    font-family: $mossport;
+    cursor: pointer;
+
+    &.is-active {
+      background-color: $white;
+    }
+  }
+
+  &__legend-digit {
+    color: $red;
+    text-transform: uppercase;
+    font-size: 3rem;
+  }
+
+  &__legend-title {
+    font-size: 3rem;
+    line-height: 2.5rem;
+    text-transform: uppercase;
+    margin: 0 0 0.9rem;
+
+    .is-active & {
+      color: $purple;
+    }
+  }
+
+  &__marker {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 1rem;
+    justify-content: center;
+    text-transform: uppercase;
+    font-family: $mossport;
+    width: 3.7rem;
+    height: 4.5rem;
+    background-size: contain;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="37" height="45" viewBox="0 0 37 45" fill="none"><path d="M18.344 0.916992C28.2325 0.916992 36.2483 8.93381 36.2483 18.8223C36.2478 28.7108 18.344 44.5596 18.344 44.5596C18.2613 44.4863 0.440138 28.6878 0.439697 18.8223C0.439697 8.93384 8.45559 0.917052 18.344 0.916992Z" fill="%23EB3333"/></svg>');
+    cursor: pointer;
+    font-size: 2.9rem;
+  }
+
+  &__more {
+    display: none;
+    font-size: 1.6rem;
+    line-height: 1.1;
+    color: $white;
+    background-color: $red;
+    padding: 0.6rem 1rem;
+    border: none;
+    margin-top: 1.8rem;
+    text-align: center;
+    text-decoration: none;
+    font-family: $myriad;
+
+    .is-active & {
+      display: inline-block;
+    }
+  }
+
+  &__legend-pin {
+    display: flex;
+    align-items: center;
+    font-family: $myriad;
+    gap: 1rem;
+    font-size: 1.6rem;
+    line-height: 1.1;
+
+    .is-active & {
+      color: $black;
+    }
+  }
+
 }

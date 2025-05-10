@@ -3,6 +3,12 @@
   const contentsEls = document.querySelectorAll(".js-content");
   const thumbs = document.querySelectorAll(".js-thumb");
 
+  const slider = document.querySelector(".js-slider");
+
+  if (!slider) {
+    return;
+  }
+
   const swiperSlider = new Swiper(".js-slider", {
     // Optional parameters
     slidesPerView: "auto",

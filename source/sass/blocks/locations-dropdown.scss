@@ -1,0 +1,92 @@
+.locations-dropdown {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.4rem;
+
+  &__pin {
+    background-color: $white;
+    padding: 1.8rem 2.4rem;
+  }
+
+  &__right {
+    position: relative;
+  }
+
+  .divider {
+    width: calc(100% - 4rem);
+    margin-left: 2rem;
+  }
+
+  &__content {
+    position: absolute;
+    background-color: $grey;
+    opacity: 0;
+    pointer-events: none;
+    top: 9.6rem;
+    left: 0;
+    z-index: 7;
+
+    &.is-active {
+      opacity: 1;
+      pointer-events: all;
+    }
+  }
+
+  &__arrow {
+    margin-right: 0.7rem;
+    margin-top: 0.3rem;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    background-color: $grey;
+    min-width: 65rem;
+    padding: 1.6rem 1.9rem;
+    color: $red;
+    cursor: pointer;
+
+    span {
+      color: $black;
+      font-size: 2rem;
+    }
+
+    &--trigger {
+      background-color: $white;
+      user-select: none;
+    }
+
+    &.is-active {
+      color: $white;
+      background-color: $red;
+
+      span {
+        color: $white;
+      }
+
+      &.locations-dropdown__item--trigger {
+        background-color: $white;
+        color: $red;
+
+        span {
+          color: $black;
+        }
+
+        .locations-dropdown__arrow img {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+
+  &__location-name {
+    font-family: $mossport;
+    color: currentColor;
+    text-transform: uppercase;
+    font-size: 4rem;
+    line-height: 1.01;
+    margin: 0 0 0.2rem;
+  }
+
+}
