@@ -1,5 +1,87 @@
 "use strict";
-(function () {
+(async function () {
+  const locations = [
+    {
+      name: "Пушкинская площадь",
+      index: 1,
+      coords: [37.605822, 55.765412],
+    },
+    {
+      name: "Тверская, площадь «Известия»",
+      index: 2,
+      coords: [37.6107, 55.762004],
+    },
+    {
+      name: "Трубная площадь",
+      index: 3,
+      coords: [37.622172, 55.767377],
+    },
+    {
+      name: "Новопушкинский сквер",
+      index: 4,
+      coords: [37.603716, 55.764309],
+    },
+    {
+      name: "Тверской бульвар",
+      index: 5,
+      coords: [37.601978, 55.76095],
+    },
+    {
+      name: "Мясницкая ул. Площадь et cetera",
+      index: 6,
+      coords: [37.636814, 55.764688],
+    },
+    {
+      name: "Лубянская площадь",
+      index: 7,
+      coords: [37.626618, 55.759653],
+    },
+    {
+      name: "Никольская улица",
+      index: 8,
+      coords: [37.622522, 55.757192],
+    },
+    {
+      name: "Новая площадь",
+      index: 9,
+      coords: [37.628433, 55.757729],
+    },
+    {
+      name: "Плошадь революции",
+      index: 10,
+      coords: [37.619845, 55.757863],
+    },
+    {
+      name: "Большая никитинская, площадь тасс",
+      index: 11,
+      coords: [37.599498, 55.757587],
+    },
+    {
+      name: "Кудринская площадь",
+      index: 12,
+      coords: [37.582924, 55.758762],
+    },
+    {
+      name: "Ильинский сквер, китай-город",
+      index: 13,
+      coords: [37.632574, 55.755626],
+    },
+    {
+      name: "Новый арбат",
+      index: 14,
+      coords: [37.587227, 55.752688],
+    },
+    {
+      name: "Старый арбат",
+      index: 15,
+      coords: [37.591494, 55.749486],
+    },
+    {
+      name: "Площадь павелецкого вокзала",
+      index: 16,
+      coords: [37.638773, 55.730867],
+    },
+  ];
   // locations-dropdown constants
   const dropdownContainer = document.querySelector(".js-locations-dropdown");
   const activeString = "is-active";
@@ -36,13 +118,12 @@
 
   //map constants
   const legend = document.querySelector(".js-legend");
-  const map = document.querySelector(".js-map");
   if (!legend) return;
 
   const legendItems = legend.querySelectorAll(".js-legend-item");
   const legendLinks = legend.querySelectorAll(".js-legend-link");
 
-  initMap();
+  const mapInstance = await initMap();
 
   trigger.addEventListener("click", () => {
     trigger.classList.toggle(activeString);
@@ -69,8 +150,7 @@
 
   legendItems.forEach((item) => {
     item.addEventListener("click", () => {
-      clearLegendItems();
-      item.classList.add(activeString);
+      setActiveLegend(Number(item.dataset.thumbIndex));
       // TODO ADD METHOD FOR MAP
     });
   });
@@ -102,6 +182,32 @@
   function clearItems() {
     items.forEach((item) => {
       item.classList.remove(activeString);
+    });
+  }
+
+  function setActiveLegend(index) {
+    clearLegendItems();
+    const legendItem = Array.from(legendItems).find(
+      (item) => Number(item.dataset.thumbIndex) === index
+    );
+    const markers = document.querySelectorAll(".js-marker");
+
+    const selectedMarker = Array.from(markers).find(
+      (marker) => Number(marker.dataset.thumbIndex) === index
+    );
+
+    clearMarkers();
+    selectedMarker.classList.add("is-active");
+    legendItem.classList.add(activeString);
+    const selectedLocation = locations.find(
+      (location) => location.index === index
+    );
+
+    mapInstance.setLocation({
+      center: selectedLocation.coords,
+      zoom: 17,
+      duration: 200, // Animation of moving map will take 200 milliseconds
+      easing: "ease-in-out", // Animation easing function
     });
   }
 
@@ -149,89 +255,6 @@
   }
 
   async function initMap() {
-    const locations = [
-      {
-        name: "Пушкинская площадь",
-        index: 1,
-        coords: [37.605822, 55.765412],
-      },
-      {
-        name: "Тверская, площадь «Известия»",
-        index: 2,
-        coords: [37.6107, 55.762004],
-      },
-      {
-        name: "Трубная площадь",
-        index: 3,
-        coords: [37.622172, 55.767377],
-      },
-      {
-        name: "Новопушкинский сквер",
-        index: 4,
-        coords: [37.603716, 55.764309],
-      },
-      {
-        name: "Тверской бульвар",
-        index: 5,
-        coords: [37.601978, 55.76095],
-      },
-      {
-        name: "Мясницкая ул. Площадь et cetera",
-        index: 6,
-        coords: [37.636814, 55.764688],
-      },
-      {
-        name: "Лубянская площадь",
-        index: 7,
-        coords: [37.626618, 55.759653],
-      },
-      {
-        name: "Никольская улица",
-        index: 8,
-        coords: [37.622522, 55.757192],
-      },
-      {
-        name: "Новая площадь",
-        index: 9,
-        coords: [37.628433, 55.757729],
-      },
-      {
-        name: "Плошадь революции",
-        index: 10,
-        coords: [37.619845, 55.757863],
-      },
-      {
-        name: "Большая никитинская, площадь тасс",
-        index: 11,
-        coords: [37.599498, 55.757587],
-      },
-      {
-        name: "Кудринская площадь",
-        index: 12,
-        coords: [37.582924, 55.758762],
-      },
-      {
-        name: "Ильинский сквер, китай-город",
-        index: 13,
-        coords: [37.632574, 55.755626],
-      },
-      {
-        name: "Новый арбат",
-        index: 14,
-        coords: [37.587227, 55.752688],
-      },
-      {
-        name: "Старый арбат",
-        index: 15,
-        coords: [37.591494, 55.749486],
-      },
-      {
-        name: "Площадь павелецкого вокзала",
-        index: 16,
-        coords: [37.638773, 55.730867],
-      },
-    ];
-
     await ymaps3.ready;
 
     const {
@@ -259,8 +282,10 @@
 
     locations.forEach((location) => {
       const markerElement = document.createElement("div");
-      markerElement.className = "map-night__marker";
+      markerElement.className = "map-night__marker js-marker";
       markerElement.innerText = location.index;
+      markerElement.dataset.thumbIndex = location.index;
+
       const marker = new YMapMarker(
         {
           coordinates: location.coords,
@@ -271,8 +296,44 @@
       );
 
       map.addChild(marker);
+
+      markerElement.addEventListener("click", () => {
+        const legendItem = Array.from(legendItems).find(
+          (item) => Number(item.dataset.thumbIndex) === Number(location.index)
+        );
+        setActiveLegend(Number(location.index));
+        legend.scrollTop = findPosition(legendItem) - findPosition(legend);
+
+        clearMarkers();
+
+        markerElement.classList.add("is-active");
+
+        map.setLocation({
+          center: location.coords,
+          zoom: 17,
+          duration: 200, // Animation of moving map will take 200 milliseconds
+          easing: "ease-in-out", // Animation easing function
+        });
+      });
     });
 
     return map;
+  }
+
+  function findPosition(obj) {
+    let currenttop = 0;
+    if (obj.offsetParent) {
+      do {
+        currenttop += obj.offsetTop;
+      } while ((obj = obj.offsetParent));
+      return currenttop;
+    }
+  }
+
+  function clearMarkers() {
+    const markers = document.querySelectorAll(".js-marker");
+    Array.from(markers).forEach((marker) => {
+      marker.classList.remove("is-active");
+    });
   }
 })();
