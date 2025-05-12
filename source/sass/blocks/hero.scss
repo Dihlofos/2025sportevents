@@ -13,6 +13,12 @@
     position: absolute;
     top: -8.5rem;
     left: -8rem;
+    width: 67.2rem;
+
+    @media (max-width: $tablet) {
+      width: 43.2rem;
+      left: -2rem;
+    }
   }
 
   &__content {
@@ -20,15 +26,36 @@
     justify-content: flex-end;
     padding: 9rem 0 8.1rem;
 
+    @media (max-width: $tablet) {
+      justify-content: flex-start;
+      align-items: flex-end;
+      padding: 20rem 0 4rem;
+    }
+  }
+
+  &__info {
+    @media (max-width: $tablet) {
+      display: flex;
+      flex-direction: column-reverse;
+    }
   }
 
   &__right {
     width: 55.9rem;
+
+    @media (max-width: $tablet) {
+      width: 41.9rem;
+      margin-left: 30rem;
+    }
   }
 
   &__title {
     width: 100%;
     margin: 0 0 9.7rem;
+
+    @media (max-width: $tablet) {
+      margin: 0 0 4rem;
+    }
   }
 
   &__bullits {
@@ -40,6 +67,11 @@
     text-transform: uppercase;
     gap: 7.1rem;
     margin: 0 0 5.2rem;
+
+    @media (max-width: $tablet) {
+      flex-direction: column-reverse;
+      gap: 2rem;
+    }
   }
 
   &__bullit {

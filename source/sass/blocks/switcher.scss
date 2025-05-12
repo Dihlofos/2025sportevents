@@ -6,6 +6,10 @@
 
   &--big {
     gap: 3.8rem;
+
+    @media (max-width: $tablet) {
+      gap: 2rem;
+    }
   }
 
   &__link {
@@ -24,6 +28,15 @@
     width: 5.9rem;
     height: 3.1rem;
 
+    @media (max-width: $tablet) {
+      font-size: 3.6rem;
+      line-height: 1;
+      width: 7.7rem;
+      height: 4.3rem;
+      text-transform: uppercase;
+      font-family: $mossport;
+    }
+
     .switcher--big & {
       padding: 1.3rem 2.2rem;
       font-family: $mossport;
@@ -34,6 +47,12 @@
       height: 5.89rem;
       padding: 0;
       border-width: 3px;
+
+      @media (max-width: $tablet) {
+        font-size: 2.4rem;
+        width: 6rem;
+        height: auto;
+      }
     }
 
     &--purple {

@@ -81,17 +81,24 @@
           </button>
           <div class="nav__wrapper">
             <button class="nav__close js-nav-close ">
-              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="1.41406" y="0.000244141" width="33" height="2" transform="rotate(45 1.41406 0.000244141)" fill="white"/>
-                <rect x="1.41406" y="0.000244141" width="33" height="2" transform="rotate(45 1.41406 0.000244141)" fill="white"/>
-                <rect x="24.7485" y="1.41431" width="33" height="2" transform="rotate(135 24.7485 1.41431)" fill="white"/>
-                <rect x="24.7485" y="1.41431" width="33" height="2" transform="rotate(135 24.7485 1.41431)" fill="white"/>
+              <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
+                <g clip-path="url(#clip0_98_13088)">
+                  <path d="M31.1279 3.60184L3.47933 31.2504" stroke="#E41B1B" stroke-width="4" stroke-linecap="square"/>
+                  <path d="M31.1279 31.2505L3.47933 3.60192" stroke="#E41B1B" stroke-width="4" stroke-linecap="square"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_98_13088">
+                    <rect width="35" height="35" fill="white"/>
+                  </clipPath>
+                </defs>
               </svg>
             </button>
             <ul class="nav__list">
-              <a class="nav__link js-scroll" data-scroll href="#about"
-                >О событии</a
-              >
+              <li class="nav__item">
+                <a class="nav__link js-scroll" data-scroll href="#about"
+                  >О событии</a
+                >
+              </li>
               <li class="nav__item">
                 <a class="nav__link js-scroll" data-scroll href="#locations"
                   >Локации</a
@@ -118,7 +125,15 @@
                 >
               </li>
             </ul>
-            <img class="nav__decor" src="img/nav/decor.png" alt="" width="280" height="385">
+            <div class="switcher">
+              <a class="switcher__link switcher__link--white" href="/">День</a>
+              <a class="switcher__link switcher__link--red" href="/night.html">Ночь</a>
+            </div>
+            <picture class="nav__decor">
+              <source srcset="img/hero/decor_night.webp" type="image/webp">
+              <source srcset="img/hero/decor_night.png" type="image/png">
+              <img src="img/hero/decor_night.png" alt="" width="672" height="803">
+            </picture>
           </div>
         </nav>
         <div class="top top--night">
@@ -210,15 +225,17 @@
                   </div>
                   <div class="hero__right">
                     <h1 itemprop="name" class="visually-hidden">Ночь  Московского спорта</h1>
-                    <img src="img/hero/title_night.svg" alt="Ночь  Московского спорта" class="hero__title" width="561" height="347">
-                    <div class="hero__bullits">
-                      <div class="hero__bullit">
-                        <img src="img/icons/pin-red.svg" width="37" height="46" alt="pin">
-                        <span>г. Москва</span>
-                      </div>
-                      <div class="hero__bullit">
-                        <img src="img/icons/calendar-red.svg" width="37" height="40" alt="calendar">
-                        <span>31 мая 2025 г.<br/> С 20:00 до 23:00</span>
+                    <div class="hero__info">
+                      <img src="img/hero/title_night.svg" alt="Ночь  Московского спорта" class="hero__title" width="561" height="347">
+                      <div class="hero__bullits">
+                        <div class="hero__bullit">
+                          <img src="img/icons/pin-red.svg" width="37" height="46" alt="pin">
+                          <span>г. Москва</span>
+                        </div>
+                        <div class="hero__bullit">
+                          <img src="img/icons/calendar-red.svg" width="37" height="40" alt="calendar">
+                          <span>31 мая 2025 г.<br/> С 20:00 до 23:00</span>
+                        </div>
                       </div>
                     </div>
                     <a href="https://sport.mos.ru/" target="_blank" class="hero__chip-link">Портал sport.mos.ru</a>

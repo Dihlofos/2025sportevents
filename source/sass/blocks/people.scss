@@ -77,6 +77,8 @@
     top: 11.4rem;
     z-index: 20;
     cursor: pointer;
+    width: 5.9rem;
+    height: 5.9rem;
 
     .disabled & {
       display: none;

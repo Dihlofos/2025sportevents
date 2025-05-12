@@ -25,8 +25,22 @@
     top: 9.6rem;
     left: 0;
     z-index: 7;
-    height: 52.8rem;
+    height: 58rem;
     overflow: auto;
+
+    &::-webkit-scrollbar {
+      width: 1.4rem;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #D9D9D9;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $red;
+      border: 0.3rem solid transparent;
+      background-clip: content-box;
+    }
 
     &.is-active {
       opacity: 1;
@@ -44,7 +58,7 @@
     justify-content: space-between;
     gap: 2rem;
     background-color: $grey;
-    min-width: 65rem;
+    min-width: 63.6rem;
     padding: 1.6rem 1.9rem;
     color: $red;
     cursor: pointer;
@@ -57,6 +71,7 @@
     &--trigger {
       background-color: $white;
       user-select: none;
+      min-width: 65rem
     }
 
     &.is-active {

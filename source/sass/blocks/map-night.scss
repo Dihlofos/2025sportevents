@@ -1,11 +1,10 @@
 .map-night {
   position: relative;
-  overflow: hidden;
   background-color: $purple;
 
   .container {
     position: relative;
-    padding: 10.6rem 0 12.7rem;
+    padding: 10.6rem 4.5rem 12.7rem;
   }
 
   &__grey {
@@ -23,6 +22,7 @@
     top: -1rem;
     right: -65rem;
     z-index: 7;
+    width: 79.8rem;
   }
 
   &__title {
@@ -129,13 +129,13 @@
     font-family: $mossport;
     width: 3.7rem;
     height: 4.5rem;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="37" height="45" viewBox="0 0 37 45" fill="none"><path d="M18.344 0.916992C28.2325 0.916992 36.2483 8.93381 36.2483 18.8223C36.2478 28.7108 18.344 44.5596 18.344 44.5596C18.2613 44.4863 0.440138 28.6878 0.439697 18.8223C0.439697 8.93384 8.45559 0.917052 18.344 0.916992Z" fill="%23EB3333"/></svg>');
     background-size: contain;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="37" height="45" viewBox="0 0 37 45" fill="none"><path d="M18.344 0.916992C28.2325 0.916992 36.2483 8.93381 36.2483 18.8223C36.2478 28.7108 18.344 44.5596 18.344 44.5596C18.2613 44.4863 0.440138 28.6878 0.439697 18.8223C0.439697 8.93384 8.45559 0.917052 18.344 0.916992Z" fill="%23EB3333"/></svg>');
     cursor: pointer;
     font-size: 2.9rem;
 
     &.is-active {
-      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="37" height="44" viewBox="0 0 37 44" fill="none"><path d="M18.4084 0.136719C28.2969 0.136719 36.3127 8.15353 36.3127 18.042C36.3126 27.9172 18.4562 43.737 18.4084 43.7793C18.3157 43.6971 0.504335 27.9047 0.50415 18.042C0.50415 8.15355 8.52001 0.136749 18.4084 0.136719Z" fill="%233B3393"/></svg>');
+      background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="37" height="44" viewBox="0 0 37 44" fill="none"><path d="M18.4084 0.136719C28.2969 0.136719 36.3127 8.15353 36.3127 18.042C36.3126 27.9172 18.4562 43.737 18.4084 43.7793C18.3157 43.6971 0.504335 27.9047 0.50415 18.042C0.50415 8.15355 8.52001 0.136749 18.4084 0.136719Z" fill="%233B3393"/></svg>');
     }
   }
 

@@ -38,6 +38,7 @@
     position: absolute;
     bottom: -24rem;
     right: -11.2rem;
+    width: 34.9rem;
   }
 
   &__header-right {
@@ -686,12 +687,21 @@
     z-index: 6;
     top: 16rem;
     left: -10.6rem;
+    width: 5.9rem;
+    height: 5.9rem;
+
+    @media (max-width: $laptop) {
+      left: -5.6rem;
+    }
 
     &--right {
       left: auto;
       right: -10.6rem;
-    }
 
+      @media (max-width: $laptop) {
+        right: -5.6rem;
+      }
+    }
   }
 
 }
