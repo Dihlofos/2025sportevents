@@ -4,7 +4,7 @@
   const vw = window.innerWidth;
   const wrapper = slider.querySelector(".swiper-wrapper");
 
-  if (wrapper.childNodes.length > 3 && vw >= 744) {
+  if (wrapper.childNodes.length > 3 && vw > 1024) {
     new Swiper(`.js-people-slider-concert`, {
       // Optional parameters
       slidesPerView: 3,

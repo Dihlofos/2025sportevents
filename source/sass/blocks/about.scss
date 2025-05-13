@@ -12,6 +12,10 @@
     right: 2.7rem;
     top: -10.5rem;
     width: 44.1rem;
+
+    @media (max-width: $tablet) {
+          width: 28.1rem;
+    }
   }
 
   &__title {
@@ -33,6 +37,10 @@
     position: relative;
     left: 1.5rem;
     display: flex;
+
+    @media (max-width: $tablet) {
+      flex-wrap: wrap;
+    }
   }
 
   &__bullit {
@@ -44,6 +52,10 @@
     justify-content: flex-start;
     flex-direction: column;
     padding: 4.1rem 1rem 4.9rem;
+
+    @media (max-width: $tablet) {
+      width: 50%;
+    }
 
     h4, p {
       position: relative;
@@ -125,6 +137,20 @@
         padding: 0 4rem;
       }
 
+      @media (max-width: $tablet) {
+        color: $white;
+        padding-top: 6rem;
+
+        h4 {
+          margin-bottom: 6rem
+        }
+
+        &:after {
+          background-color: $purple;
+          transform: rotate(-6.6deg);
+        }
+      }
+
     }
 
     &:nth-child(4) {
@@ -142,6 +168,15 @@
       p {
         padding: 0;
         margin-right: 6.3rem;
+      }
+
+      @media (max-width: $tablet) {
+        color: $purple;
+
+        &:after {
+          background-color: $white;
+          transform: rotate(8.1deg);
+        }
       }
 
     }

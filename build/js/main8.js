@@ -743,6 +743,9 @@
 
   function fillLegendList() {
     const container = document.querySelector(".js-legend-list");
+    const wrapper = document.querySelector(".js-legend-wrapper");
+    const button = document.querySelector(".js-legend-more-button");
+
     const locationsArray = Object.entries(locations);
 
     locationsArray.forEach(([index, value]) => {
@@ -768,6 +771,10 @@
       itemLi.append(itemP);
       container.append(itemLi);
     });
+
+    button.addEventListener("click", function () {
+      wrapper.classList.remove("more-hide");
+    });
   }
 
   function reinitSlider(container) {
@@ -782,7 +789,7 @@
     if (wrapper) {
       const id = slider.id;
 
-      if (wrapper.childNodes.length > 3 && vw >= 744) {
+      if (wrapper.childNodes.length > 3 && vw > 1024) {
         setTimeout(() => {
           new Swiper(`#${id}`, {
             // Optional parameters
@@ -806,7 +813,7 @@
     }
 
     if (partnersWrapper) {
-      if (partnersWrapper?.childNodes.length > 3 && vw >= 744) {
+      if (partnersWrapper?.childNodes.length > 3 && vw >= 1024) {
         setTimeout(() => {
           new Swiper(`.js-partner-slider`, {
             // Optional parameters
@@ -864,7 +871,7 @@
   const vw = window.innerWidth;
   const wrapper = slider.querySelector(".swiper-wrapper");
 
-  if (wrapper.childNodes.length > 3 && vw >= 744) {
+  if (wrapper.childNodes.length > 3 && vw > 1024) {
     new Swiper(`.js-people-slider-concert`, {
       // Optional parameters
       slidesPerView: 3,

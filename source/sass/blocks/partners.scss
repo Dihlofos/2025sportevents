@@ -2,8 +2,16 @@
   position: relative;
   padding: 10.3rem 0 0;
 
+  @media (max-width: $tablet) {
+    padding: 4.3rem 0 0;
+  }
+
   &__title {
     margin: 0 0 12.1rem;
+
+    @media (max-width: $tablet) {
+      margin: 0 0 5.1rem;
+    }
   }
 
   &__content {
@@ -12,6 +20,10 @@
     align-items: flex-start;
     justify-content: space-between;
     min-height: 34.5rem;
+
+    @media (max-width: $tablet) {
+      flex-direction: column;
+    }
   }
 
   &__logos {
@@ -19,6 +31,10 @@
     flex-wrap: wrap;
     width: 59rem;
     gap: 3.8rem;
+
+     @media (max-width: $tablet) {
+      margin: 0 0 6rem;
+     }
   }
 
   &__decor {
@@ -28,6 +44,12 @@
     width: 68.2rem;
     z-index: 6;
     width: 68.2rem;
+
+    @media (max-width: $tablet) {
+      position: relative;
+      top: 0;
+      right: -15rem;
+    }
   }
 
 }

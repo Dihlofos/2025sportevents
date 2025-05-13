@@ -6,6 +6,7 @@
   &__pin {
     background-color: $white;
     padding: 1.8rem 2.4rem;
+    flex-shrink: 0;
   }
 
   &__right {
@@ -63,6 +64,10 @@
     color: $red;
     cursor: pointer;
 
+    @media (max-width: $tablet) {
+      min-width: 56.6rem;
+    }
+
     span {
       color: $black;
       font-size: 2rem;
@@ -71,7 +76,11 @@
     &--trigger {
       background-color: $white;
       user-select: none;
-      min-width: 65rem
+      min-width: 65rem;
+
+      @media (max-width: $tablet) {
+        min-width: 58rem;
+      }
     }
 
     &.is-active {

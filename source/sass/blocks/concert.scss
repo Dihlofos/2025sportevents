@@ -1,6 +1,10 @@
 .concert {
   padding: 10.4rem 0 18.5rem;
 
+  @media (max-width: $tablet) {
+    padding: 10.4rem 0 8rem;
+  }
+
   .night & {
     padding: 10.4rem 0 15.4rem;
   }
@@ -16,8 +20,19 @@
     z-index: 5;
     width: 75.8rem;
 
+    @media (max-width: $tablet) {
+      top: -36.4rem;
+      right: -17rem;
+      width: 51.8rem;
+    }
+
     .night & {
       top: -48.4rem;
+
+       @media (max-width: $tablet) {
+        top: -36.4rem;
+        right: 0;
+       }
     }
   }
 
