@@ -11,7 +11,7 @@
   }
 
   @media (max-width: $mobile) {
-    padding: 1.5rem 0 6.8rem;
+    padding: 2.2rem 0 9.3rem;
 
     .container {
       padding: 0;
@@ -23,6 +23,10 @@
 
     @media (max-width: $tablet) {
       padding: 1.6rem 2.4rem 0;
+    }
+
+    @media (max-width: $mobile) {
+      padding: 1.6rem 0 0;
     }
   }
 
@@ -50,6 +54,10 @@
 
   &__title {
     margin: 0;
+
+    @media (max-width: $mobile) {
+      margin-left: 1.6rem;
+    }
   }
 
   &__map {
@@ -77,7 +85,7 @@
 
     @media (max-width: $mobile) {
       max-width: 124.2rem;
-      width: 363%;
+      width: 315%;
     }
   }
 
@@ -92,7 +100,7 @@
   &__map-wrapper {
     @media (max-width: $mobile) {
       overflow-x: auto;
-      padding-top: 6.5rem;
+      padding-top: 5.3rem;
 
       &::-webkit-scrollbar {
         -webkit-appearance: none;
@@ -262,6 +270,10 @@
       width: 80%;
     }
 
+    @media (max-width: $mobile) {
+      width: 100%;
+    }
+
   }
 
   &__mobile-more {
@@ -276,8 +288,12 @@
     .more-hide & {
       @media (max-width: $tablet) {
         display: block;
-
       }
+    }
+
+    @media (max-width: $mobile) {
+      margin-left: 1.6rem;
+      margin-top: 0.4rem;
     }
 
 
@@ -324,9 +340,8 @@
     }
 
     @media (max-width: $mobile) {
-      height: auto;
-      column-count: auto;
-      padding: 5.5rem 1.6rem 0;
+      margin-top: 2.4rem;
+      padding: 0 1.6rem 0;
       max-height: initial;
     }
   }
@@ -336,7 +351,7 @@
 
     @media (max-width: $mobile) {
       display: block;
-      margin: 1.5rem auto 0;
+      margin: 2.3rem auto 0;
     }
 
   }

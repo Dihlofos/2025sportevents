@@ -5,12 +5,26 @@
     padding: 10.4rem 0 8rem;
   }
 
+  @media (max-width: $mobile) {
+    padding: 3.8rem 0 9rem;
+  }
+
   .night & {
     padding: 10.4rem 0 15.4rem;
+
+    @media (max-width: $mobile) {
+      padding: 3.6rem 0 5rem;
+    }
   }
 
   .container {
     position: relative;
+  }
+
+  &__description {
+    @media (max-width: $mobile) {
+      max-width: 70%;
+    }
   }
 
   &__decor {
@@ -26,12 +40,23 @@
       width: 51.8rem;
     }
 
+    @media (max-width: $mobile) {
+      width: 32.4rem;
+      top: -18.3rem;
+      right: -1rem;
+    }
+
     .night & {
       top: -48.4rem;
 
        @media (max-width: $tablet) {
         top: -36.4rem;
         right: 0;
+       }
+
+       @media (max-width: $mobile) {
+        top: -19.9rem;
+        right: -1rem;
        }
     }
   }
@@ -41,16 +66,34 @@
     line-height: 1.1;
     margin: 0 0 7.5rem;
 
+    @media (max-width: $mobile) {
+      font-size: 1.4rem;
+      margin: 0 0 4.7rem;
+    }
+
     .night & {
       margin: 0 0 10.5rem;
+
+      @media (max-width: $mobile) {
+        margin: 0px 0 4.5rem;
+      }
     }
   }
 
   &__title {
     margin: 0 0 0.5rem;
 
+    @media (max-width: $mobile) {
+      margin: 0;
+    }
+
     .night & {
       margin: 0 0 7.5rem;
+
+      @media (max-width: $mobile) {
+        max-width: 15rem;
+        margin: 0 0 5.1rem;
+      }
     }
   }
 
@@ -61,5 +104,9 @@
     line-height: 1;
     margin: 0 0 6.2rem;
 
+    @media (max-width: $mobile) {
+      font-size: 2rem;
+      margin: 0 0 6.5rem;
+    }
   }
 }

@@ -18,7 +18,7 @@
     }
 
     @media (max-width: $mobile) {
-      padding: 0 1.6rem 9.6rem;
+      padding: 3.5rem 1.6rem 9.6rem;
     }
   }
 
@@ -30,7 +30,7 @@
     }
 
     @media (max-width: $mobile) {
-      margin: 3.5rem 0 4.5rem;
+      margin: 0 0 3.3rem;
     }
   }
 
@@ -41,6 +41,12 @@
     top: 11.8rem;
     z-index: 4;
     width: 49.2rem;
+
+    @media (max-width: $mobile) {
+      width: 25.7rem;
+      right: -7.5rem;
+      top: -0.7rem;
+    }
   }
 
   &__grey {
@@ -51,6 +57,13 @@
     height: 100%;
     background-color: $grey;
     z-index: 2;
+
+    @media(max-width: $mobile) {
+      width: 7.3rem;
+      height: 100%;
+      right: 0;
+      z-index: 1;
+    }
   }
 
 
@@ -134,10 +147,12 @@
 
 
   &__info {
+    position: relative;
     font-size: 2.4rem;
     line-height: 1.1;
     max-width: 76.8rem;
     margin: 0 0 7.8rem;
+    z-index: 3;
 
     p {
       margin: 0 0 2.6rem;
@@ -175,7 +190,14 @@
     }
 
     @media(max-width: $mobile) {
-      margin: 0 0 5.5rem;
+      margin: 0;
+      width: calc(100% - 7.3rem);
+      font-size: 1.4rem;
+      line-height: 1.1;
+
+      p {
+        margin: 0 0 1.4rem;
+      }
       ul {
         padding-left: 2rem;
       }
@@ -198,7 +220,7 @@
 
     @media (max-width: $mobile) {
       align-items: flex-start;
-      margin-top: 4.8rem;
+      margin-top: 3rem;
     }
   }
 
@@ -209,6 +231,10 @@
 
     @media (max-width: $tablet) {
       margin: 0 0 1.5rem;
+    }
+
+    @media (max-width: $mobile) {
+      margin: 0 0 2.2rem;
     }
   }
 
@@ -246,6 +272,17 @@
     @media (max-width: $tablet) {
       font-size: 1.2rem;;
     }
+
+    @media (max-width: $mobile) {
+      font-size: 1.4rem;
+      line-height: normal;
+    }
+  }
+
+  &__email {
+    @media (max-width: $mobile) {
+      margin: 0 0 0.7rem;
+    }
   }
 
   &__emails {
@@ -274,13 +311,20 @@
     @media (max-width: $tablet) {
       gap: 2.3rem;
       h6 {
-        font-size: 1.2rem;
-        margin: 0 0 1rem;
+        font-size: 1.4rem;
+        line-height: normal;
+        margin: 0 0 1.5rem;
       }
 
       a {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
       }
+    }
+
+    @media (max-width: $mobile) {
+      flex-direction: column;
+      max-width: 18rem;
+      margin: 0 0 2.8rem;
     }
   }
 

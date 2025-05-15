@@ -3,6 +3,14 @@
   background-color: $red;
   color: $white;
 
+  @media (max-width: $mobile) {
+    padding: 3.8rem 0 8rem;
+
+    .night & {
+      padding: 3.8rem 0 6rem;
+    }
+  }
+
   .container {
     position: relative;
   }
@@ -14,12 +22,22 @@
     width: 44.1rem;
 
     @media (max-width: $tablet) {
-          width: 28.1rem;
+      width: 28.1rem;
+    }
+
+    @media (max-width: $mobile) {
+      width: 33.1rem;
+      right: -8.3rem;
+      top: -3.8rem;
     }
   }
 
   &__title {
     margin: 0 0 8.7rem;
+
+    @media (max-width: $mobile) {
+      margin: 0 0 17.2rem;
+    }
   }
 
   &__description {
@@ -31,6 +49,15 @@
     p {
       margin: 0 0 2.9rem;
     };
+
+    @media (max-width: $mobile) {
+      font-size: 1.4rem;
+      margin: 0 0 4rem;
+
+      p {
+        margin: 0 0 2rem;
+      }
+    }
   }
 
   &__bullits {
@@ -40,6 +67,19 @@
 
     @media (max-width: $tablet) {
       flex-wrap: wrap;
+    }
+
+    @media (max-width: $mobile) {
+      display: none;
+    }
+  }
+
+  &__bullits-mobile {
+    display: none;
+
+    @media (max-width: $mobile) {
+      display: block;
+      width: 100%;
     }
   }
 
@@ -55,6 +95,7 @@
 
     @media (max-width: $tablet) {
       width: 50%;
+
     }
 
     h4, p {
@@ -106,7 +147,8 @@
       padding-bottom: 3rem;
 
       &:after {
-        left:-1rem
+        left:-1rem;
+
       }
 
       h4 {
@@ -121,7 +163,6 @@
     }
 
     &:nth-child(3) {
-
       &:after {
         z-index: 1;
         left:-2rem
@@ -130,6 +171,7 @@
       h4 {
         margin-right: 4.5rem;
         margin-bottom: 3.5rem;
+
       }
 
       p {
@@ -157,12 +199,13 @@
       padding-bottom: 4rem;
 
       &:after {
-        left:-3rem
+        left:-3rem;
       }
 
       h4 {
         margin-right: 7.1rem;
         margin-bottom: 4.5rem;
+
       }
 
       p {
@@ -178,7 +221,6 @@
           transform: rotate(8.1deg);
         }
       }
-
     }
 
     .about--night & {
@@ -209,8 +251,6 @@
           margin-bottom: 5rem;
         }
       }
-
     }
-
   }
 }

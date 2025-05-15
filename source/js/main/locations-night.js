@@ -151,7 +151,6 @@
   legendItems.forEach((item) => {
     item.addEventListener("click", () => {
       setActiveLegend(Number(item.dataset.thumbIndex));
-      // TODO ADD METHOD FOR MAP
     });
   });
 
@@ -238,8 +237,6 @@
       (item) => Number(item.dataset.contentIndex) === index
     );
 
-    console.log("item", item);
-
     const name = item.querySelector(
       ".js-locations-dropdown-item-name"
     ).textContent;
@@ -252,9 +249,71 @@
 
     item.classList.add(activeString);
     contentItem.classList.add(activeString);
+
+    reinitSlider(document.querySelector(`[data-content-index="${index}"]`));
+  }
+
+  function reinitSlider(container) {
+    const cont = container.querySelector(".js-people-slider-container");
+    const slider = container.querySelector(".js-people-slider");
+
+    const partnerSlider = container.querySelector(".js-partner-slider");
+
+    const wrapper = slider?.querySelector(".swiper-wrapper");
+    const partnersWrapper = partnerSlider?.querySelector(".swiper-wrapper");
+    const vw = window.innerWidth;
+
+    if (wrapper) {
+      const id = slider.id;
+
+      if (wrapper.childNodes.length > 3 && vw > 1024) {
+        setTimeout(() => {
+          new Swiper(`#${id}`, {
+            // Optional parameters
+            slidesPerView: 3,
+            spaceBetween: 30,
+            initialSlide: 0,
+            draggable: false,
+            pagination: false,
+            loop: false,
+
+            navigation: {
+              nextEl: ".js-people-next-extreme",
+              prevEl: ".js-people-prev-extreme",
+            },
+          });
+        }, 300);
+      } else {
+        cont.classList.add("disabled");
+      }
+      return;
+    }
+
+    if (partnersWrapper) {
+      if (partnersWrapper?.childNodes.length > 3 && vw >= 1024) {
+        setTimeout(() => {
+          new Swiper(`.js-partner-slider`, {
+            // Optional parameters
+            slidesPerView: "auto",
+            spaceBetween: 30,
+            initialSlide: 0,
+            draggable: false,
+            pagination: false,
+            loop: false,
+            navigation: {
+              nextEl: ".js-people-next-concert",
+              prevEl: ".js-people-prev-concert",
+            },
+          });
+        }, 300);
+      } else {
+        cont.classList.add("disabled");
+      }
+    }
   }
 
   async function initMap() {
+    const vw = window.innerWidth;
     await ymaps3.ready;
 
     const {
@@ -269,7 +328,7 @@
       {
         location: {
           center: [37.618435, 55.74713],
-          zoom: 13,
+          zoom: vw > 767 ? 13 : 12,
         },
       },
       [

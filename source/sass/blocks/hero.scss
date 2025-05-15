@@ -19,6 +19,18 @@
       width: 43.2rem;
       left: -2rem;
     }
+
+    @media (max-width: $mobile) {
+      top: -3.5rem;
+      left: -6.2rem;
+      width: 32.3rem;
+
+      .night & {
+        left: -4.3rem;
+        width: 32.2rem;
+        top: -5.7rem;
+      }
+    }
   }
 
   &__content {
@@ -30,6 +42,11 @@
       justify-content: flex-start;
       align-items: flex-end;
       padding: 20rem 0 4rem;
+    }
+
+    @media (max-width: $mobile) {
+      padding: 22rem 0 4rem;
+
     }
   }
 
@@ -47,6 +64,11 @@
       width: 41.9rem;
       margin-left: 30rem;
     }
+
+    @media (max-width: $mobile) {
+      width: auto;
+      margin-left: 7.2rem;
+    }
   }
 
   &__title {
@@ -55,6 +77,11 @@
 
     @media (max-width: $tablet) {
       margin: 0 0 4rem;
+    }
+
+    @media (max-width: $mobile) {
+      margin: 0 0 3.5rem;
+      max-width: 35rem;
     }
   }
 
@@ -72,12 +99,29 @@
       flex-direction: column-reverse;
       gap: 2rem;
     }
+
+    @media (max-width: $mobile) {
+      gap: 2.2rem;
+      font-size: 2.4rem;
+      margin: 0 0 3.5rem 10.8rem;
+      flex-direction: column;
+    }
   }
 
   &__bullit {
     display: flex;
     align-items: flex-start;
     gap: 2.3rem;
+
+
+    @media (max-width: $mobile) {
+      gap: 0.8rem;
+
+      img {
+        width: 2.5rem;
+      }
+    }
+
 
   }
 
@@ -99,6 +143,18 @@
     &:hover {
       background-color: $white;
       color: $red
+    }
+
+    @media (max-width: $tablet) {
+      font-size: 2.4rem;
+      height: 3rem;
+      padding: 0.5rem 2rem;
+
+      &:hover {
+        background-color: $red;
+        color: $white;
+      }
+
     }
   }
 

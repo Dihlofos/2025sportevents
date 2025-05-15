@@ -15,7 +15,9 @@
     padding: 2.1rem 0 2rem;
     background-color: $purple;
 
-
+    @media (max-width: $mobile) {
+      padding: 1rem 0 1.1rem;
+    }
 
     .top--night & {
       background-color: $white;
