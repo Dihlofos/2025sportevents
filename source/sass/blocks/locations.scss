@@ -7,7 +7,10 @@
     padding: 10.5rem 0 11.5rem;
 
     .people .swiper-container {
-      width: auto;
+      &:not(.swiper-container-initialized) {
+        width: auto;
+      }
+
     }
 
     @media (max-width: $tablet) {
@@ -770,6 +773,7 @@
   }
 
   &__blocks-arrow {
+    display: none; // времено?
     position: absolute;
     background: transparent;
     border: none;
