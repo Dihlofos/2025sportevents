@@ -720,6 +720,9 @@
     }
 
     @media (max-width: $mobile) {
+      &:hover {
+        color: $red;
+      }
 
     }
   }
