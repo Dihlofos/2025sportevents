@@ -43,8 +43,19 @@
   }
 
   &__logo {
+
+    &--nashe {
+      width: 20rem;
+      position: relative;
+      left: -2rem;
+    }
     @media (max-width: $mobile) {
       width: calc(33% - 1.5rem);
+
+      &--nashe {
+        left: 0;
+        top: -2rem;
+      }
      }
   }
 

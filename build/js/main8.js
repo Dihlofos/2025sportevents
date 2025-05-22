@@ -557,13 +557,18 @@
     16: "фк динамо",
     17: "фк локомотив",
     18: "фк цска",
-    19: "Памп-трек",
+    19: "Бокс",
     20: "полоса препятствий",
     21: "информационная стойка",
     22: "Живые шахматы",
-    23: "Лазертаг",
+    23: "Аквагрим/Авиамоделирование",
     24: "концерт",
     25: "Битбокс",
+    26: "Лазертаг",
+    27: "Мастер‑класс по Гимнастике",
+    28: "Этноспорт",
+    29: "Кубик рубика",
+    30: "Зеленый марафон",
   };
 
   console.log(window.location);
@@ -582,8 +587,7 @@
   const numbersWithoutAction = ["21"];
 
   const concertNumber = "24";
-  const extreemeNumbers = [];
-  const figureSkating = [];
+  const childZone = ["23", "27"]; // TODO Поменять, когда нумерацию заменят!
 
   const partnersLinks = {};
   const vw = window.innerWidth;
@@ -651,7 +655,7 @@
 
   function onFigureClick(figure) {
     modalGoTo.classList.remove("is-hidden");
-    const locationNumber = figure.classList[1].split("_")[1];
+    let locationNumber = figure.classList[1].split("_")[1];
     const mapOffset =
       document.getElementById("map").getBoundingClientRect().top +
       document.documentElement.scrollTop;
@@ -708,14 +712,8 @@
 
     let targetNumber = locationNumber;
 
-    // Change target zone if it is several zones in one slide.
-    // extrmr zone
-    if (extreemeNumbers.includes(locationNumber)) {
-      targetNumber = 1;
-    }
-
-    if (figureSkating.includes(locationNumber)) {
-      targetNumber = 19;
+    if (childZone.includes(locationNumber)) {
+      targetNumber = 10;
     }
 
     modalGoTo.dataset.locationNumber = targetNumber;

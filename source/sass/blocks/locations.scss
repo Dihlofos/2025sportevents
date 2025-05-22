@@ -140,7 +140,7 @@
     font-family: $mossport;
     text-transform: uppercase;
     color: $lightBlack;
-    font-size: 4rem;
+    font-size: 5.5rem;
     line-height: 1;
 
     @media (max-width: $mobile) {
@@ -284,6 +284,10 @@
     max-width: 70rem;
     font-size: 2.4rem;
     line-height: 1;
+
+    .night & {
+      color: $white;
+    }
 
     ul {
       line-height: 1.2;
@@ -563,6 +567,12 @@
           }
 
 
+      }
+    }
+
+    &--spot {
+      &:after {
+        display: none;
       }
     }
 

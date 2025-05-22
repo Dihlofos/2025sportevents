@@ -100,12 +100,12 @@
   &__time-text {
     font-family: $mossport;
     text-transform: uppercase;
-    font-size: 4rem;
+    font-size: 5.5rem;
     line-height: 1;
     margin: 0 0 6.2rem;
 
     @media (max-width: $mobile) {
-      font-size: 2rem;
+      font-size: 2.4rem;
       margin: 0 0 6.5rem;
     }
   }
