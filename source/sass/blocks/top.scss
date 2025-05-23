@@ -2,6 +2,34 @@
   position: relative;
   overflow: hidden;
 
+  & >.container {
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      width: calc(300% + 43.1rem);
+      height: 400vh;
+      left: -300%;
+      top: 0;
+      background-color: $grey;
+      z-index: 1;
+
+      @media(max-width: $laptop) {
+        width: calc(300% + 44.5rem);
+      }
+
+      @media(max-width: $tablet) {
+        width: calc(300% + 29.5rem);
+      }
+
+       @media (max-width: $mobile) {
+        width: 7.1rem;
+        right: auto;
+        left: -1.6rem;
+      }
+    }
+  }
+
   &--night {
     background-color: $purple;
   }
@@ -9,6 +37,30 @@
   &__section {
     position: relative;
     z-index: 2;
+  }
+
+  &__decor {
+    position: absolute;
+    top: -9.4rem;
+    right: -35rem;
+    z-index: 6;
+    width: 60.1rem;
+
+
+    @media (max-width: $tablet) {
+      top: 5rem;
+      right: -34rem;
+      z-index: 1;
+      width: 52.1rem;
+    }
+
+    @media (max-width: $mobile) {
+      top: 12.1rem;
+      right: -14.8rem;
+      z-index: 1;
+      width: 25.1rem;
+    }
+
   }
 
   &__switcher {

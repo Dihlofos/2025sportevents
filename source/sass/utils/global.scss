@@ -29,7 +29,11 @@ body {
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
-  padding-top: 0; // 6.5rem
+  padding-top: 9.4rem;
+
+  @media (max-width: $tablet) {
+    padding-top: 0;
+  }
 
   @media (max-width: $laptop) {
     // шаблон медиа-запроса desktop-first
