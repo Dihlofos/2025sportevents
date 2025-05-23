@@ -66,6 +66,7 @@
   &__arrow {
     margin-right: 0.7rem;
     margin-top: 0.3rem;
+    flex-shrink: 0;
 
     @media (max-width: $mobile) {
       width: 2.6rem;

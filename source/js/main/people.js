@@ -1,6 +1,9 @@
 "use strict";
 (function () {
   const slider = document.querySelector(".js-people-slider-concert-container");
+  if (!slider) {
+    return;
+  }
   const vw = window.innerWidth;
   const wrapper = slider.querySelector(".swiper-wrapper");
 
