@@ -23,9 +23,10 @@
       }
 
        @media (max-width: $mobile) {
+        top: -0.2rem;
         width: 7.1rem;
         right: auto;
-        left: -1.6rem;
+        left: 0;
       }
     }
   }

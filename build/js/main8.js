@@ -567,8 +567,8 @@
     26: "Лазертаг",
     27: "Мастер‑класс по Гимнастике",
     28: "Этноспорт",
-    29: "Кубик рубика",
-    30: "Зеленый марафон",
+    29: "Зеленый марофон",
+    30: "Кубик рубика",
   };
 
   console.log(window.location);
@@ -657,7 +657,7 @@
     modalGoTo.classList.remove("is-hidden");
     let locationNumber = figure.classList[1].split("_")[1];
     const mapOffset =
-      document.getElementById("map").getBoundingClientRect().top +
+      document.getElementById("map-title").getBoundingClientRect().top +
       document.documentElement.scrollTop;
 
     const legendItem = document.querySelector(
@@ -670,7 +670,7 @@
       modalGoTo.target = "_blank";
       modalGoTo.href = partnersLinks[locationNumber];
     } else {
-      modalGoTo.href = "#locations";
+      modalGoTo.href = "#locations-slider";
     }
 
     if (numbersWithoutAction.includes(locationNumber)) {
