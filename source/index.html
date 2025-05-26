@@ -122,7 +122,7 @@
                 >
               </li>
             </ul>
-            <div class="switcher">
+            <div class="switcher" style="opacity: 0; pointer-events:none;">
               <a class="switcher__link" href="/">День</a>
               <a class="switcher__link switcher__link--purple" href="/night.html">Ночь</a>
             </div>
@@ -196,7 +196,7 @@
                       </li>
                     </ul>
                   </nav>
-                  <div class="switcher">
+                  <div class="switcher" style="opacity: 0; pointer-events:none;">
                     <a class="switcher__link" href="/">День</a>
                     <a class="switcher__link switcher__link--purple" href="/night.html">Ночь</a>
                   </div>
@@ -208,7 +208,7 @@
           <section class="top__section">
             <div class="top__switcher">
               <div class="container">
-                <div class="switcher switcher--big">
+                <div class="switcher switcher--big" style="opacity: 0; pointer-events:none;">
                   <a class="switcher__link switcher__link--active " href="/">День</a>
                   <a class="switcher__link switcher__link--white" href="/night.html">Ночь</a>
                 </div>
@@ -548,9 +548,31 @@
             </div>
             <!--6 "Шахматы"-->
             <div class="locations__blocks-content locations__blocks-content--big js-content" data-content-index="6">
-              <!-- <h4 class="locations__subtitle">приглашенные звезды</h4>
-
-              <h4 class="locations__subtitle">Активности локации</h4> -->
+              <h4 class="locations__subtitle">приглашенные звезды</h4>
+              <div class="people locations__people js-people-slider-container">
+                <div class="people__slider">
+                  <div class="js-people-prev-extreme people__arrow people__arrow--prev">
+                    <img src="img/icons/arrow-left.svg" width="59" height="59"/>
+                  </div>
+                  <div class="swiper-container js-people-slider" id="extreme">
+                    <div class="swiper-wrapper people__wrapper justify-align-center">
+                      <div class="swiper-slide people__slide">
+                        <div class="people__image">
+                          <img src="img/people/karyakin.jpg" width="260" height="260"/>
+                        </div>
+                        <div class="people__slide-title">
+                          Сергей Карякин
+                          <span>11:30-14:00</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="js-people-next-extreme people__arrow people__arrow--next">
+                    <img src="img/icons/arrow-right.svg" width="59" height="59"/>
+                  </div>
+                </div>
+              </div>
+              <h4 class="locations__subtitle">Активности локации</h4>
               <ul class="locations__blocks is-active">
                 <li class="locations__block">
                   <div class="locations__block-card locations__block-card--red">
