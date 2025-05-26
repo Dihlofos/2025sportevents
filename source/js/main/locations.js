@@ -295,6 +295,7 @@
   }
 
   function toggleContent(locationNumber) {
+    const thumbs = document.querySelectorAll(".js-thumb");
     reinitSlider(
       document.querySelector(`[data-content-index="${locationNumber}"]`)
     );
@@ -314,6 +315,7 @@
 
     thumbs.forEach((item) => {
       const thumbIndex = item.dataset.thumbIndex;
+
       if (Number(thumbIndex) === Number(locationNumber)) {
         item.classList.add("is-active");
       } else {
