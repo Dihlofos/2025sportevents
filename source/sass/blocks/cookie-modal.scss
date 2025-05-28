@@ -1,0 +1,38 @@
+.cookie-modal {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  background-color: $grey;
+  border: 1px solid $red;
+  padding: 3.4rem;
+  color: $black;
+  max-width: 76rem;
+
+  &.hidden {
+    display: none;
+  }
+
+  &__close {
+    background: none;
+    border: none;
+    position: absolute;
+    top: 3.4rem;
+    right: 3.4rem;
+    cursor: pointer;
+  }
+
+  &__text {
+    width: 88%;
+
+    p {
+      margin: 0 0 2rem;
+
+      a {
+        color: currentColor;
+      }
+    }
+  }
+
+}
