@@ -571,6 +571,7 @@
     }
 
     &--spot {
+      pointer-events: none;
       &:after {
         display: none;
       }
