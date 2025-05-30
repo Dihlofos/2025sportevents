@@ -293,6 +293,10 @@
       line-height: 1.2;
     }
 
+    p {
+      margin-top: 0;
+    }
+
     @media (max-width: $tablet) {
       font-size: 2rem;
     }
