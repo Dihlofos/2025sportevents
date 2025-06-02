@@ -63,13 +63,13 @@
     <!-- /Yandex.Metrika counter -->
   </head>
 
-  <body>
+  <body style="padding:0;">
     <!-- Yandex.Metrika counter -->
     <noscript><div><img src="https://mc.yandex.ru/watch/93594344" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
 
     <div itemscope style="overflow: hidden">
-      <main style="overflow: hidden">
+      <main style="overflow: hidden" class="dummy-site">
         <header
         class="header"
         id="header"
@@ -104,14 +104,14 @@
               <div class="dummy__main-image">
                 <img src="img/hero/main.svg" width="595" height="312" />
               </div>
-              <div class="dummy__chip">
+              <!-- <div class="dummy__chip">
                 <img src="img/hero/chip.svg" width="344" height="259" />
-              </div>
+              </div> -->
             </div>
           </div>
           <div class="dummy__bottom red">
             <div class="container">
-              <img class="dummy__decor" src="img/hero/decor.png" alt="Экстримал на байке" width="579" height="805">
+              <img class="dummy__decor" src="img/hero/decor_day.png" alt="Экстримал на байке" width="579" height="805">
 
               <h2 class="dummy__title">Москва снова<br/>станет столицей спорта</h2>
               <div class="dummy__subtitle">Вас ждут события по всему городу:</div>
@@ -136,10 +136,6 @@
                   <div class="dummy__date-list">
                     <div class="dummy__date">
                       <img src="img/icons/calendar-white.svg" width="16" height="16" />
-                      31.05
-                    </div>
-                    <div class="dummy__date">
-                      <img src="img/icons/calendar-white.svg" width="16" height="16" />
                       05.07
                     </div>
                     <div class="dummy__date">
@@ -151,10 +147,6 @@
                 <div class="dummy__date-block">
                   <div class="dummy__date-title">Ночи спорта</div>
                   <div class="dummy__date-list">
-                    <div class="dummy__date">
-                      <img src="img/icons/calendar-white.svg" width="16" height="16" />
-                      31.05
-                    </div>
                     <div class="dummy__date">
                       <img src="img/icons/calendar-white.svg" width="16" height="16" />
                       05.07
@@ -188,6 +180,16 @@
           </div>
 
         </section>
+        <div class="cookie-modal hidden js-cookie">
+          <div class="cookie-modal__text">
+            <p>Мы используем cookies для улучшения работы сайта. Подробнее — в&nbsp;<a href="docs/policy.docx">Политике</a>. Продолжая пользоваться сайтом, Вы&nbsp;даёте согласие на&nbsp;использование файлов cookies.</p>
+            <p>Если Вы&nbsp;не&nbsp;согласны на&nbsp;использование файлов cookies, Вам необходимо установить специальные настройки в&nbsp;браузере или покинуть сайт.</p>
+          </div>
+
+          <button class="cookie-modal__close js-cookie-close">
+            <img src="img/icons/close.svg" alt="" width="39" height="39"/>
+          </button>
+        </div>
       </main>
         <!-- Кнопка "наверх" -->
         <a class="up js-scroll" data-scroll href="#header">

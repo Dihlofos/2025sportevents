@@ -8,6 +8,10 @@
   margin: 0 0 1.6rem;
   z-index: 120;
 
+  .dummy-site & {
+    position: relative;
+  }
+
   @media (max-width: $tablet) {
     position: relative;
     z-index: 1;
@@ -103,6 +107,12 @@
         width: 7.1rem;
         right: auto;
         left: -1.6rem;
+      }
+    }
+
+    .dummy-site & {
+      &:before {
+      display: none;
       }
     }
 
