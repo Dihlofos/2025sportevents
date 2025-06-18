@@ -15,7 +15,7 @@
 
 "use strict";
 (function () {
-  const key = "day-night-cookie-modal-shown";
+  const key = "maraphon-cookie-modal-shown";
   let modal = document.querySelector(".js-cookie");
   if (!modal) {
     return;
