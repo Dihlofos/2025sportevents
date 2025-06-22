@@ -190,7 +190,7 @@
       name: "Старая Басманная",
       index: 20,
       externalLink: "https://outdoor.sport.moscow/",
-      coords: [37.561509, 55.765281],
+      coords: [37.657637, 55.763984],
     },
     {
       name: "ТЦ «Атриум»",
