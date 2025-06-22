@@ -104,9 +104,9 @@
       coords: [37.628541, 55.740791],
     },
     {
-      name: "Новопушкинский сквер",
+      name: "Большая бронная",
       index: 4,
-      coords: [37.603716, 55.764309],
+      coords: [37.603918, 55.764973],
     },
     {
       name: "Пятницкая улица",
@@ -116,18 +116,18 @@
     {
       name: "Мясницкая ул. Площадь et cetera",
       index: 6,
-      coords: [37.636814, 55.764688],
+      coords: [37.635664, 55.765053],
     },
-    // {
-    //   name: "Никольская улица",
-    //   index: 7,
-    //   coords: [37.623631, 55.7579],
-    // },
-    // {
-    //   name: "Новая площадь",
-    //   index: 8,
-    //   coords: [37.628433, 55.757729],
-    // },
+    {
+      name: "Никольская улица",
+      index: 7,
+      coords: [37.623631, 55.7579],
+    },
+    {
+      name: "Новая площадь",
+      index: 8,
+      coords: [37.628433, 55.757729],
+    },
     {
       name: "Плошадь революции",
       index: 9,
@@ -148,20 +148,61 @@
       index: 12,
       coords: [37.633897, 55.754608],
     },
-    // {
-    //   name: "ПАРК ГОРЬКОГО",
-    //   index: 13,
-    //   coords: [37.601848, 55.730188],
-    // },
     {
-      name: "Старый арбат",
-      index: 14,
-      coords: [37.591089, 55.749554],
+      name: "ПАРК ГОРЬКОГО",
+      index: 13,
+      coords: [37.601848, 55.730188],
     },
+    // {
+    //   name: "Старый арбат",
+    //   index: 14,
+    //   coords: [37.591089, 55.749554],
+    // },
     {
       name: "Калошин переулок",
       index: 15,
-      coords: [37.592132, 55.748468],
+      coords: [37.592048, 55.749431],
+    },
+    {
+      name: "Кривоарбатский переулок",
+      index: 16,
+      coords: [37.590983, 55.749225],
+    },
+    {
+      name: "Третьяковская",
+      index: 17,
+      externalLink: "https://outdoor.sport.moscow/",
+      coords: [37.6251895, 55.740825],
+    },
+    {
+      name: "Баррикадная",
+      index: 18,
+      externalLink: "https://outdoor.sport.moscow/",
+      coords: [37.582017, 55.760104],
+    },
+    {
+      name: "Метро «Улица 1905 года»",
+      index: 19,
+      externalLink: "https://outdoor.sport.moscow/",
+      coords: [37.561509, 55.765281],
+    },
+    {
+      name: "Старая Басманная",
+      index: 20,
+      externalLink: "https://outdoor.sport.moscow/",
+      coords: [37.561509, 55.765281],
+    },
+    {
+      name: "ТЦ «Атриум»",
+      index: 21,
+      externalLink: "https://outdoor.sport.moscow/",
+      coords: [37.659173, 55.757339],
+    },
+    {
+      name: "Лаврушинский переулок",
+      index: 22,
+      externalLink: "https://outdoor.sport.moscow/",
+      coords: [37.621444, 55.741693],
     },
   ];
   // locations-dropdown constants
@@ -305,6 +346,14 @@
   }
 
   function setActiveLocation(index) {
+    const item = Array.from(items).find(
+      (item) => Number(item.dataset.thumbIndex) === index
+    );
+
+    if (!item) {
+      return;
+    }
+
     clearItems();
     clearContents();
     // set active index - it needs for arrows
@@ -312,9 +361,6 @@
 
     console.log("index", items, index);
 
-    const item = Array.from(items).find(
-      (item) => Number(item.dataset.thumbIndex) === index
-    );
     const contentItem = Array.from(contentsEls).find(
       (item) => Number(item.dataset.contentIndex) === index
     );
