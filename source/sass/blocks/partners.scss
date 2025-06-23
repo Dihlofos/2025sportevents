@@ -28,8 +28,9 @@
 
   &__logos {
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
-    width: 59rem;
+    width: 65rem;
     gap: 3.8rem;
 
      @media (max-width: $tablet) {
