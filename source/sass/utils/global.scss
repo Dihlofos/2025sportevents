@@ -97,3 +97,9 @@ img {
   background-color: $red;
   margin: 0.45rem 0;
 }
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+  user-select: none;
+}

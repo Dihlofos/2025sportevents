@@ -122,7 +122,7 @@
                 >
               </li>
             </ul>
-            <div class="switcher" >
+            <div class="switcher hidden" >
               <a class="switcher__link" href="/">День</a>
               <a class="switcher__link switcher__link--purple" href="/night.html">Ночь</a>
             </div>
@@ -196,7 +196,7 @@
                       </li>
                     </ul>
                   </nav>
-                  <div class="switcher" >
+                  <div class="switcher hidden" >
                     <a class="switcher__link" href="/">День</a>
                     <a class="switcher__link switcher__link--purple" href="/night.html">Ночь</a>
                   </div>
@@ -208,7 +208,7 @@
           <section class="top__section">
             <div class="top__switcher">
               <div class="container">
-                <div class="switcher switcher--big" >
+                <div class="switcher switcher--big hidden" >
                   <a class="switcher__link switcher__link--active " href="/">День</a>
                   <a class="switcher__link switcher__link--white" href="/night.html">Ночь</a>
                 </div>
@@ -307,7 +307,7 @@
                   <div class="js-thumb swiper-slide locations__thumb" data-thumb-index="5">настольный теннис</div>
                   <div class="js-thumb swiper-slide locations__thumb" data-thumb-index="6">шахматы</div>
                   <!-- <div class="js-thumb swiper-slide locations__thumb" data-thumb-index="7">фан-встречи</div> -->
-                  <div class="js-thumb swiper-slide locations__thumb" data-thumb-index="8">стронгмен</div>
+                  <!-- <div class="js-thumb swiper-slide locations__thumb" data-thumb-index="8">стронгмен</div> -->
                   <div class="js-thumb swiper-slide locations__thumb" data-thumb-index="9">стрельба из лука</div>
                   <div class="js-thumb swiper-slide locations__thumb" data-thumb-index="10">детская зона</div>
                   <div class="js-thumb swiper-slide locations__thumb" data-thumb-index="11">брейк-данс</div>
@@ -460,20 +460,6 @@
             <!--5 "настольный теннис"-->
             <div class="locations__blocks-content locations__blocks-content--big js-content" data-content-index="5">
               <ul class="locations__blocks is-active">
-                <li class="locations__block">
-                  <div class="locations__block-card">
-                    <div class="locations__block-card-top">
-                      <div class="locations__block-title">
-                        <p>ТУРНИРЫ НА ВЫБЫВАНИЕ</p>
-                        <p class="locations__block-count">11:00–18:00</p>
-                      </div>
-                      <div class="locations__block-description">Приходите показать, на&nbsp;что вы&nbsp;способны, или поболеть за&nbsp;любимого игрока</div>
-                    </div>
-                    <div class="locations__block-card-bottom">
-                      <div class="locations__spot-free button">вход свободный</div>
-                    </div>
-                  </div>
-                </li>
                 <li class="locations__block">
                   <div class="locations__block-card">
                     <div class="locations__block-card-top">
@@ -691,7 +677,7 @@
               </ul>
             </div> -->
             <!--8 стронгмен!-->
-            <div class="locations__blocks-content locations__blocks-content--big js-content" data-content-index="8">
+            <!-- <div class="locations__blocks-content locations__blocks-content--big js-content" data-content-index="8">
               <ul class="locations__blocks is-active">
                 <li class="locations__block">
                   <div class="locations__block-card locations__block-card--red">
@@ -736,7 +722,7 @@
                   </div>
                 </li>
               </ul>
-            </div>
+            </div> -->
             <!--9 стрельба из лука-->
             <ul class="locations__blocks js-content" data-content-index="9">
               <li class="locations__block">
@@ -997,36 +983,6 @@
             <div class="locations__blocks-content locations__blocks-content--big js-content" data-content-index="11">
               <ul class="locations__blocks is-active">
                 <li class="locations__block">
-                  <div class="locations__block-card locations__block-card--red">
-                    <div class="locations__block-card-top">
-                      <div class="locations__block-title">
-                        <p>МАСТЕР-КЛАССЫ</p>
-                        <p class="locations__block-count">13:00–17:00</p>
-                      </div>
-                      <div class="locations__block-description">Научитесь владеть телом, разучите фирменные движения и&nbsp;найдите свой стиль на&nbsp;мастер-классах от&nbsp;известных танцоров.</div>
-                    </div>
-                    <div class="button locations__block-link dropdown js-dropdown">
-                      <button class="dropdown__trigger button js-dropdown-trigger">
-                        регистрация
-                      </button>
-                      <div class="dropdown__content">
-                        <ul class="dropdown__list">
-                          <li class="dropdown__item">
-                            <a href="https://day-moscow-sport.timepad.ru/event/3428531/" class="dropdown__link" target="_blank">
-                              13:00 – 13:30
-                            </a>
-                          </li>
-                          <li class="dropdown__item">
-                            <a href="https://day-moscow-sport.timepad.ru/event/3428532/" class="dropdown__link" target="_blank">
-                              16:30 – 17:00
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="locations__block">
                   <div class="locations__block-card">
                     <div class="locations__block-card-top">
                       <div class="locations__block-title">
@@ -1045,12 +1001,95 @@
                     <div class="locations__block-card-top">
                       <div class="locations__block-title">
                         <p>СОРЕВНОВАНИЯ ПО БРЕЙК-ДАНСУ</p>
-                        <p class="locations__block-count">11:00–18:00</p>
+                        <p class="locations__block-count">11:00–12:00</p>
                       </div>
-                      <div class="locations__block-description">Примите участие в&nbsp;баттле и&nbsp;покажите, кто тут лучший танцор.</div>
+                      <div class="locations__block-description">1vs1 KIDS до 10 лет </div>
                     </div>
                     <div class="locations__block-card-bottom">
-                        <div class="locations__spot-free button">вход свободный</div>
+                    </div>
+                  </div>
+                </li>
+                <li class="locations__block">
+                  <div class="locations__block-card">
+                    <div class="locations__block-card-top">
+                      <div class="locations__block-title">
+                        <p>СОРЕВНОВАНИЯ ПО БРЕЙК-ДАНСУ</p>
+                        <p class="locations__block-count">12:00–13:00</p>
+                      </div>
+                      <div class="locations__block-description">2vs2 KIDS 10-15 лет</div>
+                    </div>
+                    <div class="locations__block-card-bottom">
+                    </div>
+                  </div>
+                </li>
+                <li class="locations__block">
+                  <div class="locations__block-card locations__block-card--red">
+                    <div class="locations__block-card-top">
+                      <div class="locations__block-title">
+                        <p>Мастер-класс</p>
+                        <p class="locations__block-count">13:00 – 13:30</p>
+                      </div>
+                      <div class="locations__block-description">Научитесь владеть телом, разучите фирменные движения и&nbsp;найдите свой стиль на&nbsp;мастер-классах от&nbsp;известных танцоров. Категория: Masters 1&nbsp;&mdash; bboy Cheerito</div>
+                    </div>
+                    <div class="locations__block-card-bottom">
+                      <a class="button locations__block-link" href="https://day-moscow-sport.timepad.ru/event/3430774/" target="_blank">
+                        Регистрация
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li class="locations__block">
+                  <div class="locations__block-card">
+                    <div class="locations__block-card-top">
+                      <div class="locations__block-title">
+                        <p>СОРЕВНОВАНИЯ ПО БРЕЙК-ДАНСУ</p>
+                        <p class="locations__block-count">13:30–14:30</p>
+                      </div>
+                      <div class="locations__block-description">1vs1 YOUNG PRO 15-18 лет</div>
+                    </div>
+                    <div class="locations__block-card-bottom">
+                    </div>
+                  </div>
+                </li>
+                <li class="locations__block">
+                  <div class="locations__block-card">
+                    <div class="locations__block-card-top">
+                      <div class="locations__block-title">
+                        <p>СОРЕВНОВАНИЯ ПО БРЕЙК-ДАНСУ</p>
+                        <p class="locations__block-count">14:30–16:30</p>
+                      </div>
+                      <div class="locations__block-description">2vs2 PRO с 18 лет </div>
+                    </div>
+                    <div class="locations__block-card-bottom">
+                    </div>
+                  </div>
+                </li>
+                <li class="locations__block">
+                  <div class="locations__block-card locations__block-card--red">
+                    <div class="locations__block-card-top">
+                      <div class="locations__block-title">
+                        <p>Мастер-класс</p>
+                        <p class="locations__block-count">16:30 – 17:00</p>
+                      </div>
+                      <div class="locations__block-description">Научитесь владеть телом, разучите фирменные движения и&nbsp;найдите свой стиль на&nbsp;мастер-классах от&nbsp;известных танцоров. Категория: РАФ</div>
+                    </div>
+                    <div class="locations__block-card-bottom">
+                      <a class="button locations__block-link" href="https://day-moscow-sport.timepad.ru/event/3430780/" target="_blank">
+                        Регистрация
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li class="locations__block">
+                  <div class="locations__block-card">
+                    <div class="locations__block-card-top">
+                      <div class="locations__block-title">
+                        <p>СОРЕВНОВАНИЯ ПО БРЕЙК-ДАНСУ</p>
+                        <p class="locations__block-count">17:00–18:00</p>
+                      </div>
+                      <div class="locations__block-description">1vs1 (Русская Рулетка) </div>
+                    </div>
+                    <div class="locations__block-card-bottom">
                     </div>
                   </div>
                 </li>
@@ -1397,38 +1436,34 @@
                     </div>
                   </div>
                 </li>
-                <!-- <li class="locations__block locations__block--small">
-                  <div class="locations__block-card locations__block-card--red">
+                <li class="locations__block locations__block--small">
+                  <div class="locations__block-card">
                     <div class="locations__block-card-top">
                       <div class="locations__block-title">
-                        <p>Турнир Кубик Рубика 3х3х3</p>
-                        <p class="locations__block-count">11:00 – 18:00</p>
+                        <p>Викторины и розыгрыши, дуэли</p>
+                        <p class="locations__block-count">11:40 – 14:00</p>
                       </div>
 
                     </div>
                     <div class="locations__block-card-bottom">
-                      <a class="button locations__block-link locations__block-link--spot">
-                        Регистрация закрыта
-                      </a>
+                      <div class="locations__spot-free button">вход свободный</div>
                     </div>
                   </div>
                 </li>
                 <li class="locations__block locations__block--small">
-                  <div class="locations__block-card locations__block-card--red">
+                  <div class="locations__block-card">
                     <div class="locations__block-card-top">
                       <div class="locations__block-title">
-                        <p>Турнир Кубик Рубика 2х2х2</p>
-                        <p class="locations__block-count">11:00 – 18:00</p>
+                        <p>Мастер-класс по сборке Кубика рубика, кубика 2х2 и пирамидки</p>
+                        <p class="locations__block-count">11:00 – 17:40</p>
                       </div>
 
                     </div>
                     <div class="locations__block-card-bottom">
-                      <a class="button locations__block-link locations__block-link--spot">
-                        Регистрация закрыта
-                      </a>
+                      <div class="locations__spot-free button">вход свободный</div>
                     </div>
                   </div>
-                </li> -->
+                </li>
                 <li class="locations__block locations__block--small">
                   <div class="locations__block-card locations__block-card--red">
                     <div class="locations__block-card-top">
@@ -1752,13 +1787,41 @@
             <div class="locations__blocks-content locations__blocks-content--big js-content" data-content-index="28">
               <ul  class="locations__blocks is-active">
                 <li class="locations__block">
-                  <div class="locations__block-card locations__block-card--red">
+                  <div class="locations__block-card">
                     <div class="locations__block-card-top">
                       <div class="locations__block-title">
-                        <p>Свободное посещение</p>
+                        <p>Гидрофлай</p>
                         <p class="locations__block-count">11:00 – 18:00</p>
                       </div>
-                      <div class="locations__block-description"></div>
+                      <div class="locations__block-description">Смотрите захватывающие показательные выступления в&nbsp;дисциплине &laquo;Гидрофлай&raquo;</div>
+                    </div>
+                    <div class="locations__block-card-bottom">
+                      <div class="locations__spot-free button">вход свободный</div>
+                    </div>
+                  </div>
+                </li>
+                <li class="locations__block">
+                  <div class="locations__block-card">
+                    <div class="locations__block-card-top">
+                      <div class="locations__block-title">
+                        <p>Сап-борды и каноэ</p>
+                        <p class="locations__block-count">12:50 – 15:30</p>
+                      </div>
+                      <div class="locations__block-description">Катание на&nbsp;сап-бордах и&nbsp;каноэ для взролых и&nbsp;детей</div>
+                    </div>
+                    <div class="locations__block-card-bottom">
+                      <div class="locations__spot-free button">вход свободный</div>
+                    </div>
+                  </div>
+                </li>
+                <li class="locations__block">
+                  <div class="locations__block-card">
+                    <div class="locations__block-card-top">
+                      <div class="locations__block-title">
+                        <p>Радиоуправляемые лодки</p>
+                        <p class="locations__block-count">15:30 – 17:45</p>
+                      </div>
+                      <div class="locations__block-description">Заезды на&nbsp;радиоуправляемых лодках для детей и&nbsp;взрослых</div>
                     </div>
                     <div class="locations__block-card-bottom">
                       <div class="locations__spot-free button">вход свободный</div>
@@ -1844,9 +1907,9 @@
                       <div class="locations__block-description"></div>
                     </div>
                     <div class="locations__block-card-bottom">
-                      <a class="button locations__block-link" href="https://day-moscow-sport.timepad.ru/event/3428554/" target="_blank">
+                      <!-- <a class="button locations__block-link" href="https://day-moscow-sport.timepad.ru/event/3428554/" target="_blank">
                         Регистрация
-                      </a>
+                      </a> -->
                     </div>
                   </div>
                 </li>
