@@ -101,12 +101,12 @@
     {
       name: "ТРЕТЬЯКОВСКАЯ (КЛИМЕНТОВСКИЙ ПЕР.)",
       index: 3,
-      coords: [37.628541, 55.740791],
+      coords: [37.625856, 55.740876],
     },
     {
       name: "Пятницкая улица",
       index: 4,
-      coords: [37.628163, 55.737831],
+      coords: [37.628625, 55.740263],
     },
     {
       name: "Мясницкая ул. Площадь et cetera",
@@ -149,9 +149,9 @@
       coords: [37.592446, 55.75053],
     },
     {
-      name: "Калошин переулок",
+      name: "Большой николпесковский переулок",
       index: 13,
-      coords: [37.592048, 55.749431],
+      coords: [37.590362, 55.750651],
     },
     // {
     //   name: "Кривоарбатский переулок",
@@ -633,14 +633,14 @@
     30: "Кубик рубика",
   };
 
-  console.log(window.location);
+  console.log(getURls());
 
   // Функция для генерации
   function getURls() {
     Object.entries(locations).forEach(([index, value]) => {
       console.log(
         value,
-        `https://day.moscow.sport/?locationId=${index}#locations`
+        `https://day.sport.moscow/?locationId=${index}#locations`
       );
     });
   }

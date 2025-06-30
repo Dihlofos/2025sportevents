@@ -110,14 +110,14 @@
     30: "Кубик рубика",
   };
 
-  console.log(window.location);
+  console.log(getURls());
 
   // Функция для генерации
   function getURls() {
     Object.entries(locations).forEach(([index, value]) => {
       console.log(
         value,
-        `https://day.moscow.sport/?locationId=${index}#locations`
+        `https://day.sport.moscow/?locationId=${index}#locations`
       );
     });
   }
