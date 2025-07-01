@@ -109,4 +109,34 @@
       margin: 0 0 6.5rem;
     }
   }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6rem;
+  }
+
+  &__open-air {
+    position: relative;
+    display: flex;
+    gap: 4rem;
+    background: $purple;
+    padding: 2rem;
+    z-index: 6;
+    max-width: 40rem;
+
+    @media (max-width: $tablet) {
+      max-width: 25rem;
+    }
+
+    @media (max-width: $mobile) {
+      gap: 1rem;
+      padding: 1rem;
+    }
+
+    span {
+      width: 50%;
+    }
+  }
 }
