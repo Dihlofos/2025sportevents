@@ -93,111 +93,112 @@
       index: 1,
       coords: [37.605822, 55.765412],
     },
-    {
-      name: "Тверская, площадь «Известия»",
-      index: 2,
-      coords: [37.604014, 55.765779],
-    },
-    {
-      name: "ТРЕТЬЯКОВСКАЯ (КЛИМЕНТОВСКИЙ ПЕР.)",
-      index: 3,
-      coords: [37.625856, 55.740876],
-    },
-    {
-      name: "Пятницкая улица",
-      index: 4,
-      coords: [37.628625, 55.740263],
-    },
+    // {
+    //   name: "Тверская, площадь «Известия»",
+    //   index: 2,
+    //   coords: [37.604014, 55.765779],
+    // },
     {
       name: "Мясницкая ул. Площадь et cetera",
-      index: 5,
+      index: 2,
       coords: [37.635664, 55.765053],
     },
+    // {
+    //   name: "ТРЕТЬЯКОВСКАЯ (КЛИМЕНТОВСКИЙ ПЕР.)",
+    //   index: 3,
+    //   coords: [37.625856, 55.740876],
+    // },
+    // {
+    //   name: "Пятницкая улица",
+    //   index: 4,
+    //   coords: [37.628625, 55.740263],
+    // },
+
     {
       name: "Никольская улица",
-      index: 6,
+      index: 3,
       coords: [37.623631, 55.7579],
     },
     {
-      name: "Шахматы",
-      index: 7,
-      coords: [37.619933, 55.758193],
-    },
-    {
       name: "Камергерский переулок",
-      index: 8,
+      index: 4,
       coords: [37.612332, 55.759486],
     },
     {
+      name: "Театральная площадь",
+      index: 5,
+      coords: [37.619342, 55.758559],
+    },
+    {
       name: "Большая никитинская, площадь тасс",
-      index: 9,
+      index: 6,
       coords: [37.599498, 55.757587],
     },
 
     {
       name: "Кудринская площадь",
-      index: 10,
+      index: 7,
       coords: [37.582924, 55.758762],
     },
-    {
-      name: "Ильинский сквер",
-      index: 11,
-      coords: [37.633897, 55.754608],
-    },
+    // {
+    //   name: "Ильинский сквер",
+    //   index: 11,
+    //   coords: [37.633897, 55.754608],
+    // },
     {
       name: "ПАРК ГОРЬКОГО",
-      index: 12,
+      index: 8,
       coords: [37.601848, 55.730188],
     },
     {
       name: "Малй николпесковский переулок",
-      index: 13,
+      index: 9,
       coords: [37.592446, 55.75053],
     },
     {
       name: "Большой николпесковский переулок",
-      index: 14,
+      index: 10,
       coords: [37.590362, 55.750651],
     },
     {
       name: "Третьяковская",
-      index: 15,
+      index: 11,
       externalLink: "https://outdoor.sport.moscow/",
       coords: [37.6251895, 55.740825],
     },
     {
       name: "Баррикадная",
-      index: 16,
+      index: 12,
       externalLink: "https://outdoor.sport.moscow/",
       coords: [37.582017, 55.760104],
     },
     {
       name: "Метро «Улица 1905 года»",
-      index: 17,
+      index: 13,
       externalLink: "https://outdoor.sport.moscow/",
       coords: [37.561509, 55.765281],
     },
     {
       name: "Старая Басманная",
-      index: 18,
+      index: 14,
       externalLink: "https://outdoor.sport.moscow/",
       coords: [37.657637, 55.763984],
     },
     {
       name: "ТЦ «Атриум»",
-      index: 19,
+      index: 15,
       externalLink: "https://outdoor.sport.moscow/",
       coords: [37.659173, 55.757339],
     },
     {
       name: "Лаврушинский переулок",
-      index: 20,
+      index: 16,
       externalLink: "https://outdoor.sport.moscow/",
       coords: [37.621444, 55.741693],
     },
     {
       name: "Добрынинская",
-      index: 21,
+      index: 17,
       externalLink: "https://outdoor.sport.moscow/",
       coords: [37.622745, 55.728995],
     },
@@ -355,8 +356,6 @@
     clearContents();
     // set active index - it needs for arrows
     trigger.dataset.thumbIndex = index;
-
-    console.log("index", items, index);
 
     const contentItem = Array.from(contentsEls).find(
       (item) => Number(item.dataset.contentIndex) === index

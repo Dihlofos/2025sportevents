@@ -123,7 +123,7 @@ Yj      sizes="114x114"
                 >
               </li>
             </ul>
-            <div class="switcher">
+            <div class="switcher hidden">
               <a class="switcher__link switcher__link--white" href="/">День</a>
               <a class="switcher__link switcher__link--red" href="/night.html">Ночь</a>
             </div>
@@ -199,7 +199,7 @@ Yj      sizes="114x114"
                       </li>
                     </ul>
                   </nav>
-                  <div class="switcher">
+                  <div class="switcher hidden">
                     <a class="switcher__link switcher__link--white" href="/">День</a>
                     <a class="switcher__link switcher__link--red" href="/night.html">Ночь</a>
                   </div>
@@ -210,7 +210,7 @@ Yj      sizes="114x114"
           <section class="top__section">
             <div class="top__switcher">
               <div class="container">
-                <div class="switcher switcher--big">
+                <div class="switcher switcher--big hidden">
                   <a class="switcher__link switcher__link--white-red " href="/">День</a>
                   <a class="switcher__link switcher__link--red" href="/night.html">Ночь</a>
                 </div>
@@ -237,7 +237,7 @@ Yj      sizes="114x114"
                         </div>
                         <div class="hero__bullit">
                           <img src="img/icons/calendar-red.svg" width="37" height="40" alt="calendar">
-                          <span>05 июля 2025 г.<br/> С 20:00 до 23:00</span>
+                          <span>02 августа 2025 г.<br/> С 20:00 до 23:00</span>
                         </div>
                       </div>
                     </div>
@@ -260,7 +260,7 @@ Yj      sizes="114x114"
             </div>
             <div class="about__bullits">
               <div class="about__bullit">
-                <h4 class="about__bullit-title">21 локация</h4>
+                <h4 class="about__bullit-title">Более 10 локаций</h4>
                 <p class="about__bullit-text">Центральные улицы и&nbsp;площади Москвы</p>
               </div>
               <div class="about__bullit about__bullit--purple">
@@ -281,6 +281,7 @@ Yj      sizes="114x114"
         </section>
         <section class="locations purple" id="locations">
           <div class="container">
+            <div class="locations__description" id="locations-dropdown"></div>
             <div class="locations__header">
               <div class="locations__header-left">
                 <h2 class="locations__title title title--white">Локации</h2>
@@ -292,7 +293,7 @@ Yj      sizes="114x114"
                 </div>
               </div>
             </div>
-            <!-- <div class="locations__description" id="locations-dropdown">Мастер-класс по&nbsp;фехтованию? Показательные выступления по&nbsp;воркауту?Турнир по&nbsp;шахматам? Участвуйте в&nbsp;любых активностях!</div> -->
+
             <div class="locations-dropdown js-locations-dropdown">
               <div class="locations-dropdown__pin">
                 <img src="img/icons/pin-red.svg" alt="" width="48" height="59">
@@ -317,89 +318,61 @@ Yj      sizes="114x114"
                   <div class="divider"></div>
                   <div class="locations-dropdown__item js-locations-dropdown-item" data-thumb-index="2">
                     <div class="locations-dropdown__location">
-                      <div class="locations-dropdown__location-name js-locations-dropdown-item-name">Тверская площадь, «Известия»</div>
-                      <span class=" js-locations-dropdown-item-sport">Стритбаскет</span>
-                    </div>
-                  </div>
-                  <div class="divider"></div>
-                  <div class="locations-dropdown__item js-locations-dropdown-item" data-thumb-index="3">
-                    <div class="locations-dropdown__location">
-                      <div class="locations-dropdown__location-name js-locations-dropdown-item-name">Третьяковская, Климентовский пер.</div>
-                      <span class=" js-locations-dropdown-item-sport">Памп трек, скейт парк</span>
-                    </div>
-                  </div>
-                  <div class="divider"></div>
-                  <div class="locations-dropdown__item js-locations-dropdown-item" data-thumb-index="4">
-                    <div class="locations-dropdown__location">
-                      <div class="locations-dropdown__location-name js-locations-dropdown-item-name">Пятницкая улица</div>
-                      <span class=" js-locations-dropdown-item-sport">Роуп-скиппинг</span>
-                    </div>
-                  </div>
-                  <div class="divider"></div>
-                  <div class="locations-dropdown__item js-locations-dropdown-item" data-thumb-index="5">
-                    <div class="locations-dropdown__location">
                       <div class="locations-dropdown__location-name js-locations-dropdown-item-name">Мясницкая улица, Площадь перед театром Et-cetera</div>
                       <span class=" js-locations-dropdown-item-sport">Настольный теннис</span>
                     </div>
                   </div>
                   <div class="divider"></div>
-                  <div class="locations-dropdown__item js-locations-dropdown-item" data-thumb-index="6">
+                  <div class="locations-dropdown__item js-locations-dropdown-item" data-thumb-index="3">
                     <div class="locations-dropdown__location">
                       <div class="locations-dropdown__location-name js-locations-dropdown-item-name">Никольская улица</div>
                       <span class=" js-locations-dropdown-item-sport">Настольные спортивные игры</span>
                     </div>
                   </div>
                   <div class="divider"></div>
-                  <div class="locations-dropdown__item js-locations-dropdown-item" data-thumb-index="7">
-                    <div class="locations-dropdown__location">
-                      <div class="locations-dropdown__location-name js-locations-dropdown-item-name">Площадь Революции, «Метрополь»</div>
-                      <span class=" js-locations-dropdown-item-sport">Шахматы</span>
-                    </div>
-                  </div>
-                  <div class="divider"></div>
-                  <div class="locations-dropdown__item js-locations-dropdown-item" data-thumb-index="8">
+                  <div class="locations-dropdown__item js-locations-dropdown-item" data-thumb-index="4">
                     <div class="locations-dropdown__location">
                       <div class="locations-dropdown__location-name js-locations-dropdown-item-name">Камергерский переулок</div>
                       <span class=" js-locations-dropdown-item-sport">Воркаут, паркур, бокс (ринг)</span>
                     </div>
                   </div>
                   <div class="divider"></div>
-                  <div class="locations-dropdown__item js-locations-dropdown-item" data-thumb-index="9">
+                  <div class="locations-dropdown__item js-locations-dropdown-item" data-thumb-index="5">
                     <div class="locations-dropdown__location">
-                      <div class="locations-dropdown__location-name js-locations-dropdown-item-name">Площадь ТАСС (Б. Никитская)</div>
-                      <span class=" js-locations-dropdown-item-sport">Сборка кубика Рубика</span>
+                      <div class="locations-dropdown__location-name js-locations-dropdown-item-name">ТЕАТРАЛЬНАЯ ПЛОЩАДЬ</div>
+                      <span class=" js-locations-dropdown-item-sport">Шахматы</span>
                     </div>
                   </div>
                   <div class="divider"></div>
-                  <div class="locations-dropdown__item js-locations-dropdown-item" data-thumb-index="10">
+                  <div class="locations-dropdown__item js-locations-dropdown-item" data-thumb-index="6">
+                    <div class="locations-dropdown__location">
+                      <div class="locations-dropdown__location-name js-locations-dropdown-item-name">Б. НИКИТСКАЯ, ПЛОЩАДЬ ТАСС</div>
+                      <span class=" js-locations-dropdown-item-sport">&laquo;Я&nbsp;ТАНЦУЮ ПО&nbsp;СТРАНЕ&raquo;</span>
+                    </div>
+                  </div>
+                  <div class="divider"></div>
+                  <div class="locations-dropdown__item js-locations-dropdown-item" data-thumb-index="7">
                     <div class="locations-dropdown__location">
                       <div class="locations-dropdown__location-name js-locations-dropdown-item-name">Кудринская площадь</div>
                       <span class=" js-locations-dropdown-item-sport">Полоса препятствий, фитнес джампинг</span>
                     </div>
                   </div>
                   <div class="divider"></div>
-                  <div class="locations-dropdown__item js-locations-dropdown-item" data-thumb-index="11">
-                    <div class="locations-dropdown__location">
-                      <div class="locations-dropdown__location-name js-locations-dropdown-item-name">ИЛЬИНСКИЙ СКВЕР</div>
-                      <span class=" js-locations-dropdown-item-sport">Лекторий, фан-встречи</span>
-                    </div>
-                  </div>
-                  <div class="divider"></div>
-                  <div class="locations-dropdown__item js-locations-dropdown-item" data-thumb-index="12">
+                  <div class="locations-dropdown__item js-locations-dropdown-item" data-thumb-index="8">
                     <div class="locations-dropdown__location">
                       <div class="locations-dropdown__location-name js-locations-dropdown-item-name">ФОНТАННАЯ ПЛОЩАДЬ ПАРКА ГОРЬКОГО</div>
                       <span class=" js-locations-dropdown-item-sport">Мотофристайл</span>
                     </div>
                   </div>
                   <div class="divider"></div>
-                  <div class="locations-dropdown__item js-locations-dropdown-item" data-thumb-index="13">
+                  <div class="locations-dropdown__item js-locations-dropdown-item" data-thumb-index="9">
                     <div class="locations-dropdown__location">
                       <div class="locations-dropdown__location-name js-locations-dropdown-item-name">Старый Арбат (Малый Николопесковский переулок)</div>
                       <span class=" js-locations-dropdown-item-sport">Силовой спорт</span>
                     </div>
                   </div>
                   <div class="divider"></div>
-                  <div class="locations-dropdown__item js-locations-dropdown-item" data-thumb-index="14">
+                  <div class="locations-dropdown__item js-locations-dropdown-item" data-thumb-index="10">
                     <div class="locations-dropdown__location">
                       <div class="locations-dropdown__location-name js-locations-dropdown-item-name">Старый Арбат (Большой Николопесковский переулок)</div>
                       <span class=" js-locations-dropdown-item-sport">Брейк-данс</span>
@@ -419,34 +392,34 @@ Yj      sizes="114x114"
                     <div class="locations__block-card locations__block-card--red">
                       <div class="locations__block-card-top">
                         <div class="locations__block-title locations__block-title--small">
-                          <p>САЙКЛИНГ: Костюмированный заезд</p>
+                          <p>САЙКЛИНГ</p>
                           <p class="locations__block-count">20:00 – 23:00</p>
                         </div>
-                        <div class="locations__block-description">Крути педали вместе с&nbsp;профессиональными инструкторами под зажигательные музыкальные миксы DJ. Тематика: Неоновое диско. Будь самым ярким!</div>
+                        <div class="locations__block-description">Крути педали вместе с&nbsp;профессиональными инструкторами под зажигательные музыкальные миксы&nbsp;DJ.</div>
                       </div>
-                      <div class="button locations__block-link dropdown js-dropdown">
+                      <div class="button locations__block-link dropdown js-dropdown hidden">
                         <button class="dropdown__trigger button js-dropdown-trigger">
                           регистрация
                         </button>
                         <div class="dropdown__content">
                           <ul class="dropdown__list">
                             <li class="dropdown__item">
-                              <a href="https://nights-sport-mos.timepad.ru/event/3428568/" class="dropdown__link" target="_blank">
+                              <a href="#" class="dropdown__link" target="_blank">
                                 20:00 – 20:35
                               </a>
                             </li>
                             <li class="dropdown__item">
-                              <a href="https://nights-sport-mos.timepad.ru/event/3428570/" class="dropdown__link" target="_blank">
+                              <a href="#" class="dropdown__link" target="_blank">
                                 20:50 – 21:25
                               </a>
                             </li>
                             <li class="dropdown__item">
-                              <a href="https://nights-sport-mos.timepad.ru/event/3428571/" class="dropdown__link" target="_blank">
+                              <a href="#" class="dropdown__link" target="_blank">
                                 21:40 – 22:15
                               </a>
                             </li>
                             <li class="dropdown__item">
-                              <a href="https://nights-sport-mos.timepad.ru/event/3428572/" class="dropdown__link" target="_blank">
+                              <a href="#" class="dropdown__link" target="_blank">
                                 22:25 – 23:00
                               </a>
                             </li>
@@ -457,8 +430,549 @@ Yj      sizes="114x114"
                   </li>
                 </ul>
               </div>
-              <!--2 "ТВЕРСКАЯ УЛИЦА ПЛОЩАДЬ ИЗВЕСТИЯ"-->
+              <!--2 "МЯСНИЦКАЯ УЛ. ПЛОЩАДЬ-->
               <div class="locations__blocks-content locations__blocks-content--big js-content" data-content-index="2">
+                <div class="locations__blocks is-active">
+                  <div class="locations__block">
+                    <div class="locations__block-card locations__block-card--red">
+                      <div class="locations__block-card-top">
+                        <div class="locations__block-title locations__block-title--small">
+                          <p>Турниры на выбывание</p>
+                          <p class="locations__block-count">20:00 – 23:00</p>
+                        </div>
+                        <div class="locations__block-description">Хорошо играете в&nbsp;настольный теннис? Покажите всё, на&nbsp;что способны в&nbsp;турнирах на&nbsp;выбывание!</div>
+                      </div>
+                      <div class="locations__block-card-bottom hidden">
+                        <a class="button locations__block-link" href="#" target="_blank">
+                          Регистрация
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="locations__block">
+                    <div class="locations__block-card">
+                      <div class="locations__block-card-top">
+                        <div class="locations__block-title locations__block-title--small">
+                          <p>ОТКРЫТОЕ ЗАНЯТИЕ</p>
+                          <p class="locations__block-count">20:00 – 21:00</p>
+                        </div>
+                        <div class="locations__block-description"></div>
+                      </div>
+                      <div class="locations__block-card-bottom">
+                        <div class="locations__spot-free button">вход свободный</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="locations__block">
+                    <div class="locations__block-card">
+                      <div class="locations__block-card-top">
+                        <div class="locations__block-title locations__block-title--small">
+                          <p>СВОБОДНАЯ ИГРА</p>
+                          <p class="locations__block-count">21:00 – 23:00</p>
+                        </div>
+                        <div class="locations__block-description"></div>
+                      </div>
+                      <div class="locations__block-card-bottom">
+                        <div class="locations__spot-free button">вход свободный</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--3 "НИКОЛЬСКАЯ УЛИЦА-->
+              <div class="locations__blocks-content locations__blocks-content--big js-content" data-content-index="3">
+                <h4 class="locations__subtitle">НАСТОЛЬНЫЕ СПОРТИВНЫЕ ИГРЫ</h4>
+                <div class="locations__blocks is-active">
+                  <div class="locations__block">
+                    <div class="locations__block-card">
+                      <div class="locations__block-card-top">
+                        <div class="locations__block-title">
+                          <p>ТУРНИР  ПО НАСТОЛЬНОМУ ФУТБОЛУ </p>
+                          <p class="locations__block-count">20:30</p>
+                        </div>
+                        <div class="locations__block-description">Попробуйте свои силы в&nbsp;большом турнире или наблюдайте за&nbsp;борьбой соперников. Масса эмоций гарантирована!</div>
+                      </div>
+                      <div class="locations__block-card-bottom">
+                        <div class="locations__spot-free button">вход свободный</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="locations__block">
+                    <div class="locations__block-card">
+                      <div class="locations__block-card-top">
+                        <div class="locations__block-title">
+                          <p>ТУРНИР  ПО НАСТОЛЬНОМУ ХОККЕЮ</p>
+                          <p class="locations__block-count">20:30</p>
+                        </div>
+                        <div class="locations__block-description">Вас ждут захватывающие матчи, в&nbsp;которых может принять участие любой желающий.</div>
+                      </div>
+                      <div class="locations__block-card-bottom">
+                        <div class="locations__spot-free button">вход свободный</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="locations__block">
+                    <div class="locations__block-card">
+                      <div class="locations__block-card-top">
+                        <div class="locations__block-title">
+                          <p>СВОБОДНая ИГРа</p>
+                          <p class="locations__block-count">20:00–23:00</p>
+                        </div>
+                        <div class="locations__block-description">Играйте в&nbsp;любимые игры, знакомьтесь с&nbsp;новыми людьми и&nbsp;отлично проводите время!</div>
+                      </div>
+                      <div class="locations__block-card-bottom">
+                        <div class="locations__spot-free button">вход свободный</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <h4 class="locations__subtitle">СКАКАЛКИ, ГОРОДКИ</h4>
+                <div class="locations__blocks is-active">
+                  <div class="locations__block">
+                    <div class="locations__block-card">
+                      <div class="locations__block-card-top">
+                        <div class="locations__block-title locations__block-title--multiple-slots">
+                          <p>ПОКАЗАТЕЛЬНЫЕ ВЫСТУПЛЕНИЯ</p>
+                          <p class="locations__block-count">20:00 - 20:15</p>
+                          <p class="locations__block-count">21:00 - 21:15</p>
+                          <p class="locations__block-count">22:00 - 22:15</p>
+                        </div>
+                        <div class="locations__block-description"></div>
+                      </div>
+                      <div class="locations__block-card-bottom">
+                        <div class="locations__spot-free button">вход свободный</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="locations__block">
+                    <div class="locations__block-card">
+                      <div class="locations__block-card-top">
+                        <div class="locations__block-title locations__block-title--multiple-slots">
+                          <p>МАСТЕР-КЛАССЫ</p>
+                          <p class="locations__block-count">20:15 - 21:00</p>
+                          <p class="locations__block-count">21:15 - 22:00</p>
+                          <p class="locations__block-count">22:15 - 23:00</p>
+                        </div>
+                        <div class="locations__block-description"></div>
+                      </div>
+                      <div class="locations__block-card-bottom">
+                        <div class="locations__spot-free button">вход свободный</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--4 "Камергерский переулок-->
+              <div class="locations__blocks-content locations__blocks-content--big js-content" data-content-index="4">
+                <h4 class="locations__subtitle">Воркаут</h4>
+                <div class="locations__blocks is-active">
+                  <div class="locations__block">
+                    <div class="locations__block-card">
+                      <div class="locations__block-card-top">
+                        <div class="locations__block-title">
+                          <p>Соревнования по дисциплинам: Воркаут Баттлы 1х1 Фристайлбар 1х1</p>
+                          <p class="locations__block-count">20:30 - 22:30</p>
+                        </div>
+                        <div class="locations__block-description">Кто станет лучшим воркаутером? Узнайте лично!</div>
+                      </div>
+                      <div class="locations__block-card-bottom">
+                        <div class="locations__spot-free button">вход свободный</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="locations__block">
+                    <div class="locations__block-card">
+                      <div class="locations__block-card-top">
+                        <div class="locations__block-title">
+                          <p>Финалы Ночного кубка Московского спорта по воркауту</p>
+                          <p class="locations__block-count">22:00</p>
+                        </div>
+                        <div class="locations__block-description">Кто станет лучшим воркаутером в&nbsp;Ночном Кубке? Узнайте лично!</div>
+                      </div>
+                      <div class="locations__block-card-bottom">
+                        <div class="locations__spot-free button">вход свободный</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="locations__block">
+                    <div class="locations__block-card">
+                      <div class="locations__block-card-top">
+                        <div class="locations__block-title">
+                          <p>ПОКАЗАТЕЛЬНЫЕ ВЫСТУПЛЕНИЯ ТОП СПОРТСМЕНОВ</p>
+                          <p class="locations__block-count">20:00 - 23:00</p>
+                        </div>
+                        <div class="locations__block-description">Приходите насладиться зрелищными поединками от&nbsp;топовых спортсменов.</div>
+                      </div>
+                      <div class="locations__block-card-bottom">
+                        <div class="locations__spot-free button">вход свободный</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <h4 class="locations__subtitle">Паркур</h4>
+                <div class="locations__blocks is-active">
+                  <div class="locations__block">
+                    <div class="locations__block-card">
+                      <div class="locations__block-card-top">
+                        <div class="locations__block-title">
+                          <p>ПОКАЗАТЕЛЬНЫЕ ВЫСТУПЛЕНИЯ ТОП СПОРТСМЕНОВ</p>
+                          <p class="locations__block-count">20:00 - 23:00</p>
+                        </div>
+                        <div class="locations__block-description">Приходите насладиться зрелищными поединками от&nbsp;топовых спортсменов.</div>
+                      </div>
+                      <div class="locations__block-card-bottom">
+                        <div class="locations__spot-free button">вход свободный</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <h4 class="locations__subtitle">Бокс (ринг)</h4>
+                <div class="locations__blocks is-active">
+                  <div class="locations__block">
+                    <div class="locations__block-card">
+                      <div class="locations__block-card-top">
+                        <div class="locations__block-title locations__block-title--multiple-slots">
+                          <p>Показательные поединки</p>
+                          <p class="locations__block-count">20:00</p>
+                          <p class="locations__block-count">21:30</p>
+                          <p class="locations__block-count">22:30</p>
+                        </div>
+                        <div class="locations__block-description"></div>
+                      </div>
+                      <div class="locations__block-card-bottom">
+                        <div class="locations__spot-free button">вход свободный</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="locations__block">
+                    <div class="locations__block-card">
+                      <div class="locations__block-card-top">
+                        <div class="locations__block-title locations__block-title--multiple-slots">
+                          <p>Мастер-классы для всех желающих</p>
+                          <p class="locations__block-count">20:30</p>
+                          <p class="locations__block-count">22:00</p>
+                        </div>
+                        <div class="locations__block-description">На&nbsp;мастер-классе Вы&nbsp;сможете правильно двигаться, не&nbsp;теряя контроль, научитесь анализировать ситуацию и&nbsp;действовать молниеносно.</div>
+                      </div>
+                      <div class="locations__block-card-bottom">
+                        <div class="locations__spot-free button">вход свободный</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <!--5 Театральная площадь-->
+              <div class="locations__blocks-content locations__blocks-content--big js-content" data-content-index="5">
+                <div class="locations__blocks is-active">
+                  <div class="locations__block">
+                    <div class="locations__block-card">
+                      <div class="locations__block-card-top">
+                        <div class="locations__block-title">
+                          <p>Сеанс одновременной игры с&nbsp;гроссмейстером Денисом Хисматуллиным</p>
+                          <p class="locations__block-count">20:30 - 23:30</p>
+                        </div>
+                        <div class="locations__block-description">Попробуйте одолеть известного гроссмейтера в&nbsp;игре в&nbsp;шахматы!</div>
+                      </div>
+                      <div class="locations__block-card-bottom">
+                        <div class="locations__spot-free button">вход свободный</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="locations__block">
+                    <div class="locations__block-card">
+                      <div class="locations__block-card-top">
+                        <div class="locations__block-title">
+                          <p>Выступление группы &laquo;Корни&raquo;</p>
+                          <p class="locations__block-count">20:00–20:20</p>
+                        </div>
+                        <div class="locations__block-description"></div>
+                      </div>
+                      <div class="locations__block-card-bottom">
+                        <div class="locations__spot-free button">вход свободный</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="locations__block">
+                    <div class="locations__block-card">
+                      <div class="locations__block-card-top">
+                        <div class="locations__block-title">
+                          <p>СВОБОДНАЯ ИГРА</p>
+                          <p class="locations__block-count">20:00–23.00</p>
+                        </div>
+                        <div class="locations__block-description">Найти достойного соперника и&nbsp;оттачивать навыки? Легко! Во&nbsp;время свободной игры в&nbsp;шахматы.</div>
+                      </div>
+                      <div class="locations__block-card-bottom">
+                        <div class="locations__spot-free button">вход свободный</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="locations__block">
+                    <div class="locations__block-card">
+                      <div class="locations__block-card-top">
+                        <div class="locations__block-title">
+                          <p>Стол для игры в шахматы с роботом </p>
+                          <p class="locations__block-count">20:00–23.00</p>
+                        </div>
+                        <div class="locations__block-description">Найти достойного соперника и&nbsp;оттачивать навыки? Легко! Во&nbsp;время свободной игры в&nbsp;шахматы.</div>
+                      </div>
+                      <div class="locations__block-card-bottom">
+                        <div class="locations__spot-free button">вход свободный</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--6 "Б. НИКИТСКАЯ, ПЛОЩАДЬ ТАСС-->
+              <div class="locations__blocks-content locations__blocks-content--big js-content" data-content-index="6">
+                <div class="locations__blocks is-active">
+                  <div class="locations__block">
+                    <div class="locations__block-card">
+                      <div class="locations__block-card-top">
+                        <div class="locations__block-title locations__block-title--multiple-slots">
+                          <p>&laquo;Я&nbsp;ТАНЦУЮ ПО&nbsp;СТРАНЕ&raquo;</p>
+                          <p class="locations__block-count">20:00–21:00</p>
+                          <p class="locations__block-count">21:00–22:00</p>
+                          <p class="locations__block-count">22:20–23:00</p>
+                        </div>
+                        <div class="locations__block-description">Иммерсивная танцевальная прогулка, объединяющая людей с&nbsp;помощью музыки и&nbsp;танца</div>
+                      </div>
+                      <div class="locations__block-card-bottom">
+                        <div class="locations__spot-free button">вход свободный</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--7 "КУДРИНСКАЯ ПЛОЩАДЬ-->
+              <div class="locations__blocks-content locations__blocks-content--big js-content" data-content-index="7">
+                <ul  class="locations__blocks is-active">
+                  <li class="locations__block">
+                    <div class="locations__block-card locations__block-card--red">
+                      <div class="locations__block-card-top">
+                        <div class="locations__block-title">
+                          <p>ПОЛОСА ПРЕПЯТСТВИЙ</p>
+                          <p class="locations__block-count">20:00 – 23:00</p>
+                        </div>
+                        <div class="locations__block-description">Проверьте свою силу, ловкость и&nbsp;выносливость, преодолевая увлекательные испытания. Подходит для всех уровней подготовки.</div>
+                      </div>
+                      <div class="button locations__block-link dropdown js-dropdown hidden">
+                        <button class="dropdown__trigger button js-dropdown-trigger">
+                          регистрация
+                        </button>
+                        <div class="dropdown__content">
+                          <ul class="dropdown__list">
+                            <li class="dropdown__item">
+                              <a href="#" class="dropdown__link" target="_blank">
+                                20:00 – 20:35
+                              </a>
+                            </li>
+                            <li class="dropdown__item">
+                              <a href="#" class="dropdown__link" target="_blank">
+                                20:50 – 21:25
+                              </a>
+                            </li>
+                            <li class="dropdown__item">
+                              <a href="#" class="dropdown__link" target="_blank">
+                                21:40 – 22:15
+                              </a>
+                            </li>
+                            <li class="dropdown__item">
+                              <a href="#" class="dropdown__link" target="_blank">
+                                22:25 – 23:00
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="locations__block">
+                    <div class="locations__block-card locations__block-card--red">
+                      <div class="locations__block-card-top">
+                        <div class="locations__block-title">
+                          <p>Костюмированный ФИТНЕС ДЖАМПИНГ</p>
+                          <p class="locations__block-count">20:00 – 23:00</p>
+                        </div>
+                        <div class="locations__block-description">Динамичная кардиотренировка на&nbsp;мини-батутах, сочетающая в&nbsp;себе элементы силовых упражнений, баланса, координации и&nbsp;танца. Тематика: Неоновое диско. Будь самым ярким!</div>
+                      </div>
+                      <div class="button locations__block-link dropdown js-dropdown hidden">
+                        <button class="dropdown__trigger button js-dropdown-trigger">
+                          регистрация
+                        </button>
+                        <div class="dropdown__content">
+                          <ul class="dropdown__list">
+                            <li class="dropdown__item">
+                              <a href="#" class="dropdown__link" target="_blank">
+                                20:00 – 20:35
+                              </a>
+                            </li>
+                            <li class="dropdown__item">
+                              <a href="#" class="dropdown__link" target="_blank">
+                                20:50 – 21:25
+                              </a>
+                            </li>
+                            <li class="dropdown__item">
+                              <a href="#" class="dropdown__link" target="_blank">
+                                21:40 – 22:15
+                              </a>
+                            </li>
+                            <li class="dropdown__item">
+                              <a href="#" class="dropdown__link" target="_blank">
+                                22:25 – 23:00
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!--8 ФОНТАННАЯ ПЛОЩАДЬ ПАРКА ГОРЬКОГО -->
+              <div class="locations__blocks-content locations__blocks-content--big js-content" data-content-index="8">
+                <div class="locations__blocks is-active">
+                  <div class="locations__block">
+                    <div class="locations__block-card">
+                      <div class="locations__block-card-top">
+                        <div class="locations__block-title locations__block-title--multiple-slots">
+                          <p>SHOW FMX</p>
+                          <p class="locations__block-count">20:00–20:15</p>
+                          <p class="locations__block-count">20:55–21:10</p>
+                          <p class="locations__block-count">21:50–22:05</p>
+                          <p class="locations__block-count">22:45–23:00</p>
+                        </div>
+                        <div class="locations__block-description">Захватывающий вид спорта с&nbsp;затяжными прыжками на&nbsp;мотоцикле с&nbsp;высокого трамплина. Адреналин и&nbsp;экстрим гарантированы!</div>
+                      </div>
+                      <div class="locations__block-card-bottom">
+                        <div class="locations__spot-free button">вход свободный</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--9 "малый николпесковский-->
+              <div class="locations__blocks-content locations__blocks-content--big js-content" data-content-index="9">
+                <div class="locations__blocks is-active">
+                  <div class="locations__block">
+                    <div class="locations__block-card">
+                      <div class="locations__block-card-top">
+                        <div class="locations__block-title locations__block-title--multiple-slots">
+                          <p>Показательные выступления</p>
+                          <p class="locations__block-count">21:00–21:30</p>
+                          <p class="locations__block-count">22:30–23:00</p>
+                        </div>
+                        <div class="locations__block-description">Посмотри на сильнейших и лучших  спортсменов силовго спорта!</div>
+                      </div>
+                      <div class="locations__block-card-bottom">
+                        <div class="locations__spot-free button">вход свободный</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="locations__block">
+                    <div class="locations__block-card">
+                      <div class="locations__block-card-top">
+                        <div class="locations__block-title">
+                          <p>Мастер-класс</p>
+                          <p class="locations__block-count">21:30–22:30</p>
+                        </div>
+                        <div class="locations__block-description"></div>
+                      </div>
+                      <div class="locations__block-card-bottom">
+                        <div class="locations__spot-free button">вход свободный</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="locations__block">
+                    <div class="locations__block-card">
+                      <div class="locations__block-card-top">
+                        <div class="locations__block-title">
+                          <p>СОРЕВНОВАНИЯ </p>
+                          <p class="locations__block-count">20:00–21:00</p>
+                        </div>
+                        <div class="locations__block-description">Соревнования среди лучших спортсменов после предварительных этапов: 5&nbsp;стран, 15&nbsp;лучших атлетов</div>
+                      </div>
+                      <div class="locations__block-card-bottom">
+                        <div class="locations__spot-free button">вход свободный</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--10 Николепский переулок Брейк данс-->
+              <div class="locations__blocks-content locations__blocks-content--big js-content" data-content-index="10">
+                <div class="locations__blocks is-active">
+                  <div class="locations__block">
+                    <div class="locations__block-card">
+                      <div class="locations__block-card-top">
+                        <div class="locations__block-title">
+                          <p>BBOYS+BGIRLS 12-15 лет 1X1</p>
+                          <p class="locations__block-count">20:00–20:50</p>
+                        </div>
+                        <div class="locations__block-description">Примите участие в баттле и покажите, кто тут лучший танцор</div>
+                      </div>
+                      <div class="locations__block-card-bottom hidden">
+                        <a class="button locations__block-link locations__block-link--spot">
+                          Регистрация на месте
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="locations__block">
+                    <div class="locations__block-card">
+                      <div class="locations__block-card-top">
+                        <div class="locations__block-title">
+                          <p>PROFI 1X1</p>
+                          <p class="locations__block-count">21:00–21:50</p>
+                        </div>
+                        <div class="locations__block-description">Примите участие в баттле и покажите, кто тут лучший танцор. Возраст 10-15лет.</div>
+                      </div>
+                      <div class="locations__block-card-bottom hidden">
+                        <a class="button locations__block-link locations__block-link--spot">
+                          Регистрация на месте
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="locations__block">
+                    <div class="locations__block-card">
+                      <div class="locations__block-card-top">
+                        <div class="locations__block-title">
+                          <p>PROFI TEAMS 3X3</p>
+                          <p class="locations__block-count">22:00–23:00</p>
+                        </div>
+                        <div class="locations__block-description">Примите участие в баттле и покажите, кто тут лучший танцор. От 16 лет</div>
+                      </div>
+                      <div class="locations__block-card-bottom hidden">
+                        <a class="button locations__block-link locations__block-link--spot">
+                          Регистрация на месте
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="locations__block">
+                    <div class="locations__block-card">
+                      <div class="locations__block-card-top">
+                        <div class="locations__block-title locations__block-title--multiple-slots">
+                          <p>Показательные шоу</p>
+                          <p class="locations__block-count">20:50–21:00</p>
+                          <p class="locations__block-count">21:50–22:00</p>
+                        </div>
+                        <div class="locations__block-description"></div>
+                      </div>
+                      <div class="locations__block-card-bottom hidden">
+                        <a class="button locations__block-link locations__block-link--spot">
+                          Регистрация на месте
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- В РАЗРАБОТКЕ-->
+              <!--2 "ТВЕРСКАЯ УЛИЦА ПЛОЩАДЬ ИЗВЕСТИЯ"-->
+              <!-- <div class="locations__blocks-content locations__blocks-content--big js-content" data-content-index="2">
                 <ul class="locations__blocks locations__blocks--small-titles is-active">
                   <li class="locations__block">
                     <div class="locations__block-card">
@@ -503,7 +1017,7 @@ Yj      sizes="114x114"
                     </div>
                   </li>
                 </ul>
-              </div>
+              </div> -->
               <!--3 ""ТРУБНАЯ ПЛОЩАДЬ"-->
               <div class="locations__blocks-content locations__blocks-content--big js-content" data-content-index="3">
                 <div class="locations__blocks is-active">
@@ -593,450 +1107,6 @@ Yj      sizes="114x114"
                     </div>
                   </div>
                 </div>
-              </div>
-              <!--6 "МЯСНИЦКАЯ УЛ. ПЛОЩАДЬ-->
-              <div class="locations__blocks-content locations__blocks-content--big js-content" data-content-index="5">
-                <!-- <h4 class="locations__subtitle">Приглашенные звезды</h4>
-                <div class="people locations__people js-people-slider-container">
-                  <div class="people__slider">
-                    <div class="js-people-prev-extreme people__arrow people__arrow--prev">
-                      <img src="img/icons/arrow-left.svg" width="59" height="59"/>
-                    </div>
-                    <div class="swiper-container js-people-slider" id="extreme">
-                      <div class="swiper-wrapper people__wrapper justify-align-center">
-                        <div class="swiper-slide people__slide">
-                          <div class="people__image">
-                            <img src="img/people/koroleva.jpg" width="260" height="260"/>
-                          </div>
-                          <div class="people__slide-title">
-                            Кристина Королева
-                            <span>Легкоатлет</span>
-                          </div>
-                        </div>
-                        <div class="swiper-slide people__slide">
-                          <div class="people__image">
-                            <img src="img/people/perfenko.jpg" width="260" height="260"/>
-                          </div>
-                          <div class="people__slide-title">
-                            Полина Парфененко
-                            <span>Легкоатлет</span>
-                          </div>
-                        </div>
-                        <div class="swiper-slide people__slide">
-                          <div class="people__image">
-                            <img src="img/people/spiridonova.jpg" width="260" height="260"/>
-                          </div>
-                          <div class="people__slide-title">
-                            Наталья Спиридонова
-                            <span>Легкоатлет</span>
-                          </div>
-                        </div>
-                        <div class="swiper-slide people__slide">
-                          <div class="people__image">
-                            <img src="img/people/demidik.jpg" width="260" height="260"/>
-                          </div>
-                          <div class="people__slide-title">
-                            Карина Демидик
-                            <span>Легкоатлет</span>
-                          </div>
-                        </div>
-                        <div class="swiper-slide people__slide">
-                          <div class="people__image">
-                            <img src="img/people/ermachenkova.jpg" width="260" height="260"/>
-                          </div>
-                          <div class="people__slide-title">
-                            Татьяна Ермаченкова
-                            <span>Легкоатлет</span>
-                          </div>
-                        </div>
-                        <div class="swiper-slide people__slide">
-                          <div class="people__image">
-                            <img src="img/people/seliverstov.jpg" width="260" height="260"/>
-                          </div>
-                          <div class="people__slide-title">
-                            Павел Селиверстов
-                            <span>Легкоатлет</span>
-                          </div>
-                        </div>
-                        <div class="swiper-slide people__slide">
-                          <div class="people__image">
-                            <img src="img/people/lisenko.jpg" width="260" height="260"/>
-                          </div>
-                          <div class="people__slide-title">
-                            Даниил Лысенко
-                            <span>Легкоатлет</span>
-                          </div>
-                        </div>
-                        <div class="swiper-slide people__slide">
-                          <div class="people__image">
-                            <img src="img/people/ivanuk.jpg" width="260" height="260"/>
-                          </div>
-                          <div class="people__slide-title">
-                            Илья Иванюк
-                            <span>Легкоатлет</span>
-                          </div>
-                        </div>
-                        <div class="swiper-slide people__slide">
-                          <div class="people__image">
-                            <img src="img/people/vetkin.jpg" width="260" height="260"/>
-                          </div>
-                          <div class="people__slide-title">
-                            Степан Веткин
-                            <span>Легкоатлет</span>
-                          </div>
-                        </div>
-                        <div class="swiper-slide people__slide">
-                          <div class="people__image">
-                            <img src="img/people/kutkovoi.jpg" width="260" height="260"/>
-                          </div>
-                          <div class="people__slide-title">
-                            Ярослав Кутковой
-                            <span>Легкоатлет</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="js-people-next-extreme people__arrow people__arrow--next">
-                      <img src="img/icons/arrow-right.svg" width="59" height="59"/>
-                    </div>
-                  </div>
-                </div>
-                <h4 class="locations__subtitle">Легкая атлетика</h4>
-                <div class="locations__blocks is-active">
-                  <div class="locations__block">
-                    <div class="locations__block-card">
-                      <div class="locations__block-card-top">
-                        <div class="locations__block-title locations__block-title--small">
-                          <p>ПРЫЖКИ В ВЫСОТУ </p>
-                          <p class="locations__block-count">19.30 – 23:00</p>
-                        </div>
-                        <div class="locations__block-description">Покажите свои навыки и&nbsp;стремление к&nbsp;победе, преодолевая планку на&nbsp;высоте. Это отличная возможность испытать себя и&nbsp;насладиться атмосферой спортивного духа!</div>
-                      </div>
-                      <div class="locations__block-card-bottom">
-                        <div class="locations__spot-free button">вход свободный</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <h4 class="locations__subtitle">Настольный теннис</h4> -->
-                <div class="locations__blocks is-active">
-                  <div class="locations__block">
-                    <div class="locations__block-card locations__block-card--red">
-                      <div class="locations__block-card-top">
-                        <div class="locations__block-title locations__block-title--small">
-                          <p>Турниры на выбывание</p>
-                          <p class="locations__block-count">20:00 – 23:00</p>
-                        </div>
-                        <div class="locations__block-description">Хорошо играете в&nbsp;настольный теннис? Покажите все, на&nbsp;что способны, в&nbsp;турнирах на&nbsp;выбывание!</div>
-                      </div>
-                      <div class="locations__block-card-bottom">
-                        <a class="button locations__block-link" href="https://nights-sport-mos.timepad.ru/event/3428576/" target="_blank">
-                          Регистрация
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--7 "НИКОЛЬСКАЯ УЛИЦА-->
-              <div class="locations__blocks-content locations__blocks-content--big js-content" data-content-index="6">
-                <div class="locations__blocks is-active">
-                  <div class="locations__block">
-                    <div class="locations__block-card">
-                      <div class="locations__block-card-top">
-                        <div class="locations__block-title">
-                          <p>ТУРНИР  ПО НАСТОЛЬНОМУ ФУТБОЛУ </p>
-                          <p class="locations__block-count">20:30</p>
-                        </div>
-                        <div class="locations__block-description">Попробуйте свои силы в&nbsp;большом турнире или наблюдайте за&nbsp;борьбой соперников. Масса эмоций гарантирована!</div>
-                      </div>
-                      <div class="locations__block-card-bottom">
-                        <div class="locations__spot-free button">вход свободный</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="locations__block">
-                    <div class="locations__block-card">
-                      <div class="locations__block-card-top">
-                        <div class="locations__block-title">
-                          <p>ТУРНИР  ПО НАСТОЛЬНОМУ ХОККЕЮ</p>
-                          <p class="locations__block-count">20:30</p>
-                        </div>
-                        <div class="locations__block-description">Вас ждут захватывающие матчи, в&nbsp;которых может принять участие любой желающий.</div>
-                      </div>
-                      <div class="locations__block-card-bottom">
-                        <div class="locations__spot-free button">вход свободный</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="locations__block">
-                    <div class="locations__block-card">
-                      <div class="locations__block-card-top">
-                        <div class="locations__block-title">
-                          <p>СВОБОДНая ИГРа</p>
-                          <p class="locations__block-count">20:00–23:00</p>
-                        </div>
-                        <div class="locations__block-description">Играйте в&nbsp;любимые игры, знакомьтесь с&nbsp;новыми людьми и&nbsp;отлично проводите время!</div>
-                      </div>
-                      <div class="locations__block-card-bottom">
-                        <div class="locations__spot-free button">вход свободный</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--9 "ПЛ.РЕВОЛЮЦИИ, СКВЕР У ГОСТИНИЦЫ МЕТРОПОЛЬ-->
-              <div class="locations__blocks-content locations__blocks-content--big js-content" data-content-index="7">
-                <div class="locations__blocks is-active">
-                  <div class="locations__block">
-                    <div class="locations__block-card">
-                      <div class="locations__block-card-top">
-                        <div class="locations__block-title">
-                          <p>Сеанс одновременной игры со спортсменом</p>
-                          <p class="locations__block-count">20:30 - 23:00</p>
-                        </div>
-                        <div class="locations__block-description">Попробуйте одолеть известного гроссмейтера в&nbsp;игре в&nbsp;шахматы!</div>
-                      </div>
-                      <div class="locations__block-card-bottom">
-                        <div class="locations__spot-free button">вход свободный</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="locations__block">
-                    <div class="locations__block-card">
-                      <div class="locations__block-card-top">
-                        <div class="locations__block-title">
-                          <p>Выступление группы &laquo;Мохито&raquo;</p>
-                          <p class="locations__block-count">20:00</p>
-                        </div>
-                        <div class="locations__block-description">Российский поп-дуэт в&nbsp;составе Дианы Оболашвили и&nbsp;Влада Сударевского. Во&nbsp;время работы площадки прозвуат хиты &laquo;Руки прочь&raquo;, &laquo;разрывай танцпол&raquo;, &laquo;Слезы солнца&raquo; и&nbsp;др.</div>
-                      </div>
-                      <div class="locations__block-card-bottom">
-                        <div class="locations__spot-free button">вход свободный</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="locations__block">
-                    <div class="locations__block-card">
-                      <div class="locations__block-card-top">
-                        <div class="locations__block-title">
-                          <p>СВОБОДНАЯ ИГРА</p>
-                          <p class="locations__block-count">20:00–23.00</p>
-                        </div>
-                        <div class="locations__block-description">Найти достойного соперника и&nbsp;оттачивать навыки? Легко! Во&nbsp;время свободной игры в&nbsp;шахматы.</div>
-                      </div>
-                      <div class="locations__block-card-bottom">
-                        <div class="locations__spot-free button">вход свободный</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--10 "Камергерский переулок-->
-              <div class="locations__blocks-content locations__blocks-content--big js-content" data-content-index="8">
-                <h4 class="locations__subtitle">Воркаут</h4>
-                <div class="locations__blocks is-active">
-                  <div class="locations__block">
-                    <div class="locations__block-card">
-                      <div class="locations__block-card-top">
-                        <div class="locations__block-title">
-                          <p>Соревнования по дисциплинам: Воркаут Баттлы 1х1 Фристайлбар 1х1</p>
-                          <p class="locations__block-count">20:30 - 22:30</p>
-                        </div>
-                        <div class="locations__block-description">Кто станет лучшим воркаутером? Узнайте лично!</div>
-                      </div>
-                      <div class="locations__block-card-bottom">
-                        <div class="locations__spot-free button">вход свободный</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="locations__block">
-                    <div class="locations__block-card">
-                      <div class="locations__block-card-top">
-                        <div class="locations__block-title">
-                          <p>ПОКАЗАТЕЛЬНЫЕ ВЫСТУПЛЕНИЯ ТОП СПОРТСМЕНОВ</p>
-                          <p class="locations__block-count">20:00 - 23:00</p>
-                        </div>
-                        <div class="locations__block-description">Приходите насладиться зрелищными поединками от&nbsp;топовых спортсменов.</div>
-                      </div>
-                      <div class="locations__block-card-bottom">
-                        <div class="locations__spot-free button">вход свободный</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <h4 class="locations__subtitle">Паркур</h4>
-                <div class="locations__blocks is-active">
-                  <div class="locations__block">
-                    <div class="locations__block-card">
-                      <div class="locations__block-card-top">
-                        <div class="locations__block-title">
-                          <p>ПОКАЗАТЕЛЬНЫЕ ВЫСТУПЛЕНИЯ ТОП СПОРТСМЕНОВ</p>
-                          <p class="locations__block-count">20:00 - 23:00</p>
-                        </div>
-                        <div class="locations__block-description">Приходите насладиться зрелищными поединками от&nbsp;топовых спортсменов.</div>
-                      </div>
-                      <div class="locations__block-card-bottom">
-                        <div class="locations__spot-free button">вход свободный</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <h4 class="locations__subtitle">Бокс (ринг)</h4>
-                <div class="locations__blocks is-active">
-                  <div class="locations__block">
-                    <div class="locations__block-card">
-                      <div class="locations__block-card-top">
-                        <div class="locations__block-title locations__block-title--multiple-slots">
-                          <p>Показательные поединки</p>
-                          <p class="locations__block-count">20:00</p>
-                          <p class="locations__block-count">21:30</p>
-                          <p class="locations__block-count">22:30</p>
-                        </div>
-                        <div class="locations__block-description"></div>
-                      </div>
-                      <div class="locations__block-card-bottom">
-                        <div class="locations__spot-free button">вход свободный</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="locations__block">
-                    <div class="locations__block-card">
-                      <div class="locations__block-card-top">
-                        <div class="locations__block-title locations__block-title--multiple-slots">
-                          <p>Мастер-классы для всех желающих</p>
-                          <p class="locations__block-count">20:30</p>
-                          <p class="locations__block-count">22:00</p>
-                        </div>
-                        <div class="locations__block-description">На&nbsp;мастер-классе Вы&nbsp;сможете правильно двигаться, не&nbsp;теряя контроль, научитесь анализировать ситуацию и&nbsp;действовать молниеносно.</div>
-                      </div>
-                      <div class="locations__block-card-bottom">
-                        <div class="locations__spot-free button">вход свободный</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-              <!--10 "Б. НИКИТСКАЯ, ПЛОЩАДЬ ТАСС-->
-              <div class="locations__blocks-content locations__blocks-content--big js-content" data-content-index="9">
-                <div class="locations__blocks is-active">
-                  <div class="locations__block">
-                    <div class="locations__block-card">
-                      <div class="locations__block-card-top">
-                        <div class="locations__block-title locations__block-title--multiple-slots">
-                          <p>ИГРА ВСЕХ ЖЕЛАЮЩИХ</p>
-                          <p class="locations__block-count">20:00–21:00</p>
-                          <p class="locations__block-count">22:00–23:00</p>
-                        </div>
-                        <div class="locations__block-description">Логика и&nbsp;тактика&nbsp;&mdash; ваше все? Попробуйте себя в&nbsp;скоростной сборке кубика Рубика</div>
-                      </div>
-                      <div class="locations__block-card-bottom">
-                        <div class="locations__spot-free button">вход свободный</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="locations__block">
-                    <div class="locations__block-card">
-                      <div class="locations__block-card-top">
-                        <div class="locations__block-title">
-                          <p>ПОКАЗАТЕЛЬНЫЙ ШОУ-ТУРНИР</p>
-                          <p class="locations__block-count">22:20–23:00</p>
-                        </div>
-                        <div class="locations__block-description">Уникальная возможность увидеть мастеров в&nbsp;действии и&nbsp;узнать секреты быстрой сборки. Поддержите участников и&nbsp;погрузитесь в&nbsp;мир головоломок!</div>
-                      </div>
-                      <div class="locations__block-card-bottom">
-                        <div class="locations__spot-free button">вход свободный</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--11 "КУДРИНСКАЯ ПЛОЩАДЬ-->
-              <div class="locations__blocks-content locations__blocks-content--big js-content" data-content-index="10">
-                <ul  class="locations__blocks is-active">
-                  <li class="locations__block">
-                    <div class="locations__block-card locations__block-card--red">
-                      <div class="locations__block-card-top">
-                        <div class="locations__block-title">
-                          <p>ПОЛОСА ПРЕПЯТСТВИЙ</p>
-                          <p class="locations__block-count">20:00 – 23:00</p>
-                        </div>
-                        <div class="locations__block-description">Проверьте свою силу, ловкость и&nbsp;выносливость, преодолевая увлекательные испытания. Подходит для всех уровней подготовки.</div>
-                      </div>
-                      <div class="button locations__block-link dropdown js-dropdown">
-                        <button class="dropdown__trigger button js-dropdown-trigger">
-                          регистрация
-                        </button>
-                        <div class="dropdown__content">
-                          <ul class="dropdown__list">
-                            <li class="dropdown__item">
-                              <a href="https://nights-sport-mos.timepad.ru/event/3428577/" class="dropdown__link" target="_blank">
-                                20:00 – 20:35
-                              </a>
-                            </li>
-                            <li class="dropdown__item">
-                              <a href="https://nights-sport-mos.timepad.ru/event/3428581/" class="dropdown__link" target="_blank">
-                                20:50 – 21:25
-                              </a>
-                            </li>
-                            <li class="dropdown__item">
-                              <a href="https://nights-sport-mos.timepad.ru/event/3428582/" class="dropdown__link" target="_blank">
-                                21:40 – 22:15
-                              </a>
-                            </li>
-                            <li class="dropdown__item">
-                              <a href="https://nights-sport-mos.timepad.ru/event/3428583/" class="dropdown__link" target="_blank">
-                                22:25 – 23:00
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="locations__block">
-                    <div class="locations__block-card locations__block-card--red">
-                      <div class="locations__block-card-top">
-                        <div class="locations__block-title">
-                          <p>Костюмированный ФИТНЕС ДЖАМПИНГ</p>
-                          <p class="locations__block-count">20:00 – 23:00</p>
-                        </div>
-                        <div class="locations__block-description">Динамичная кардиотренировка на&nbsp;мини-батутах, сочетающая в&nbsp;себе элементы силовых упражнений, баланса, координации и&nbsp;танца. Тематика: Неоновое диско. Будь самым ярким!</div>
-                      </div>
-                      <div class="button locations__block-link dropdown js-dropdown">
-                        <button class="dropdown__trigger button js-dropdown-trigger">
-                          регистрация
-                        </button>
-                        <div class="dropdown__content">
-                          <ul class="dropdown__list">
-                            <li class="dropdown__item">
-                              <a href="https://nights-sport-mos.timepad.ru/event/3428584/" class="dropdown__link" target="_blank">
-                                20:00 – 20:35
-                              </a>
-                            </li>
-                            <li class="dropdown__item">
-                              <a href="https://nights-sport-mos.timepad.ru/event/3428585/" class="dropdown__link" target="_blank">
-                                20:50 – 21:25
-                              </a>
-                            </li>
-                            <li class="dropdown__item">
-                              <a href="https://nights-sport-mos.timepad.ru/event/3428586/" class="dropdown__link" target="_blank">
-                                21:40 – 22:15
-                              </a>
-                            </li>
-                            <li class="dropdown__item">
-                              <a href="https://nights-sport-mos.timepad.ru/event/3428587/" class="dropdown__link" target="_blank">
-                                22:25 – 23:00
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
               </div>
               <!--12 ИЛЬИНСКИЙ СКВЕР, КИТАЙ ГОРОД -->
               <div class="locations__blocks-content locations__blocks-content--big js-content" data-content-index="11">
@@ -1182,115 +1252,7 @@ Yj      sizes="114x114"
                   </li>
                 </ul>
               </div>
-              <!--13 ФОНТАННАЯ ПЛОЩАДЬ ПАРКА ГОРЬКОГО -->
-              <div class="locations__blocks-content locations__blocks-content--big js-content" data-content-index="12">
-                <div class="locations__blocks is-active">
-                  <div class="locations__block">
-                    <div class="locations__block-card">
-                      <div class="locations__block-card-top">
-                        <div class="locations__block-title locations__block-title--multiple-slots">
-                          <p>SHOW FMX</p>
-                          <p class="locations__block-count">20:00–20:15</p>
-                          <p class="locations__block-count">20:55–21:10</p>
-                          <p class="locations__block-count">21:50–22:05</p>
-                          <p class="locations__block-count">22:45–23:00</p>
-                        </div>
-                        <div class="locations__block-description">Захватывающий вид спорта с&nbsp;затяжными прыжками на&nbsp;мотоцикле с&nbsp;высокого трамплина. Адреналин и&nbsp;экстрим гарантированы!</div>
-                      </div>
-                      <div class="locations__block-card-bottom">
-                        <div class="locations__spot-free button">вход свободный</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
 
-              <!--13 "малый николпесковский-->
-              <div class="locations__blocks-content locations__blocks-content--big js-content" data-content-index="13">
-                <div class="locations__blocks is-active">
-                  <div class="locations__block">
-                    <div class="locations__block-card">
-                      <div class="locations__block-card-top">
-                        <div class="locations__block-title">
-                          <p>Показательные выступления</p>
-                          <p class="locations__block-count">21:00–23:00</p>
-                        </div>
-                        <div class="locations__block-description">Посмотри на сильнейших и лучших  спортсменов силовго спорта!</div>
-                      </div>
-                      <div class="locations__block-card-bottom">
-                        <div class="locations__spot-free button">вход свободный</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="locations__block">
-                    <div class="locations__block-card">
-                      <div class="locations__block-card-top">
-                        <div class="locations__block-title">
-                          <p>Кубок Московского спорта по силовому спорту </p>
-                          <p class="locations__block-count">20:00–21:00</p>
-                        </div>
-                        <div class="locations__block-description">Узнайте, кто лучший в силовом спорте и отдайте свой голос лучшему участнику!</div>
-                      </div>
-                      <div class="locations__block-card-bottom">
-                        <div class="locations__spot-free button">вход свободный</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--15 Николепский переулок Брейк данс-->
-              <div class="locations__blocks-content locations__blocks-content--big js-content" data-content-index="14">
-                <div class="locations__blocks is-active">
-                  <div class="locations__block">
-                    <div class="locations__block-card locations__block-card--red">
-                      <div class="locations__block-card-top">
-                        <div class="locations__block-title">
-                          <p>1vs1KIDS 10-15 лет</p>
-                          <p class="locations__block-count">20:00–21:00</p>
-                        </div>
-                        <div class="locations__block-description">Примите участие в баттле и покажите, кто тут лучший танцор</div>
-                      </div>
-                      <div class="locations__block-card-bottom">
-                        <a class="button locations__block-link locations__block-link--spot">
-                          Регистрация на месте
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="locations__block">
-                    <div class="locations__block-card locations__block-card--red">
-                      <div class="locations__block-card-top">
-                        <div class="locations__block-title">
-                          <p>1vs1 PRO с 16 лет</p>
-                          <p class="locations__block-count">21:00–22:00</p>
-                        </div>
-                        <div class="locations__block-description">Примите участие в баттле и покажите, кто тут лучший танцор. Возраст 10-15лет.</div>
-                      </div>
-                      <div class="locations__block-card-bottom">
-                        <a class="button locations__block-link locations__block-link--spot">
-                          Регистрация на месте
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="locations__block">
-                    <div class="locations__block-card locations__block-card--red">
-                      <div class="locations__block-card-top">
-                        <div class="locations__block-title">
-                          <p>1vs1 PRO POWER MOVIE</p>
-                          <p class="locations__block-count">22:00–23:00</p>
-                        </div>
-                        <div class="locations__block-description">Примите участие в баттле и покажите, кто тут лучший танцор. От 16 лет</div>
-                      </div>
-                      <div class="locations__block-card-bottom">
-                        <a class="button locations__block-link locations__block-link--spot">
-                          Регистрация на месте
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
               <button class="locations__blocks-arrow locations__blocks-arrow--right js-content-arrow-right">
                 <img src="img/icons/arrow-right-red.svg" alt="" width="59" height="59">
               </button>
@@ -1405,45 +1367,6 @@ Yj      sizes="114x114"
                   <div class="map-night__legend-item js-legend-item" dir="ltr" data-thumb-index="2">
                     <div class="map-night__legend-digit">2</div>
                     <div class="map-night__legend-content">
-                      <div class="map-night__legend-title">Стритбаскет</div>
-                      <div class="map-night__legend-pin">
-                        <svg width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M8.53906 0C13.2548 2.85069e-05 17.0781 3.82329 17.0781 8.53906C17.0781 13.2549 8.53906 20.8135 8.53906 20.8135C8.53906 20.8135 0 13.2549 0 8.53906C2.79893e-06 3.82328 3.82328 0 8.53906 0ZM8.53906 4.98145C6.57415 4.98145 4.98145 6.57415 4.98145 8.53906C4.98155 10.5039 6.57422 12.0967 8.53906 12.0967C10.5039 12.0966 12.0966 10.5039 12.0967 8.53906C12.0967 6.57417 10.5039 4.98148 8.53906 4.98145Z" fill="#EB3333"/>
-                        </svg>
-                        Тверская, площадь «Известия»
-                      </div>
-                      <a class="map-night__more js-legend-link js-scroll" href="#locations-dropdown" data-scroll data-thumb-index="2">Узнать расписание</button>
-                    </div>
-                  </div>
-                  <div class="map-night__legend-item js-legend-item" dir="ltr" data-thumb-index="3">
-                    <div class="map-night__legend-digit">3</div>
-                    <div class="map-night__legend-content">
-                      <div class="map-night__legend-title">Памп трек, скейт парк</div>
-                      <div class="map-night__legend-pin">
-                        <svg width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M8.53906 0C13.2548 2.85069e-05 17.0781 3.82329 17.0781 8.53906C17.0781 13.2549 8.53906 20.8135 8.53906 20.8135C8.53906 20.8135 0 13.2549 0 8.53906C2.79893e-06 3.82328 3.82328 0 8.53906 0ZM8.53906 4.98145C6.57415 4.98145 4.98145 6.57415 4.98145 8.53906C4.98155 10.5039 6.57422 12.0967 8.53906 12.0967C10.5039 12.0966 12.0966 10.5039 12.0967 8.53906C12.0967 6.57417 10.5039 4.98148 8.53906 4.98145Z" fill="#EB3333"/>
-                        </svg>
-                        Третьяковская, Климентовский пер.
-                      </div>
-                      <a class="map-night__more js-legend-link js-scroll" href="#locations-dropdown" data-scroll data-thumb-index="3">Узнать расписание</button>
-                    </div>
-                  </div>
-                  <div class="map-night__legend-item js-legend-item" dir="ltr" data-scroll data-thumb-index="4">
-                    <div class="map-night__legend-digit">4</div>
-                    <div class="map-night__legend-content">
-                      <div class="map-night__legend-title">Роуп-скиппинг</div>
-                      <div class="map-night__legend-pin">
-                        <svg width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M8.53906 0C13.2548 2.85069e-05 17.0781 3.82329 17.0781 8.53906C17.0781 13.2549 8.53906 20.8135 8.53906 20.8135C8.53906 20.8135 0 13.2549 0 8.53906C2.79893e-06 3.82328 3.82328 0 8.53906 0ZM8.53906 4.98145C6.57415 4.98145 4.98145 6.57415 4.98145 8.53906C4.98155 10.5039 6.57422 12.0967 8.53906 12.0967C10.5039 12.0966 12.0966 10.5039 12.0967 8.53906C12.0967 6.57417 10.5039 4.98148 8.53906 4.98145Z" fill="#EB3333"/>
-                        </svg>
-                        Пятницкая улица
-                      </div>
-                      <a class="map-night__more js-legend-link js-scroll" href="#locations-dropdown" data-scroll data-thumb-index="4">Узнать расписание</button>
-                    </div>
-                  </div>
-                  <div class="map-night__legend-item js-legend-item" dir="ltr" data-thumb-index="5">
-                    <div class="map-night__legend-digit">5</div>
-                    <div class="map-night__legend-content">
                       <div class="map-night__legend-title">Настольный теннис</div>
                       <!-- <div class="map-night__legend-title">Настольный теннис, Легкая атлетика</div> -->
                       <div class="map-night__legend-pin">
@@ -1452,11 +1375,11 @@ Yj      sizes="114x114"
                         </svg>
                         Мясницкая улица, Площадь перед театром Et-cetera
                       </div>
-                      <a class="map-night__more js-legend-link js-scroll" href="#locations-dropdown" data-scroll data-thumb-index="5">Узнать расписание</button>
+                      <a class="map-night__more js-legend-link js-scroll" href="#locations-dropdown" data-scroll data-thumb-index="2">Узнать расписание</button>
                     </div>
                   </div>
-                  <div class="map-night__legend-item js-legend-item" dir="ltr" data-thumb-index="6">
-                    <div class="map-night__legend-digit">6</div>
+                  <div class="map-night__legend-item js-legend-item" dir="ltr" data-thumb-index="3">
+                    <div class="map-night__legend-digit">3</div>
                     <div class="map-night__legend-content">
                       <div class="map-night__legend-title">Настольные спортивные игры</div>
                       <div class="map-night__legend-pin">
@@ -1465,24 +1388,11 @@ Yj      sizes="114x114"
                         </svg>
                         Никольская улица
                       </div>
-                      <a class="map-night__more js-legend-link js-scroll" href="#locations-dropdown" data-scroll data-thumb-index="6">Узнать расписание</button>
+                      <a class="map-night__more js-legend-link js-scroll" href="#locations-dropdown" data-scroll data-thumb-index="3">Узнать расписание</button>
                     </div>
                   </div>
-                  <div class="map-night__legend-item js-legend-item" dir="ltr" data-thumb-index="7">
-                    <div class="map-night__legend-digit">7</div>
-                    <div class="map-night__legend-content">
-                      <div class="map-night__legend-title">Шахматы</div>
-                      <div class="map-night__legend-pin">
-                        <svg width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M8.53906 0C13.2548 2.85069e-05 17.0781 3.82329 17.0781 8.53906C17.0781 13.2549 8.53906 20.8135 8.53906 20.8135C8.53906 20.8135 0 13.2549 0 8.53906C2.79893e-06 3.82328 3.82328 0 8.53906 0ZM8.53906 4.98145C6.57415 4.98145 4.98145 6.57415 4.98145 8.53906C4.98155 10.5039 6.57422 12.0967 8.53906 12.0967C10.5039 12.0966 12.0966 10.5039 12.0967 8.53906C12.0967 6.57417 10.5039 4.98148 8.53906 4.98145Z" fill="#EB3333"/>
-                        </svg>
-                        Площадь Революции, «Метрополь»
-                      </div>
-                      <a class="map-night__more js-legend-link js-scroll" href="#locations-dropdown" data-scroll data-thumb-index="7">Узнать расписание</button>
-                    </div>
-                  </div>
-                  <div class="map-night__legend-item js-legend-item" dir="ltr" data-thumb-index="8">
-                    <div class="map-night__legend-digit">8</div>
+                  <div class="map-night__legend-item js-legend-item" dir="ltr" data-thumb-index="4">
+                    <div class="map-night__legend-digit">4</div>
                     <div class="map-night__legend-content">
                       <div class="map-night__legend-title">Воркаут, паркур, бокс (ринг)</div>
                       <div class="map-night__legend-pin">
@@ -1491,25 +1401,37 @@ Yj      sizes="114x114"
                         </svg>
                         Камергерский переулок
                       </div>
-                      <a class="map-night__more js-legend-link js-scroll" href="#locations-dropdown" data-scroll data-thumb-index="8">Узнать расписание</button>
+                      <a class="map-night__more js-legend-link js-scroll" href="#locations-dropdown" data-scroll data-thumb-index="4">Узнать расписание</button>
                     </div>
                   </div>
-                  <div class="map-night__legend-item js-legend-item" dir="ltr" data-thumb-index="9">
-                    <div class="map-night__legend-digit">9</div>
+                  <div class="map-night__legend-item js-legend-item" dir="ltr" data-thumb-index="5">
+                    <div class="map-night__legend-digit">5</div>
                     <div class="map-night__legend-content">
-                      <div class="map-night__legend-title">Сборка кубика Рубика</div>
+                      <div class="map-night__legend-title">Шахматы</div>
+                      <div class="map-night__legend-pin">
+                        <svg width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M8.53906 0C13.2548 2.85069e-05 17.0781 3.82329 17.0781 8.53906C17.0781 13.2549 8.53906 20.8135 8.53906 20.8135C8.53906 20.8135 0 13.2549 0 8.53906C2.79893e-06 3.82328 3.82328 0 8.53906 0ZM8.53906 4.98145C6.57415 4.98145 4.98145 6.57415 4.98145 8.53906C4.98155 10.5039 6.57422 12.0967 8.53906 12.0967C10.5039 12.0966 12.0966 10.5039 12.0967 8.53906C12.0967 6.57417 10.5039 4.98148 8.53906 4.98145Z" fill="#EB3333"/>
+                        </svg>
+                        Театральная площадь
+                      </div>
+                      <a class="map-night__more js-legend-link js-scroll" href="#locations-dropdown" data-scroll data-thumb-index="5">Узнать расписание</button>
+                    </div>
+                  </div>
+                  <div class="map-night__legend-item js-legend-item" dir="ltr" data-thumb-index="6">
+                    <div class="map-night__legend-digit">6</div>
+                    <div class="map-night__legend-content">
+                      <div class="map-night__legend-title">&laquo;Я&nbsp;ТАНЦУЮ ПО&nbsp;СТРАНЕ&raquo;</div>
                       <div class="map-night__legend-pin">
                         <svg width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M8.53906 0C13.2548 2.85069e-05 17.0781 3.82329 17.0781 8.53906C17.0781 13.2549 8.53906 20.8135 8.53906 20.8135C8.53906 20.8135 0 13.2549 0 8.53906C2.79893e-06 3.82328 3.82328 0 8.53906 0ZM8.53906 4.98145C6.57415 4.98145 4.98145 6.57415 4.98145 8.53906C4.98155 10.5039 6.57422 12.0967 8.53906 12.0967C10.5039 12.0966 12.0966 10.5039 12.0967 8.53906C12.0967 6.57417 10.5039 4.98148 8.53906 4.98145Z" fill="#EB3333"/>
                         </svg>
                         Площадь ТАСС (Б. Никитская)
                       </div>
-                      <a class="map-night__more js-legend-link js-scroll" href="#locations-dropdown" data-scroll data-thumb-index="9">Узнать расписание</button>
+                      <a class="map-night__more js-legend-link js-scroll" href="#locations-dropdown" data-scroll data-thumb-index="6">Узнать расписание</button>
                     </div>
                   </div>
-
-                  <div class="map-night__legend-item js-legend-item" dir="ltr" data-thumb-index="10">
-                    <div class="map-night__legend-digit">10</div>
+                  <div class="map-night__legend-item js-legend-item" dir="ltr" data-thumb-index="7">
+                    <div class="map-night__legend-digit">7</div>
                     <div class="map-night__legend-content">
                       <div class="map-night__legend-title">Полоса препятствий, фитнес джампинг</div>
                       <div class="map-night__legend-pin">
@@ -1518,24 +1440,11 @@ Yj      sizes="114x114"
                         </svg>
                         Кудринская площадь
                       </div>
-                      <a class="map-night__more js-legend-link js-scroll" href="#locations-dropdown" data-scroll data-thumb-index="10">Узнать расписание</button>
+                      <a class="map-night__more js-legend-link js-scroll" href="#locations-dropdown" data-scroll data-thumb-index="7">Узнать расписание</button>
                     </div>
                   </div>
-                  <div class="map-night__legend-item js-legend-item" dir="ltr" data-thumb-index="11">
-                    <div class="map-night__legend-digit">11</div>
-                    <div class="map-night__legend-content">
-                      <div class="map-night__legend-title">Лекторий, фан-встречи</div>
-                      <div class="map-night__legend-pin">
-                        <svg width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M8.53906 0C13.2548 2.85069e-05 17.0781 3.82329 17.0781 8.53906C17.0781 13.2549 8.53906 20.8135 8.53906 20.8135C8.53906 20.8135 0 13.2549 0 8.53906C2.79893e-06 3.82328 3.82328 0 8.53906 0ZM8.53906 4.98145C6.57415 4.98145 4.98145 6.57415 4.98145 8.53906C4.98155 10.5039 6.57422 12.0967 8.53906 12.0967C10.5039 12.0966 12.0966 10.5039 12.0967 8.53906C12.0967 6.57417 10.5039 4.98148 8.53906 4.98145Z" fill="#EB3333"/>
-                        </svg>
-                        Ильинский сквер
-                      </div>
-                      <a class="map-night__more js-legend-link js-scroll" href="#locations-dropdown" data-scroll data-thumb-index="11">Узнать расписание</button>
-                    </div>
-                  </div>
-                  <div class="map-night__legend-item js-legend-item" dir="ltr" data-thumb-index="12">
-                    <div class="map-night__legend-digit">12</div>
+                  <div class="map-night__legend-item js-legend-item" dir="ltr" data-thumb-index="8">
+                    <div class="map-night__legend-digit">8</div>
                     <div class="map-night__legend-content">
                       <div class="map-night__legend-title">Мотофристайл</div>
                       <div class="map-night__legend-pin">
@@ -1544,11 +1453,11 @@ Yj      sizes="114x114"
                         </svg>
                         Фонтанная площадь парка Горького
                       </div>
-                      <a class="map-night__more js-legend-link js-scroll" href="#locations-dropdown" data-scroll data-thumb-index="12">Узнать расписание</button>
+                      <a class="map-night__more js-legend-link js-scroll" href="#locations-dropdown" data-scroll data-thumb-index="8">Узнать расписание</button>
                     </div>
                   </div>
-                  <div class="map-night__legend-item js-legend-item" dir="ltr" data-thumb-index="13">
-                    <div class="map-night__legend-digit">13</div>
+                  <div class="map-night__legend-item js-legend-item" dir="ltr" data-thumb-index="9">
+                    <div class="map-night__legend-digit">9</div>
                     <div class="map-night__legend-content">
                       <div class="map-night__legend-title">Силовой спорт</div>
                       <div class="map-night__legend-pin">
@@ -1557,11 +1466,11 @@ Yj      sizes="114x114"
                         </svg>
                         Старый Арбат (Малый Николопесковский переулок)
                       </div>
-                      <a class="map-night__more js-legend-link js-scroll" href="#locations-dropdown" data-scroll data-thumb-index="13">Узнать расписание</button>
+                      <a class="map-night__more js-legend-link js-scroll" href="#locations-dropdown" data-scroll data-thumb-index="9">Узнать расписание</button>
                     </div>
                   </div>
-                  <div class="map-night__legend-item js-legend-item" dir="ltr" data-thumb-index="14">
-                    <div class="map-night__legend-digit">14</div>
+                  <div class="map-night__legend-item js-legend-item" dir="ltr" data-thumb-index="10">
+                    <div class="map-night__legend-digit">10</div>
                     <div class="map-night__legend-content">
                       <div class="map-night__legend-title">Брейк-данс</div>
                       <div class="map-night__legend-pin">
@@ -1570,11 +1479,11 @@ Yj      sizes="114x114"
                         </svg>
                         Старый Арбат (Большой Николопесковский переулок)
                       </div>
-                      <a class="map-night__more js-legend-link js-scroll" href="#locations-dropdown" data-scroll data-thumb-index="14">Узнать расписание</button>
+                      <a class="map-night__more js-legend-link js-scroll" href="#locations-dropdown" data-scroll data-thumb-index="10">Узнать расписание</button>
                     </div>
                   </div>
-                  <div class="map-night__legend-item js-legend-item" dir="ltr" data-thumb-index="15">
-                    <div class="map-night__legend-digit">15</div>
+                  <div class="map-night__legend-item js-legend-item" dir="ltr" data-thumb-index="11">
+                    <div class="map-night__legend-digit">11</div>
                     <div class="map-night__legend-content">
                       <div class="map-night__legend-title">Падел</div>
                       <div class="map-night__legend-pin">
@@ -1583,11 +1492,11 @@ Yj      sizes="114x114"
                         </svg>
                         Метро «Третьяковская»
                       </div>
-                      <a class="map-night__more js-legend-link" href="https://outdoor.sport.moscow/" target="_blank" data-thumb-index="15">Узнать расписание</button>
+                      <a class="map-night__more js-legend-link" href="https://outdoor.sport.moscow/" target="_blank" data-thumb-index="11">Узнать расписание</button>
                     </div>
                   </div>
-                  <div class="map-night__legend-item js-legend-item" dir="ltr" data-thumb-index="16">
-                    <div class="map-night__legend-digit">16</div>
+                  <div class="map-night__legend-item js-legend-item" dir="ltr" data-thumb-index="12">
+                    <div class="map-night__legend-digit">12</div>
                     <div class="map-night__legend-content">
                       <div class="map-night__legend-title">Падел</div>
                       <div class="map-night__legend-pin">
@@ -1596,11 +1505,11 @@ Yj      sizes="114x114"
                         </svg>
                         Метро Баррикадная
                       </div>
-                      <a class="map-night__more js-legend-link" href="https://outdoor.sport.moscow/" target="_blank" data-thumb-index="16">Узнать расписание</button>
+                      <a class="map-night__more js-legend-link" href="https://outdoor.sport.moscow/" target="_blank" data-thumb-index="12">Узнать расписание</button>
                     </div>
                   </div>
-                  <div class="map-night__legend-item js-legend-item" dir="ltr" data-thumb-index="17">
-                    <div class="map-night__legend-digit">17</div>
+                  <div class="map-night__legend-item js-legend-item" dir="ltr" data-thumb-index="13">
+                    <div class="map-night__legend-digit">13</div>
                     <div class="map-night__legend-content">
                       <div class="map-night__legend-title">Пляжный волейбол</div>
                       <div class="map-night__legend-pin">
@@ -1609,11 +1518,11 @@ Yj      sizes="114x114"
                         </svg>
                         Метро «Улица 1905 года»
                       </div>
-                      <a class="map-night__more js-legend-link" href="https://outdoor.sport.moscow/" target="_blank" data-thumb-index="17">Узнать расписание</button>
+                      <a class="map-night__more js-legend-link" href="https://outdoor.sport.moscow/" target="_blank" data-thumb-index="13">Узнать расписание</button>
                     </div>
                   </div>
-                  <div class="map-night__legend-item js-legend-item" dir="ltr" data-thumb-index="18">
-                    <div class="map-night__legend-digit">18</div>
+                  <div class="map-night__legend-item js-legend-item" dir="ltr" data-thumb-index="14">
+                    <div class="map-night__legend-digit">14</div>
                     <div class="map-night__legend-content">
                       <div class="map-night__legend-title">Скалодром, скейт-парк</div>
                       <div class="map-night__legend-pin">
@@ -1622,11 +1531,11 @@ Yj      sizes="114x114"
                         </svg>
                         Старая басманная
                       </div>
-                      <a class="map-night__more js-legend-link" href="https://outdoor.sport.moscow/" target="_blank" data-thumb-index="18">Узнать расписание</button>
+                      <a class="map-night__more js-legend-link" href="https://outdoor.sport.moscow/" target="_blank" data-thumb-index="14">Узнать расписание</button>
                     </div>
                   </div>
-                  <div class="map-night__legend-item js-legend-item" dir="ltr" data-thumb-index="19">
-                    <div class="map-night__legend-digit">19</div>
+                  <div class="map-night__legend-item js-legend-item" dir="ltr" data-thumb-index="15">
+                    <div class="map-night__legend-digit">15</div>
                     <div class="map-night__legend-content">
                       <div class="map-night__legend-title">Настольный теннис</div>
                       <div class="map-night__legend-pin">
@@ -1635,11 +1544,11 @@ Yj      sizes="114x114"
                         </svg>
                         ТЦ «Атриум»
                       </div>
-                      <a class="map-night__more js-legend-link" href="https://outdoor.sport.moscow/" target="_blank" data-thumb-index="19">Узнать расписание</button>
+                      <a class="map-night__more js-legend-link" href="https://outdoor.sport.moscow/" target="_blank" data-thumb-index="15">Узнать расписание</button>
                     </div>
                   </div>
-                  <div class="map-night__legend-item js-legend-item" dir="ltr" data-thumb-index="20">
-                    <div class="map-night__legend-digit">20</div>
+                  <div class="map-night__legend-item js-legend-item" dir="ltr" data-thumb-index="16">
+                    <div class="map-night__legend-digit">16</div>
                     <div class="map-night__legend-content">
                       <div class="map-night__legend-title">Настольный теннис, Баскетбольное дерево, Зона с гамаками</div>
                       <div class="map-night__legend-pin">
@@ -1648,11 +1557,11 @@ Yj      sizes="114x114"
                         </svg>
                         Лаврушинский переулок
                       </div>
-                      <a class="map-night__more js-legend-link" href="https://outdoor.sport.moscow/" target="_blank" data-thumb-index="20">Узнать расписание</button>
+                      <a class="map-night__more js-legend-link" href="https://outdoor.sport.moscow/" target="_blank" data-thumb-index="16">Узнать расписание</button>
                     </div>
                   </div>
-                  <div class="map-night__legend-item js-legend-item" dir="ltr" data-thumb-index="21">
-                    <div class="map-night__legend-digit">21</div>
+                  <div class="map-night__legend-item js-legend-item" dir="ltr" data-thumb-index="17">
+                    <div class="map-night__legend-digit">17</div>
                     <div class="map-night__legend-content">
                       <div class="map-night__legend-title">Скейтпарк, зона с гамакаи</div>
                       <div class="map-night__legend-pin">
@@ -1661,7 +1570,7 @@ Yj      sizes="114x114"
                         </svg>
                         Метро &laquo;Добрынинская&raquo;
                       </div>
-                      <a class="map-night__more js-legend-link" href="https://outdoor.sport.moscow/" target="_blank" data-thumb-index="21">Узнать расписание</button>
+                      <a class="map-night__more js-legend-link" href="https://outdoor.sport.moscow/" target="_blank" data-thumb-index="17">Узнать расписание</button>
                     </div>
                   </div>
                 </div>
@@ -1829,6 +1738,6 @@ Yj      sizes="114x114"
     </div>
 
     <script src="js/vendor.js"></script>
-    <script src="js/main2.js"></script>
+    <script src="js/main3.js"></script>
   </body>
 </html>
