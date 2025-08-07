@@ -637,8 +637,6 @@
     33: "Московское долголетие",
   };
 
-  console.log(getURls());
-
   // Функция для генерации
   function getURls() {
     Object.entries(locations).forEach(([index, value]) => {
