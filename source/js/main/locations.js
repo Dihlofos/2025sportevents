@@ -112,7 +112,7 @@
     32: "Гимнастика",
     33: "Московское долголетие",
   };
-
+  getURls();
   // Функция для генерации
   function getURls() {
     Object.entries(locations).forEach(([index, value]) => {
