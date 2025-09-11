@@ -143,54 +143,54 @@
       index: 11,
       coords: [37.603882, 55.764438],
     },
-    {
-      name: "Третьяковская",
-      index: 12,
-      externalLink: "https://outdoor.sport.moscow/",
-      coords: [37.6251895, 55.740825],
-    },
-    {
-      name: "Баррикадная",
-      index: 13,
-      externalLink: "https://outdoor.sport.moscow/",
-      coords: [37.582017, 55.760104],
-    },
-    {
-      name: "Три вокзала. Депо",
-      index: 14,
-      externalLink: "https://outdoor.sport.moscow/",
-      coords: [37.663324, 55.77271],
-    },
-    {
-      name: "Метро «Улица 1905 года»",
-      index: 15,
-      externalLink: "https://outdoor.sport.moscow/",
-      coords: [37.561509, 55.765281],
-    },
-    {
-      name: "Старая Басманная",
-      index: 16,
-      externalLink: "https://outdoor.sport.moscow/",
-      coords: [37.657637, 55.763984],
-    },
-    {
-      name: "ТЦ «Атриум»",
-      index: 17,
-      externalLink: "https://outdoor.sport.moscow/",
-      coords: [37.659173, 55.757339],
-    },
-    {
-      name: "Лаврушинский переулок",
-      index: 18,
-      externalLink: "https://outdoor.sport.moscow/",
-      coords: [37.621444, 55.741693],
-    },
-    {
-      name: "Добрынинская",
-      index: 19,
-      externalLink: "https://outdoor.sport.moscow/",
-      coords: [37.622745, 55.728995],
-    },
+    // {
+    //   name: "Третьяковская",
+    //   index: 12,
+    //   externalLink: "https://outdoor.sport.moscow/",
+    //   coords: [37.6251895, 55.740825],
+    // },
+    // {
+    //   name: "Баррикадная",
+    //   index: 13,
+    //   externalLink: "https://outdoor.sport.moscow/",
+    //   coords: [37.582017, 55.760104],
+    // },
+    // {
+    //   name: "Три вокзала. Депо",
+    //   index: 14,
+    //   externalLink: "https://outdoor.sport.moscow/",
+    //   coords: [37.663324, 55.77271],
+    // },
+    // {
+    //   name: "Метро «Улица 1905 года»",
+    //   index: 15,
+    //   externalLink: "https://outdoor.sport.moscow/",
+    //   coords: [37.561509, 55.765281],
+    // },
+    // {
+    //   name: "Старая Басманная",
+    //   index: 16,
+    //   externalLink: "https://outdoor.sport.moscow/",
+    //   coords: [37.657637, 55.763984],
+    // },
+    // {
+    //   name: "ТЦ «Атриум»",
+    //   index: 17,
+    //   externalLink: "https://outdoor.sport.moscow/",
+    //   coords: [37.659173, 55.757339],
+    // },
+    // {
+    //   name: "Лаврушинский переулок",
+    //   index: 18,
+    //   externalLink: "https://outdoor.sport.moscow/",
+    //   coords: [37.621444, 55.741693],
+    // },
+    // {
+    //   name: "Добрынинская",
+    //   index: 19,
+    //   externalLink: "https://outdoor.sport.moscow/",
+    //   coords: [37.622745, 55.728995],
+    // },
   ];
   // locations-dropdown constants
   const dropdownContainer = document.querySelector(".js-locations-dropdown");
@@ -590,39 +590,32 @@
   const figures = map.querySelectorAll(".figure");
 
   const locations = {
-    1: "МОТОФРИСТАЙЛ + БАГГИ",
-    2: "Финансовая грамотность",
-    3: "Скейт-парк",
-    4: "воркаут",
-    5: "паркур",
-    6: "Настольный теннис",
-    7: "шахматы",
-    8: "фан-встречи",
-    9: "стронгмэн",
-    10: "стрельба из лука",
-    11: "детская зона",
-    12: "брейк-данс",
-    13: "стантрайдинг",
-    14: "стритбол",
-    15: "сайклинг",
-    16: "беговелы",
-    17: "фк спартак",
-    18: "фк Динамо",
-    19: "фк Локомотив",
-    20: "Аквагрим/Авиамоделирование",
-    21: "Кубик Рубика",
-    22: "Полоса препятствий",
-    23: "Игры москвы",
-    24: "ГТО",
-    25: "Мини-футбол",
-    26: "Бокс",
-    27: "концерт",
-    28: "гидрофлай",
-    29: "медиафутбол",
-    30: "стретчинг",
-    31: "настольные игры",
-    32: "Гимнастика",
-    33: "Московское долголетие",
+    1: "Стритбол",
+    2: "Стрельба из лука",
+    3: "детская зона",
+    4: "Скейт-парк",
+    5: "Воркаут",
+    6: "Паркур",
+    7: "Фан-встречи",
+    8: "ФК локомотив",
+    9: "ФК динамо",
+    10: "Городки",
+    11: "Настольные игры",
+    12: "Сайклинг",
+    13: "Стронгмен",
+    14: "Авиамоделирование, аквагрим",
+    15: "Концерт",
+    16: "Брейк-данс",
+    17: "Бокс",
+    18: "Шахматы",
+    19: "Настольный теннис",
+    20: "Стантрайдинг",
+    21: "Гидрофлай",
+    22: "Мотофристайл + багги",
+    23: "Полоса препятствий",
+    24: "Информационная стойка",
+    25: "Панна-футбол",
+    26: "Стретчинг",
   };
   getURls();
   // Функция для генерации
@@ -636,10 +629,10 @@
   }
 
   // 32 убрать, когда заработает.
-  const numbersWithoutAction = [];
+  const numbersWithoutAction = ["24"];
 
-  const concertNumber = "27";
-  const childZone = ["16", "32", "20"]; // TODO Поменять, когда нумерацию заменят!
+  const concertNumber = "15";
+  const childZone = []; // TODO Поменять, когда нумерацию заменят!
 
   const partnersLinks = {};
   const vw = window.innerWidth;

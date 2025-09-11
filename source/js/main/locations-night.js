@@ -56,54 +56,54 @@
       index: 11,
       coords: [37.603882, 55.764438],
     },
-    {
-      name: "Третьяковская",
-      index: 12,
-      externalLink: "https://outdoor.sport.moscow/",
-      coords: [37.6251895, 55.740825],
-    },
-    {
-      name: "Баррикадная",
-      index: 13,
-      externalLink: "https://outdoor.sport.moscow/",
-      coords: [37.582017, 55.760104],
-    },
-    {
-      name: "Три вокзала. Депо",
-      index: 14,
-      externalLink: "https://outdoor.sport.moscow/",
-      coords: [37.663324, 55.77271],
-    },
-    {
-      name: "Метро «Улица 1905 года»",
-      index: 15,
-      externalLink: "https://outdoor.sport.moscow/",
-      coords: [37.561509, 55.765281],
-    },
-    {
-      name: "Старая Басманная",
-      index: 16,
-      externalLink: "https://outdoor.sport.moscow/",
-      coords: [37.657637, 55.763984],
-    },
-    {
-      name: "ТЦ «Атриум»",
-      index: 17,
-      externalLink: "https://outdoor.sport.moscow/",
-      coords: [37.659173, 55.757339],
-    },
-    {
-      name: "Лаврушинский переулок",
-      index: 18,
-      externalLink: "https://outdoor.sport.moscow/",
-      coords: [37.621444, 55.741693],
-    },
-    {
-      name: "Добрынинская",
-      index: 19,
-      externalLink: "https://outdoor.sport.moscow/",
-      coords: [37.622745, 55.728995],
-    },
+    // {
+    //   name: "Третьяковская",
+    //   index: 12,
+    //   externalLink: "https://outdoor.sport.moscow/",
+    //   coords: [37.6251895, 55.740825],
+    // },
+    // {
+    //   name: "Баррикадная",
+    //   index: 13,
+    //   externalLink: "https://outdoor.sport.moscow/",
+    //   coords: [37.582017, 55.760104],
+    // },
+    // {
+    //   name: "Три вокзала. Депо",
+    //   index: 14,
+    //   externalLink: "https://outdoor.sport.moscow/",
+    //   coords: [37.663324, 55.77271],
+    // },
+    // {
+    //   name: "Метро «Улица 1905 года»",
+    //   index: 15,
+    //   externalLink: "https://outdoor.sport.moscow/",
+    //   coords: [37.561509, 55.765281],
+    // },
+    // {
+    //   name: "Старая Басманная",
+    //   index: 16,
+    //   externalLink: "https://outdoor.sport.moscow/",
+    //   coords: [37.657637, 55.763984],
+    // },
+    // {
+    //   name: "ТЦ «Атриум»",
+    //   index: 17,
+    //   externalLink: "https://outdoor.sport.moscow/",
+    //   coords: [37.659173, 55.757339],
+    // },
+    // {
+    //   name: "Лаврушинский переулок",
+    //   index: 18,
+    //   externalLink: "https://outdoor.sport.moscow/",
+    //   coords: [37.621444, 55.741693],
+    // },
+    // {
+    //   name: "Добрынинская",
+    //   index: 19,
+    //   externalLink: "https://outdoor.sport.moscow/",
+    //   coords: [37.622745, 55.728995],
+    // },
   ];
   // locations-dropdown constants
   const dropdownContainer = document.querySelector(".js-locations-dropdown");
